@@ -1,8 +1,8 @@
 ### Chương trình thực hiện các tác vụ cơ bản với database
 
-- Insert data
-- Update data
-- Delete data
+-	Insert data
+-	Update data
+-	Delete data
 
 ### API - DATABASE:
 

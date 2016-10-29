@@ -3,9 +3,9 @@
 static mongoc_client_t      	*client;
 static bson_error_t          	error;
 
-mongoc_database_t *ConnectDatabase(const char *DATABASE_NAME){
-	bson_t *command, reply;
+mongoc_database_t *ConnectDatabase(const char *DATABASE_NAME) {
 
+	bson_t *command, reply;
 	mongoc_init ();
 	// Create a new client instance
 	client = mongoc_client_new ("mongodb://127.0.0.1/");
@@ -58,7 +58,6 @@ bool InsertData(mongoc_collection_t *colt, char* json){
 		return 0;
 	}
 	return 1;
-	
 
 }
 
@@ -111,11 +110,9 @@ bool DeleteData(mongoc_collection_t *colt, char *jsonQuery){
         return 0;
     }
     return 0;
-
 }
 
 void DisconnectDatabase(mongoc_database_t *database){
-
 	mongoc_database_destroy (database);
 	mongoc_client_destroy (client);
 	mongoc_cleanup ();
@@ -128,7 +125,6 @@ void CloseCollection(mongoc_collection_t *colt){
 int64_t TotalDocuments (mongoc_collection_t *colt){
 
    	int64_t count;
-
 	if ( (count = mongoc_collection_count (colt, MONGOC_QUERY_NONE, NULL, 0, 0, NULL, &error)) < 0) {
 		sd_bug(error.message);
 		return 0;
@@ -139,6 +135,4 @@ int64_t TotalDocuments (mongoc_collection_t *colt){
 		#endif
 		return count;
 	}
-
-   
 }

@@ -1,0 +1,11 @@
+LOG (foo():main.cc:17) What the hell is going on !
+WARNING (main():main.cc:24) U should notice on ... !!
+ERROR (main():main.cc:25) There're something wrong !!!
+LOG (foo():main.cc:17) What the hell is going on !
+WARNING (main():main.cc:24) U should notice on ... !!
+ERROR (main():main.cc:25) There're something wrong !!!
+Verbose (main():main.cc:26) Show more information.
+LOG (foo():main.cc:17) What the hell is going on !
+WARNING (main():main.cc:24) U should notice on ... !!
+ERROR (main():main.cc:25) There're something wrong !!!
+VERBOSE (main():main.cc:26) Show more information.
