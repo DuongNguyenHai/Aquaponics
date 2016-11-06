@@ -1,0 +1,841 @@
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) >>>> Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:209) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) >>>> Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:209) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) >>>> Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) >>>> Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 2, failed: 0, missed: 1
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 3, failed: 0, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:208) Total query: 3, succeeded: 2, failed: 0, missed: 1
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 4, succeeded: 3, failed: 0, missed: 1
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 24, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:218) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+ERROR (UpdateData():lib/seed-database.cc:145) parse error: object key and value must be separated by a colon (':')
+                 {"$set":{"heartTemp"100}}
+                     (right here) ------^
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+ERROR (UpdateData():lib/seed-database.cc:145) parse error: object key and value must be separated by a colon (':')
+                 {"$set":{"heartTemp"100}}
+                     (right here) ------^
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 27, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:236) Total query: 5, succeeded: 2, failed: 2, missed: 1
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+ERROR (UpdateData():lib/seed-database.cc:175) parse error: object key and value must be separated by a colon (':')
+                 {"$set":{"heartTemp"100}}
+                     (right here) ------^
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+ERROR (UpdateData():lib/seed-database.cc:175) parse error: object key and value must be separated by a colon (':')
+                 {"$set":{"heartTemp"100}}
+                     (right here) ------^
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 27, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:236) Total query: 5, succeeded: 2, failed: 2, missed: 1
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+ERROR (UpdateData():lib/seed-database.cc:176) parse error: object key and value must be separated by a colon (':')
+                 {"$set":{"heartTemp"100}}
+                     (right here) ------^
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+ERROR (UpdateData():lib/seed-database.cc:176) parse error: object key and value must be separated by a colon (':')
+                 {"$set":{"heartTemp"100}}
+                     (right here) ------^
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 27, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:238) Total query: 5, succeeded: 2, failed: 2, missed: 1
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+ERROR (DeleteData():lib/seed-database.cc:214) parse error: object key and value must be separated by a colon (':')
+                               {"temp"25}
+                     (right here) ------^
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 28, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:238) Total query: 5, succeeded: 2, failed: 1, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+ERROR (DeleteData():lib/seed-database.cc:214) parse error: object key and value must be separated by a colon (':')
+                               {"temp"25}
+                     (right here) ------^
+ERROR (UpdateData():lib/seed-database.cc:176) parse error: object key and value must be separated by a colon (':')
+                        {"heartTemp"1234}
+                     (right here) ------^
+ERROR (DeleteData():lib/seed-database.cc:214) parse error: object key and value must be separated by a colon (':')
+                        {"heartTemp"1234}
+                     (right here) ------^
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 29, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:238) Total query: 5, succeeded: 2, failed: 3, missed: 0
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+LOG (command_succeeded():lib/seed-database.cc:34) Command ping succeeded:
+{ "ok" : 1 }
+LOG (Database():lib/seed-database.cc:85) Database connection succeeded !
+LOG (command_succeeded():lib/seed-database.cc:34) Command insert succeeded:
+{ "ok" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command update succeeded:
+{ "ok" : 1, "nModified" : 1, "n" : 1 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command delete succeeded:
+{ "ok" : 1, "n" : 1 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }
+LOG (command_succeeded():lib/seed-database.cc:34) Command count succeeded:
+{ "waitedMS" : 0, "n" : 29, "ok" : 1 }
+LOG (DisplayTotalQuery():lib/seed-database.cc:238) Total query: 5, succeeded: 3, failed: 0, missed: 2
+ERROR (Database():lib/seed-database.cc:80) No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+WARNING (command_succeeded():lib/seed-database.cc:37) Command update missed:
+{ "ok" : 1, "nModified" : 0, "n" : 0 }
+WARNING (command_succeeded():lib/seed-database.cc:37) Command delete missed:
+{ "ok" : 1, "n" : 0 }

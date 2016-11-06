@@ -1,6 +1,13 @@
+// Nguyen Hai Duong
+// Date : july 2016
 // lib/TCP-IP.cc
 
 #include "TCP-IP.h"
+
+namespace TREE { 
+
+#define LOGFILE "seed-TCP.log" // the file is used for write log
+static int DEBUG_LEVEL = 2; // DEBUG_DATABASE_LV was defined in seed-config.cc
 
 int CreateTCPServerSocket(unsigned short port){
     int servSock;                           /* socket to create */
@@ -8,7 +15,7 @@ int CreateTCPServerSocket(unsigned short port){
 
     // Create socket for incoming connections 
     if ((servSock = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP)) < 0)
-        sd_error("ERROR opening socket");
+        SEED_ERROR << "ERROR opening socket";
       
     // Construct local address structure 
     memset(&serv_addr, 0, sizeof(serv_addr));       /* Zero out structure */
@@ -18,11 +25,11 @@ int CreateTCPServerSocket(unsigned short port){
 
     // Bind to the local address
     if (bind(servSock, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0)
-        sd_error("ERROR on binding");
+        SEED_ERROR << "ERROR on binding";
 
     // Mark the socket so it will listen for incoming connections 
     if (listen(servSock, MAXPENDING) < 0)
-        sd_error("ERROR on binding");
+        SEED_ERROR << "ERROR on listening";
 
     return servSock;
 }
@@ -37,7 +44,13 @@ int AcceptTCPConnection(int servSock){
     
     // Wait for a client to connect 
     if ((clntSock = accept(servSock, (struct sockaddr *) &cli_addr, &clntLen)) < 0)
-        sd_error("accept() failed");
-      
+        SEED_ERROR << "accept() failed";
+    
+    SEED_VLOG   <<"Got a connection from " << inet_ntoa(cli_addr.sin_addr)
+                <<" on port " 
+                << htons(cli_addr.sin_port);
+
     return clntSock;
 }
+
+}   // end of namespace TREE

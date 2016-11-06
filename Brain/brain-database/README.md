@@ -14,9 +14,9 @@
 
 *	Query database
 
-	bool InsertData(const char *COLL_NAME,char *json);
-	bool UpdateData(const char *COLL_NAME, char *json, char *jsonSelector);
-	bool DeleteData(const char *COLL_NAME, char *jsonSelector);
+	int InsertData(const char *COLL_NAME,char *json);
+	int UpdateData(const char *COLL_NAME, char *json, char *jsonSelector);
+	int DeleteData(const char *COLL_NAME, char *jsonSelector);
 	
 *	Display the total of number of documents in one colletion
 

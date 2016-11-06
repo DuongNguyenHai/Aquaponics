@@ -14,12 +14,11 @@
 #include <inttypes.h>	// int64_t
 #include <stdlib.h>		// exit()
 
+#include "seed-config.h" // configuration for system
+
 namespace TREE {
 
 extern const char *g_program_name;
-
-#define PRINT_MONITOR true  // print infor on terminal
-#define PRINT_FILE true     // print infor to file (log file)
 
 struct LogMessageEnvelope {
   enum Severity {
@@ -65,6 +64,6 @@ private:
 	MessageLogger(LogMessageEnvelope::Verbose, \
                          __FUNCTION__, __FILE__, __LINE__, LOGFILE, DEBUG_LEVEL).stream()
 
-}
+} // end of namespace TREE
 
 #endif

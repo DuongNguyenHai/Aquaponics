@@ -1,7 +1,12 @@
 #include "seed-database.h"
 
+namespace TREE {
+
 bool Database::flag_succeed = false;
 stats_t Database::stats = {0};
+
+#define LOGFILE "seed-database.log" // the file is used for write log
+static int DEBUG_LEVEL = 0; // DEBUG_DATABASE_LV was defined in seed-config.cc
 
 bool Database::TurnFlag(char *s) {
 	if(s[strchr(s,'}')-s-2]-'0')
@@ -53,6 +58,8 @@ void Database::command_failed (const mongoc_apm_command_failed_t *event) {
 
 Database::Database(const char *DATABASE_NAME) {
 
+	DEBUG_LEVEL = DEBUG_DATABASE_LV; // set debug level for database
+
 	bson_t *command, reply;
 	bson_error_t error;
 	mongoc_apm_callbacks_t *callbacks;
@@ -78,11 +85,11 @@ Database::Database(const char *DATABASE_NAME) {
 	if (!mongoc_client_command_simple (client, "admin", command, NULL, &reply, &error)) {
 		bson_destroy (command);
 		SEED_ERROR << error.message;
-		exit(1);
+		exit(RET_FAILURE);
 	}
 
 	bson_destroy (command);
-	SEED_LOG << ">>>> Database connection succeeded !";
+	SEED_LOG << "Database connection succeeded !";
 }
 
 Database::~Database() {
@@ -93,7 +100,7 @@ Database::~Database() {
 
 // char *json = (char *)"{\"temp\": 25, \"heartTemp\":35, \"state\":1, \"warning\": \"none\" }";
 // object.InsertData("collection name", json);
-bool Database::InsertData(const char *COLL_NAME, char* json) {
+int Database::InsertData(const char *COLL_NAME, char* json) {
 	
 	bson_t *command;
 	bson_error_t error;
@@ -101,31 +108,39 @@ bool Database::InsertData(const char *COLL_NAME, char* json) {
 
 	stats.started++;
 
-	if( !(command = bson_new_from_json ((const uint8_t*)json, -1, &error)) ||
-		! mongoc_collection_insert (colt, MONGOC_INSERT_NONE, command, NULL, &error)) {
-			
-			stats.failed++;
-			bson_destroy (command);
-			mongoc_collection_destroy (colt);
-			SEED_ERROR << error.message;
-			return 0;
+	if( !(command = bson_new_from_json ((const uint8_t*)json, -1, &error))) {
+		goto JUMP_FAIL;
 	}
 
-	if(flag_succeed)
-		stats.succeeded++;
-	else
-		stats.missed++;
+	if( !mongoc_collection_insert (colt, MONGOC_INSERT_NONE, command, NULL, &error)) {
+		bson_destroy (command);
+		goto JUMP_FAIL;
+	}
 
 	bson_destroy (command);
 	mongoc_collection_destroy (colt);
-	return 1;
+
+	if(flag_succeed)
+		stats.succeeded++;
+	else {
+		stats.missed++;
+		return RET_MISS;
+	}
+
+	return RET_SUCCESS;
+
+	JUMP_FAIL:
+		stats.failed++;
+		mongoc_collection_destroy (colt);
+		SEED_ERROR << error.message;
+		return RET_FAILURE;
 
 }
 
 // char *jsonSelector = (char *)"{\"temp\":25}";
 // char *jsonUpdate = (char *)"{\"$set\":{\"heartTemp\":100}}";
 // object.UpdateData("collection name", jsonUpdate, jsonSelector);
-bool Database::UpdateData(const char *COLL_NAME, char *json, char *jsonSelector) {
+int Database::UpdateData(const char *COLL_NAME, char *json, char *jsonSelector) {
 
 	bson_t *command, *query;
 	bson_error_t error;
@@ -133,32 +148,45 @@ bool Database::UpdateData(const char *COLL_NAME, char *json, char *jsonSelector)
 
 	stats.started++;
 
-	if( !(query = bson_new_from_json ((const uint8_t*)jsonSelector, -1, &error)) ||
-		!(command = bson_new_from_json ((const uint8_t*)json, -1, &error)) ||
-		! mongoc_collection_update (colt, MONGOC_UPDATE_NONE, query, command, NULL, &error)) {
-			
-			stats.failed++;
-			bson_destroy (command);
-			bson_destroy (query);
-    		mongoc_collection_destroy (colt);
-    		SEED_ERROR << error.message;
-    		return 0;
+	if(!(command = bson_new_from_json ((const uint8_t*)json, -1, &error))) {
+		goto JUMP_FAIL;
 	}
-	if(flag_succeed)
-		stats.succeeded++;
-	else{
-		stats.missed++;
+
+	if(!(query = bson_new_from_json ((const uint8_t*)jsonSelector, -1, &error))) {
+		bson_destroy (command);
+		goto JUMP_FAIL;
+	}
+
+	if( !mongoc_collection_update (colt, MONGOC_UPDATE_NONE, query, command, NULL, &error)) {	
+		stats.failed++;
+		bson_destroy (command);
+		bson_destroy (query);
+		goto JUMP_FAIL;
 	}
 
 	bson_destroy (command);
 	bson_destroy (query);
     mongoc_collection_destroy (colt);
-	return 1;
+
+	if(flag_succeed)
+		stats.succeeded++;
+	else {
+		stats.missed++;
+		return RET_MISS;
+	}
+
+	return RET_SUCCESS;
+
+	JUMP_FAIL:
+		stats.failed++;
+		mongoc_collection_destroy (colt);
+		SEED_ERROR << error.message;
+		return RET_FAILURE;
 }
 
 // char *jsonSelector = (char *)"{\"temp\":25}";
 // object.DeleteData("collection name", jsonUpdate, jsonSelector);
-bool Database::DeleteData(const char *COLL_NAME, char *jsonSelector){
+int Database::DeleteData(const char *COLL_NAME, char *jsonSelector){
 
 	bson_t *query;
 	bson_error_t error;
@@ -166,24 +194,32 @@ bool Database::DeleteData(const char *COLL_NAME, char *jsonSelector){
 
 	stats.started++;
 
-	if(!(query = bson_new_from_json ((const uint8_t*)jsonSelector, -1, &error)) ||
-	   ! mongoc_collection_remove (colt, MONGOC_REMOVE_SINGLE_REMOVE, query, NULL, &error)) {
-
-			stats.failed++;
-			bson_destroy (query);
-	   		mongoc_collection_destroy (colt);
-	 		SEED_ERROR << error.message;
-    		return 0;
+	if(!(query = bson_new_from_json ((const uint8_t*)jsonSelector, -1, &error))) {
+		goto JUMP_FAIL;
 	}
 
-	if(flag_succeed)
-		stats.succeeded++;
-	else
-		stats.missed++;
+	if( !mongoc_collection_remove (colt, MONGOC_REMOVE_SINGLE_REMOVE, query, NULL, &error)) {
+		bson_destroy (query);
+	 	goto JUMP_FAIL;
+	}
 
 	bson_destroy (query);
     mongoc_collection_destroy (colt);
-    return 1;	
+
+	if(flag_succeed)
+		stats.succeeded++;
+	else {
+		stats.missed++;
+		return RET_MISS;
+	}
+
+    return RET_SUCCESS;
+
+    JUMP_FAIL:
+		stats.failed++;
+		mongoc_collection_destroy (colt);
+		SEED_ERROR << error.message;
+		return RET_FAILURE;
 }
 
 // object.TotalDocuments("collection name");
@@ -196,7 +232,7 @@ int64_t Database::TotalDocuments (const char *COLL_NAME){
 	if ( (count = mongoc_collection_count (colt, MONGOC_QUERY_NONE, NULL, 0, 0, NULL, &error)) < 0) {
 		mongoc_collection_destroy (colt);
 		SEED_ERROR << error.message;
-		return -1;
+		return RET_FAILURE;
 	} else {
 		mongoc_collection_destroy (colt);
 		printf ("The \"%s\" collection has : %" PRId64 " documents.\n", COLL_NAME, count);
@@ -211,3 +247,6 @@ void Database::DisplayTotalQuery() {
 			 << ", failed: " << stats.failed
 			 << ", missed: " << stats.missed << "\n";
 }
+
+} // end of namespace TREE
+

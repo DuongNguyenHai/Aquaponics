@@ -25,7 +25,7 @@ const char *GetShortFileName(const char *filename) {
 		return last_slash;
 	}
 }
-
+// Print log/error/warning/verbose on terminal an log file
 static void SendToLog(	const LogMessageEnvelope &envelope,
 						const char *pfile,
                       	const char *message) {
@@ -46,17 +46,18 @@ static void SendToLog(	const LogMessageEnvelope &envelope,
 
 	std::string header_str = header.str();
 
-	#if PRINT_MONITOR
+	if (PRINT_MONITOR)
 		printf("%s %s\n", header_str.c_str(), message);
-	#endif
+	
 
-	#if PRINT_FILE
+	if (PRINT_FILE) {
 		std::ofstream logFile(pfile, std::ios::out | std::ios::app);
 		if (logFile.is_open()) {
 			logFile << header_str.c_str() << " " << message << std::endl;
 			logFile.close();
 		}
-	#endif
+	}
+		
 
 }
 
@@ -85,7 +86,9 @@ MessageLogger::~MessageLogger() {
 			 (envelope_.severity == LogMessageEnvelope::Error) ) {
 
 				SendToLog(envelope_, envelope_.log, str.c_str());
+				if((envelope_.severity == LogMessageEnvelope::Error)) // if it was error message, program will exit
+					exit(EXIT_FAILURE);
 			}
 }
 
-}
+} // end of namspace TREE

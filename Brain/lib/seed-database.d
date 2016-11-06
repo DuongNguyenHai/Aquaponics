@@ -46,7 +46,6 @@
  /usr/local/include/libmongoc-1.0/mongoc-socket.h \
  /usr/local/include/libmongoc-1.0/mongoc-gridfs-file.h \
  /usr/local/include/libmongoc-1.0/mongoc-gridfs-file-list.h \
- /usr/local/include/libmongoc-1.0/mongoc-ssl.h \
  /usr/local/include/libmongoc-1.0/mongoc-uri.h \
  /usr/local/include/libmongoc-1.0/mongoc-server-description.h \
  /usr/local/include/libmongoc-1.0/mongoc-client-pool.h \
@@ -63,10 +62,7 @@
  /usr/local/include/libmongoc-1.0/mongoc-trace.h \
  /usr/local/include/libmongoc-1.0/mongoc-version.h \
  /usr/local/include/libmongoc-1.0/mongoc-version-functions.h \
- /usr/local/include/libmongoc-1.0/mongoc-rand.h \
- /usr/local/include/libmongoc-1.0/mongoc-stream-tls.h \
- /usr/local/include/libmongoc-1.0/mongoc-stream-tls-private.h \
- ../lib/seed-log.h
+ ../lib/seed-log.h ../lib/seed-config.h
 ../lib/seed-database.cc:
 ../lib/seed-database.h:
 /usr/local/include/libmongoc-1.0/mongoc.h:
@@ -116,7 +112,6 @@
 /usr/local/include/libmongoc-1.0/mongoc-socket.h:
 /usr/local/include/libmongoc-1.0/mongoc-gridfs-file.h:
 /usr/local/include/libmongoc-1.0/mongoc-gridfs-file-list.h:
-/usr/local/include/libmongoc-1.0/mongoc-ssl.h:
 /usr/local/include/libmongoc-1.0/mongoc-uri.h:
 /usr/local/include/libmongoc-1.0/mongoc-server-description.h:
 /usr/local/include/libmongoc-1.0/mongoc-client-pool.h:
@@ -133,7 +128,5 @@
 /usr/local/include/libmongoc-1.0/mongoc-trace.h:
 /usr/local/include/libmongoc-1.0/mongoc-version.h:
 /usr/local/include/libmongoc-1.0/mongoc-version-functions.h:
-/usr/local/include/libmongoc-1.0/mongoc-rand.h:
-/usr/local/include/libmongoc-1.0/mongoc-stream-tls.h:
-/usr/local/include/libmongoc-1.0/mongoc-stream-tls-private.h:
 ../lib/seed-log.h:
+../lib/seed-config.h:

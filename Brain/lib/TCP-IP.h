@@ -1,5 +1,6 @@
 // Nguyen Hai Duong
 // Date : july 2016
+// lib/TCP-IP.h
 
 #ifndef SEED_TCP_IP_H
 #define SEED_TCP_IP_H
@@ -20,6 +21,8 @@
 // for log and error
 #include "seed-log.h"
 
+namespace TREE {
+
 #define MAXPENDING 5
 #define BUFFSIZE 256
 #define PORT 8888
@@ -30,5 +33,8 @@ int CreateTCPServerSocket(unsigned short port);
 // accept tcp connection
 // Return server socket
 int AcceptTCPConnection(int servSock);
+
+
+}	// end of name space TREE
 
 #endif

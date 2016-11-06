@@ -1,0 +1,35 @@
+#!/bin/bash
+
+# Nguyen Hai Duong
+# Date : Oct 2016
+
+echo "--- Compile program to test !!!"
+make check || exit 1
+
+echo "+++ Compile all successed !!"
+cd test
+
+echo -e "\n--- Test connection failed to database :"
+sudo service mongod stop && sleep 1 	# Need sleep 1s to mongod finish stop
+./error-dtb ; VAL=$?
+		
+if [ $VAL == 1 ]; then					# because test connect error so the return will be 1
+   echo -e "+++ Test error connect successed"
+else
+   echo -e "... Test error connect Failed"
+fi
+
+echo -e "\n--- Check all query command : insert, update, delete :"
+sudo service mongod start && sleep 1 	# need sleep to mongod start before next command
+
+./check-lib ; VAL=$?
+
+if [ $VAL == 0 ]; then
+   echo -e "+++ Test all query command successed"
+else
+   echo -e "... Test all query command Failed"
+fi
+
+
+
+

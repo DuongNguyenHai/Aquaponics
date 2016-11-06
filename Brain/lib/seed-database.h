@@ -13,21 +13,9 @@
 // #include "base/lib-mongo/include/libmongoc-1.0/mongoc.h"
 #include <mongoc.h>
 #include "seed-log.h" // Print information and write to a log-file
-using namespace TREE;
+#include "seed-config.h" // configuration for system
 
-#define LOGFILE "seed-database.log"
-
-// There are 3 level of DEBUG_LEVEL from 1->3
-// Higher level will debug more information
-// Set  DEBUG_LEVEL 0 means : show WARNING, ERROR but no LOG.
-// 		DEBUG_LEVEL 1 means : show WARNING, ERROR and LOG.
-// 		DEBUG_LEVEL 2 means : show all.
-#ifndef DEBUG_LEVEL
-#define DEBUG_LEVEL 1
-#else
-#undef DEBUG_LEVEL
-#define DEBUG_LEVEL 1
-#endif
+namespace TREE {
 
 typedef mongoc_collection_t db_collection;
 
@@ -45,9 +33,9 @@ public:
 	Database(const char *DATABASE_NAME);
 	~Database();
 
-	bool InsertData(const char *COLL_NAME, char* json);						// insert only one data (document) to a collection
-	bool UpdateData(const char *COLL_NAME, char *json, char *jsonSelector); // update only one data to ca collection
-	bool DeleteData(const char *COLL_NAME, char *jsonSelector);				// delete only one data
+	int InsertData(const char *COLL_NAME, char* json);						// insert only one data (document) to a collection
+	int UpdateData(const char *COLL_NAME, char *json, char *jsonSelector); // update only one data to ca collection
+	int DeleteData(const char *COLL_NAME, char *jsonSelector);				// delete only one data
 	int64_t TotalDocuments (const char *COLL_NAME);	// count total documents in a specific colletion
 	void DisplayTotalQuery();						// Display stats
 
@@ -67,6 +55,8 @@ private:
 									// must be static function.
 	
 };
+
+} // end of namspace TREE
 
 
 #endif

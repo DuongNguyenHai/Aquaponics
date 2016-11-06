@@ -1,0 +1,331 @@
+ERROR (GetOptions():lib/seed-parse-config.cc:117) Config : "PRINT_MONITOR=Fdalse" is wrong 
+ERROR (GetOptions():lib/seed-parse-config.cc:145) Config : "PRINT_FILE_r=true" is not config
+ERROR (GetOptions():lib/seed-parse-config.cc:137) Config : "DB_DATABASE_LV=10s" is wrong 
+ERROR (GetOptions():lib/seed-parse-config.cc:117) Config : "PRINT_MONITOR=Fdalse" is wrong 
+ERROR (GetOptions():lib/seed-parse-config.cc:145) Config : "PRINT_FILE_r=true" is not config
+ERROR (GetOptions():lib/seed-parse-config.cc:137) Config : "DB_DATABASE_LV=10s" is wrong 
+ERROR (GetOptions():lib/seed-parse-config.cc:117) Config : "PRINT_MONITOR=Fdalse" is wrong 
+ERROR (PrintUsage():lib/seed-parse-config.cc:163) Write configs in file name : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+ERROR (GetOptions():lib/seed-parse-config.cc:150) Config : "PRINT_FILE_r=true" is not config
+ERROR (PrintUsage():lib/seed-parse-config.cc:163) Write configs in file name : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+ERROR (GetOptions():lib/seed-parse-config.cc:141) Config : "DB_DATABASE_LV=10s" is wrong 
+ERROR (PrintUsage():lib/seed-parse-config.cc:163) Write configs in file name : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:117) Config : "PRINT_MONITOR=Fdalse" is wrong 
+WARNING (GetOptions():lib/seed-parse-config.cc:149) Config : "PRINT_FILE_r=true" is not config
+WARNING (GetOptions():lib/seed-parse-config.cc:140) Config : "DB_DATABASE_LV=10s" is wrong 
+WARNING (PrintUsage():lib/seed-parse-config.cc:165) Write configs in file name : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:117) Config : "PRINT_MONITOR=Fdalse" is wrong 
+WARNING (GetOptions():lib/seed-parse-config.cc:149) Config : "PRINT_FILE_r=true" is not config
+WARNING (GetOptions():lib/seed-parse-config.cc:140) Config : "DB_DATABASE_LV=10s" is wrong 
+WARNING (PrintUsage():lib/seed-parse-config.cc:165) Write configs in file name : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:117) Config : "PRINT_MONITOR=Fdalse" is wrong 
+WARNING (GetOptions():lib/seed-parse-config.cc:149) Config : "PRINT_FILE_r=true" is not config
+WARNING (GetOptions():lib/seed-parse-config.cc:140) Config : "DB_DATABASE_LV=10s" is wrong 
+WARNING (PrintUsage():lib/seed-parse-config.cc:165) 
+Write configs in file name : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:117) Config : "PRINT_MONITOR=Fdalse" is wrong 
+WARNING (GetOptions():lib/seed-parse-config.cc:149) Config : "PRINT_FILE_r=true" is not config
+WARNING (GetOptions():lib/seed-parse-config.cc:140) Config : "DB_DATABASE_LV=10s" is wrong 
+WARNING (PrintUsage():lib/seed-parse-config.cc:165) 
+
+Write configs in file name : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:117) Config : "PRINT_MONITOR=Fdalse" is wrong 
+WARNING (GetOptions():lib/seed-parse-config.cc:149) Config : "PRINT_FILE_r=true" is not config
+WARNING (GetOptions():lib/seed-parse-config.cc:140) Config : "DB_DATABASE_LV=10s" is wrong 
+LOG (PrintUsage():lib/seed-parse-config.cc:165) 
+
+Write configs in file name : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:117) Config : "PRINT_MONITOR=Fdalse" is wrong 
+WARNING (GetOptions():lib/seed-parse-config.cc:149) Config : "PRINT_FILE_r=true" is not config
+WARNING (GetOptions():lib/seed-parse-config.cc:140) Config : "DB_DATABASE_LV=10s" is wrong 
+LOG (PrintUsage():lib/seed-parse-config.cc:161) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+ERROR (GetOptions():lib/seed-parse-config.cc:110) Need a config file : sys-config.cfg. All configuration was writed in it
+WARNING (GetOptions():lib/seed-parse-config.cc:123) Config : "PRINT_MONITOR=Fdalse" is wrong 
+WARNING (GetOptions():lib/seed-parse-config.cc:155) Config : "PRINT_FILE_r=true" is not config
+WARNING (GetOptions():lib/seed-parse-config.cc:146) Config : "DB_DATABASE_LV=10s" is wrong 
+LOG (PrintUsage():lib/seed-parse-config.cc:167) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (ParseArgs():lib/seed-parse-config.cc:91) Unable to open file 
+ERROR (GetOptions():lib/seed-parse-config.cc:110) Need a config file : sys-config.cfg. All configuration was writed in it
+WARNING (GetOptions():lib/seed-parse-config.cc:155) Config : "=" is not config
+WARNING (GetOptions():lib/seed-parse-config.cc:155) Config : "=" is not config
+WARNING (GetOptions():lib/seed-parse-config.cc:155) Config : "=" is not config
+LOG (PrintUsage():lib/seed-parse-config.cc:167) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (ParseArgs():lib/seed-parse-config.cc:91) Unable to open file 
+ERROR (GetOptions():lib/seed-parse-config.cc:110) Need a config file : sys-config.cfg. All configuration was writed in it
+WARNING (ParseArgs():lib/seed-parse-config.cc:91) Unable to open file 
+LOG (GetOptions():lib/seed-parse-config.cc:110) Need a config file : sys-config.cfg. All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:169) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+LOG (GetOptions():lib/seed-parse-config.cc:109) Need a config file : sys-config.cfg. All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:168) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+LOG (GetOptions():lib/seed-parse-config.cc:109) Need a config file : "sys-config.cfg". All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:168) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+LOG (GetOptions():lib/seed-parse-config.cc:109) Need a config file : "sys-config.cfg". All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:168) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+LOG (GetOptions():lib/seed-parse-config.cc:109) Need a config file : "sys-config.cfg". All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:168) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+LOG (GetOptions():lib/seed-parse-config.cc:109) Need a config file : "sys-config.cfg". All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:168) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+LOG (GetOptions():lib/seed-parse-config.cc:109) Need a config file : "sys-config.cfg". All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:168) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:124) Config : "PRINT_MONITOR=Fdalse" is wrong 
+WARNING (GetOptions():lib/seed-parse-config.cc:156) Config : "PRINT_FILE_r=true" is not config
+WARNING (GetOptions():lib/seed-parse-config.cc:147) Config : "DB_DATABASE_LV=10s" is wrong 
+ERROR (PrintUsage():lib/seed-parse-config.cc:168) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+LOG (GetOptions():lib/seed-parse-config.cc:109) Need a config file : "sys-config.cfg". All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:168) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+LOG (GetOptions():lib/seed-parse-config.cc:109) Need a config file : "sys-config.cfg". All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:168) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+LOG (GetOptions():lib/seed-parse-config.cc:110) Need a config file : "sys-config.cfg". All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:169) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+LOG (GetOptions():lib/seed-parse-config.cc:111) Need a config file : "sys-config.cfg". All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:170) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:144) Config : "DB_DATABASE_LV=10" out of range 
+ERROR (PrintUsage():lib/seed-parse-config.cc:170) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:144) Config : "DB_DATABASE_LV=10" out of range 
+ERROR (PrintUsage():lib/seed-parse-config.cc:170) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:142) Config : "DB_DATABASE_LV=10" out of range 
+ERROR (PrintUsage():lib/seed-parse-config.cc:168) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:142) Config : "DB_DATABASE_LV=10" out of range 
+ERROR (PrintUsage():lib/seed-parse-config.cc:168) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+LOG (GetOptions():lib/seed-parse-config.cc:109) Need a config file : "sys-config.cfg". All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:168) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+LOG (GetOptions():lib/seed-parse-config.cc:109) Need a config file : "sys-config.cfg". All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:169) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+LOG (GetOptions():lib/seed-parse-config.cc:109) Need a config file : "sys-config.cfg". All configuration was writed in it
+ERROR (PrintUsage():lib/seed-parse-config.cc:169) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:142) Config : "DB_DATABASE_LV=10" out of range 
+ERROR (PrintUsage():lib/seed-parse-config.cc:169) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:142) Config : "DB_DATABASE_LV=10" out of range 
+ERROR (PrintUsage():lib/seed-parse-config.cc:172) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:142) Config : "DB_DATABASE_LV=10" out of range 
+ERROR (PrintUsage():lib/seed-parse-config.cc:173) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
+WARNING (GetOptions():lib/seed-parse-config.cc:142) Config : "DB_DATABASE_LV=10" out of range 
+ERROR (PrintUsage():lib/seed-parse-config.cc:173) HOHO
+WARNING (GetOptions():lib/seed-parse-config.cc:142) Config : "DB_DATABASE_LV=10" out of range 
+ERROR (PrintUsage():lib/seed-parse-config.cc:173) HOHO
+WARNING (GetOptions():lib/seed-parse-config.cc:142) Config : "DB_DATABASE_LV=10" out of range 
+ERROR (PrintUsage():lib/seed-parse-config.cc:173) HOHO
+WARNING (GetOptions():lib/seed-parse-config.cc:142) Config : "DB_DATABASE_LV=10" out of range 
+ERROR (PrintUsage():lib/seed-parse-config.cc:173) 
+
+Write configs in file : sys-config.cfg 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DB_DATABASE_LV=2
