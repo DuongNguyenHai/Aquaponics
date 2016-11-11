@@ -8,11 +8,10 @@
 #include <iostream>
 #include "TCP-IP.h"
 #include "seed-workspace.h"
+#include "seed-config.h"
 #include "seed-log.h"
 
 namespace TREE {
-
-#define BRANCH_PORT 8888
 
 class Branch : public Workspace {
 public:

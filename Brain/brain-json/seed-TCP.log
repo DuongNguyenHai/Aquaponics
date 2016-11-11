@@ -1,0 +1,14 @@
+VERBOSE (JsonIsValid():lib/seed-json.cc:20) {
+	"name":	"joys of programming",
+	"what":	123
+}
+VERBOSE (JsonIsValid():lib/seed-json.cc:20) {
+	"name":	"Jack (\"Bee\") Nimble",
+	"format":	{
+		"type":	"rect",
+		"width":	1920,
+		"height":	1080,
+		"interlace":	false,
+		"frame rate":	24
+	}
+}

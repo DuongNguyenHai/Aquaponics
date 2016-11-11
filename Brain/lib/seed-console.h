@@ -8,11 +8,10 @@
 #include <iostream>
 #include "TCP-IP.h"
 #include "seed-workspace.h"
+#include "seed-config.h"
 #include "seed-log.h"
 
 namespace TREE {
-
-#define CONSOLE_PORT 8889
 
 class Console : public Workspace {
 public:

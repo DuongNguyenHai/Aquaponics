@@ -1,13 +1,22 @@
 CC = gcc
 CXX = g++
 
-CFLAGS += -std=c++11 -Wall -g 
-LDFLAGS +=
 
 DIRLIB = ../lib
+# json-c dynamic library directory
+JSON_DIR = ../lib/base/lib-json/Cjson
+
+CFLAGS += -std=c++11 -Wall -g
+LDFLAGS += -L$(JSON_DIR)/lib
+INCLUDES = -I../lib -I$(JSON_DIR)/include
+
+# link dynamic library
+LIBS = -Wl,-rpath='$(JSON_DIR)/lib' -lCjson
+# link static lib
+# LIBS = $(JSON_DIR)/lib/libCjson.a
 # source file
-SOURCES = $(DIRLIB)/seed-log.cc $(DIRLIB)/seed-config.cc $(DIRLIB)/seed-parse-config.cc main.cc
-INCLUDES = -I../lib
+SOURCES = $(DIRLIB)/seed-json.cc $(DIRLIB)/seed-log.cc $(DIRLIB)/seed-parse-config.cc $(DIRLIB)/seed-config.cc main.cc
+
 # convert name.c to name.o and name.cpp to name.o
 OBJECTS = $(addsuffix .o, $(basename $(SOURCES)) )
 # alternative way, u can write directly name of object
@@ -24,9 +33,9 @@ $(EXECUTABLE): $(OBJECTS)
 -include $(OBJECTS:.o=.d)
 
 %.o: %.cc
-	$(CXX) -c $(CFLAGS) $(LDFLAGS) $(INCLUDES) $*.cc -o $*.o
+	$(CXX) -c $(CFLAGS) $(LDFLAGS) $(INCLUDES) $(LIBS) $*.cc -o $*.o
 
-	$(CXX) -MM $(CFLAGS) $(LDFLAGS) $(INCLUDES) $*.cc > $*.d
+	$(CXX) -MM $(CFLAGS) $(LDFLAGS) $(INCLUDES) $(LIBS) $*.cc > $*.d
 	@mv -f $*.d $*.d.tmp
 	@sed -e 's|.*:|$*.o:|' < $*.d.tmp > $*.d
 	@sed -e 's/.*://' -e 's/\\$$//' < $*.d.tmp | fmt -1 | \

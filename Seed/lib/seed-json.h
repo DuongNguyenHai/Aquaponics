@@ -8,9 +8,9 @@
 
 // json external [ I WANT WRITE MY OWN JSON LIBRARY ]
 // json json-c
-#include "../lib-others/lib-json/include/json-c/json.h"
+#include "base/lib-json/include/json-c/json.h"
 // json jsmn
-#include "../lib-others/lib-json-jsmn/include/jsmn/jsmn.h"
+#include "base/lib-json-jsmn/include/jsmn/jsmn.h"
 // seed log
 #include "seed-log.h"
 

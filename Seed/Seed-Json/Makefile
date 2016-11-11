@@ -2,7 +2,7 @@
 CC = gcc
 CXX = g++
 
-CFLAGS = -Wall -g -fmem-report
+CFLAGS = -Wall -g
 # -ftime-report -fmem-report
 
 JSON_C_DIR = ../lib-others/lib-json
@@ -15,7 +15,7 @@ INCLUDES = -I$(JSON_C_DIR)/include/json-c -I$(JSON_JSMN_DIR)/include/jsmn
 LIBS = -ljson-c -ljsmn
 
 # source file
-SOURCES = $(LIBRARY_DIR)/seed-json.c $(LIBRARY_DIR)/seed-log.cc seed.cc 
+SOURCES = $(LIBRARY_DIR)/seed-json.cc $(LIBRARY_DIR)/seed-log.cc seed.cc 
 
 # BUILD = simple.c
 

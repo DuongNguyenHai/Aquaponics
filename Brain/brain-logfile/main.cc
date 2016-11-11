@@ -1,4 +1,4 @@
-#include "../lib/seed-log.h" // Print information and write to a log-file
+#include "seed-log.h" // Print information and write to a log-file
 using namespace TREE;
 
 // There are 3 level of DEBUG_LEVEL from 1->3

@@ -27,13 +27,16 @@ extern int DEBUG_DATABASE_LV;
 // Define args to config : 
 // "0" : string, "1" : bool, "2" : int, "3" : float, "4" : double ...
 // 
-extern std::string DEFINE_ARGS[3][2];
-
 #define Tp_STR	"0"
 #define Tp_BOOL "1"
 #define Tp_INT	"2"
 #define Tp_FLOAT "3"
 #define Tp_DOUBLE "4"
+extern std::string DEFINE_ARGS[3][2];
+
+// Define port for ...
+#define BRANCH_PORT 8888
+#define CONSOLE_PORT 8889
 
 extern const char *usage;
 
