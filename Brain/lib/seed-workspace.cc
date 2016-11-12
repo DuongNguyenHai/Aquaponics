@@ -16,21 +16,25 @@ namespace TREE {
 #define LOGFILE "seed-workspace.log" // the file is used for write log
 static int DEBUG_LEVEL = 2; // DEBUG_DATABASE_LV was defined in seed-config.cc
 
-Workspace::Workspace(void (*Handle)(int, fd_set*), int portNumber) {
-	port = portNumber;
-	if ( (processID = fork()) < 0) 
-		SEED_ERROR << "fork() failed";
-    else if (processID == 0) {
-    	childProcCount++;
-    	CreatNewSpace(Handle);
-        exit(0);
-    }
-}
+Workspace::Workspace() {}
 Workspace::~Workspace() {
 	clearFork(processID, childProcCount);
 }
 
-void Workspace::CreatNewSpace(void (*Handle)(int, fd_set*)){
+void Workspace::Start(void (*Handle)(int, fd_set*), int portNumber) {
+
+    port = portNumber;
+    if ( (processID = fork()) < 0) 
+        SEED_ERROR << "fork() failed";
+    else if (processID == 0) {
+        childProcCount++;
+        CreatNewSpace(Handle);
+        exit(0);
+    }
+
+}
+
+void Workspace::CreatNewSpace(void (*Handle)(int, fd_set*)) {
     int servSock;       // fd for socket
     fd_set socks;       // save vector of file-desciptor, it includes original socket
     fd_set readsocks;   // save vector of file-desciptor

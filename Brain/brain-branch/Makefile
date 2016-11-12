@@ -1,12 +1,17 @@
 CC = gcc
 CXX = g++
 
+DIRLIB = ../lib
+# Cjson library directory
+JSON_DIR = $(DIRLIB)/base/lib-json/cJSON
 CFLAGS += -std=c++11 -Wall -g 
-LDFLAGS +=
+LDFLAGS += -L$(JSON_DIR)/lib
+INCLUDES = -I../lib -I$(JSON_DIR)/include
 
+# link dynamic library
+LIBS = -Wl,-rpath='$(JSON_DIR)/lib' -lcJSON
 # source file
-SOURCES = ../lib/TCP-IP.cc ../lib/seed-workspace.cc ../lib/seed-branch.cc ../lib/seed-parse-config.cc ../lib/seed-log.cc ../lib/seed-config.cc main.cc
-INCLUDES = -I../lib
+SOURCES = $(DIRLIB)/TCP-IP.cc $(DIRLIB)/seed-workspace.cc $(DIRLIB)/seed-branch.cc $(DIRLIB)/seed-parse-config.cc $(DIRLIB)/seed-log.cc $(DIRLIB)/seed-config.cc $(DIRLIB)/seed-json.cc main.cc
 # convert name.c to name.o and name.cpp to name.o
 OBJECTS = $(addsuffix .o, $(basename $(SOURCES)) )
 # alternative way, u can write directly name of object

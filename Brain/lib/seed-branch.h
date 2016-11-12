@@ -6,22 +6,55 @@
 #define SEED_BRANCH_H
 
 #include <iostream>
-#include "TCP-IP.h"
-#include "seed-workspace.h"
+#include <vector>
 #include "seed-config.h"
 #include "seed-log.h"
+#include "seed-json.h"
+#include "TCP-IP.h"
+#include "seed-workspace.h"
 
 namespace TREE {
 
-class Branch : public Workspace {
+class Leaf {
 public:
-	Branch() : Workspace(HandleBranch, BRANCH_PORT) {}
-	~Branch();
-
-private:
-	static void HandleBranch(int clntSock, fd_set *set);;
-
+	Leaf();
+	~Leaf();
+	char *name;
+	bool state;
+	void Initial();
 };
+
+class Twig {
+
+public:
+	Twig();
+	~Twig();
+	// std::vector<Leaf> lonlyLeaf;
+	int totalLeaft;
+	bool state;
+};
+
+class Branch : public Workspace {
+
+public:
+	Branch();
+	~Branch();
+	std::vector<Twig> lonelyTwig;	// initial a twig (it contains all type of sensor)
+	Leaf leaf;
+	char *mmm;
+	void Start();
+	void ConnectToDatabase();
+
+	// friend void InitialTwig(Leaf lonlyleaf,char *str);
+private:
+
+	friend void HandleBranch(int clntSock, fd_set *set);
+	// Database *dt;
+	
+};
+
+void HandleBranch(int clntSock, fd_set *set);
+// void InitialTwig(Leaf lonlyleaf, char *str);
 
 }	// end of namespace TREE
 

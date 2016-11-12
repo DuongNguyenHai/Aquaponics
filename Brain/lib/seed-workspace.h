@@ -14,12 +14,14 @@ namespace TREE {
 class Workspace {
 
 public:
-	Workspace(void (*Handle)(int, fd_set*), int portNumber);
+	Workspace();
 	~Workspace();
+	void Start(void (*Handle)(int, fd_set*), int portNumber);
 private:
 	int port;
 	unsigned int childProcCount = 0;
 	pid_t processID;
+	
 	void CreatNewSpace(void (*Handle)(int, fd_set*));
 	void clearFork(pid_t processID, unsigned int childProcCount);
 };

@@ -3,19 +3,21 @@ CXX = g++
 
 
 DIRLIB = ../lib
-# Cjson library directory
+# json-c dynamic library directory
 JSON_DIR = ../lib/base/lib-json/cJSON
 
-CFLAGS += -std=c++11 -Wall -g
-LDFLAGS += -L$(JSON_DIR)/lib
-INCLUDES = -I../lib -I$(JSON_DIR)/include
+CFLAGS += -std=c++11 -Wall -g `pkg-config --cflags --libs libmongoc-1.0`
+LDFLAGS += `pkg-config --cflags --libs libmongoc-1.0`
+INCLUDES = -I../lib 
+# LDFLAGS += -L$(JSON_DIR)/lib `pkg-config --cflags --libs libmongoc-1.0`
+# INCLUDES = -I../lib -I$(JSON_DIR)/include
 
 # link dynamic library
-LIBS = -Wl,-rpath='$(JSON_DIR)/lib' -lcJSON
+# LIBS = -Wl,-rpath='$(JSON_DIR)/lib' -lcJSON
 # link static lib
 # LIBS = $(JSON_DIR)/lib/libcJSON.a
 # source file
-SOURCES = $(DIRLIB)/seed-json.cc $(DIRLIB)/seed-log.cc $(DIRLIB)/seed-parse-config.cc $(DIRLIB)/seed-config.cc main.cc
+SOURCES = $(DIRLIB)/seed-json.cc $(DIRLIB)/seed-log.cc $(DIRLIB)/seed-parse-config.cc $(DIRLIB)/seed-config.cc $(DIRLIB)/seed-database $(DIRLIB)/seed-branch.cc $(DIRLIB)/seed-workspace.cc $(DIRLIB)/TCP-IP.cc $(DIRLIB)/cJSON.cc main.cc
 
 # convert name.c to name.o and name.cpp to name.o
 OBJECTS = $(addsuffix .o, $(basename $(SOURCES)) )

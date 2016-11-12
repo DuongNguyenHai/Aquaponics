@@ -1,0 +1,5 @@
+VERBOSE (HandleBranch():lib/seed-branch.cc:27) . Branch[1]: sending
+LOG (CheckCommand():lib/seed-branch.cc:42) The command is : device
+VERBOSE (HandleBranch():lib/seed-branch.cc:27) . Branch[1]: sending
+LOG (CheckCommand():lib/seed-branch.cc:42) The command is : data
+LOG (HandleBranch():lib/seed-branch.cc:32) . Branch[1]: disconnected

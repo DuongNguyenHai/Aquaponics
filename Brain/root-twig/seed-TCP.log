@@ -1,0 +1,32 @@
+VERBOSE (AcceptTCPConnection():lib/TCP-IP.cc:53) Got a connection from 127.0.0.1 on port 41640
+VERBOSE (JsonIsValid():lib/seed-json.cc:19) {
+	"device":	{
+		"tempt":	{
+			"tempt1":	1,
+			"tempt2":	0
+		},
+		"DO":	{
+			"DO1":	1
+		},
+		"amoniac":	{
+			"amoniac1":	1
+		},
+		"nitrit":	{
+			"nitrit1":	1
+		},
+		"nitrat":	{
+			"nitrat1":	1
+		},
+		"hardness":	{
+			"hardness1":	1
+		}
+	}
+}
+VERBOSE (JsonIsValid():lib/seed-json.cc:19) {
+	"data":	{
+		"tempt":	{
+			"tempt1":	25,
+			"tempt2":	26
+		}
+	}
+}

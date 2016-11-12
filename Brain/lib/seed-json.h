@@ -4,6 +4,7 @@
 #ifndef SEED_JSON_H
 #define SEED_JSON_H
 
+#include <iostream>
 #include <string.h>
 
 // json external [ I WANT WRITE MY OWN JSON LIBRARY ]
@@ -14,8 +15,19 @@
 
 namespace TREE {
 
+typedef cJSON Json;
+#define JsonParse(str) cJSON_Parse(str)
+#define JsonGetItem(root, str) cJSON_GetObjectItem(root, str)
+#define JsonArraySize(obj) cJSON_GetArraySize(obj)
+#define JsonGetArrayItem(obj, i) cJSON_GetArrayItem(obj, i)
+#define JsonItemVal(subitem) (subitem->string)
+
 bool JsonIsValid(char *str);
-bool JsonParse(char *str);
+// bool JsonParse(char *str);
+
+bool JsonHasItem(char *str, const char *check);
+int JsonGetHeader(char *str, std::string header[], int sizeHd);
+int JsonGetDevice(char *str, std::string device[], int sizeDv);
 
 } // end of namspace TREE
 

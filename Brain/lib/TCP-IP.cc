@@ -23,6 +23,10 @@ int CreateTCPServerSocket(unsigned short port){
     serv_addr.sin_addr.s_addr = htonl(INADDR_ANY);  /* Any incoming interface */
     serv_addr.sin_port = htons(port);               /* Local port */
 
+    int enable = 1;
+    if (setsockopt(servSock, SOL_SOCKET, SO_REUSEADDR, &enable, sizeof(int)) < 0)
+        SEED_ERROR <<"setsockopt(SO_REUSEADDR) failed";
+
     // Bind to the local address
     if (bind(servSock, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) < 0)
         SEED_ERROR << "ERROR on binding";

@@ -35,8 +35,8 @@ extern int DEBUG_DATABASE_LV;
 extern std::string DEFINE_ARGS[3][2];
 
 // Define port for ...
-#define BRANCH_PORT 8888
-#define CONSOLE_PORT 8889
+#define BRANCH_PORT 8889
+#define CONSOLE_PORT 8885
 
 extern const char *usage;
 

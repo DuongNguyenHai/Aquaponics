@@ -3,7 +3,7 @@
 namespace TREE {
 
 bool PRINT_MONITOR = true;			// define for print on terminal in Log function.
-bool PRINT_FILE = true;			// define for print to file in Log function.
+bool PRINT_FILE = false;			// define for print to file in Log function.
 int32_t DEBUG_DATABASE_LV = 2;			// define for debug in database function.
 
 
