@@ -29,15 +29,15 @@ function getNextSequenceValue(sequenceName, docName){
 
    var sequenceDocument = db[docName].findAndModify({
       query:{_id: sequenceName },
-      update: {$inc:{sq_val:1}},
+      update: {$inc:{total:1}},
       new:true
    });
 	
-   return sequenceDocument.sq_val;
+   return sequenceDocument.total;
 }
 
 // Temperature of tank
-db[tempt].insert({_id:"ob_id", sq_val:0})
+db[tempt].insert({_id:"ob_id", total:0})
 db[tempt].insert([
 	{
 	   "_id" : getNextSequenceValue("ob_id", tempt),
@@ -47,7 +47,7 @@ db[tempt].insert([
 ])
 
 // DO of tank
-db[DO].insert({_id:"ob_id", sq_val:0})
+db[DO].insert({_id:"ob_id", total:0})
 db[DO].insert([
 	{
 	   "_id" : getNextSequenceValue("ob_id", DO),
@@ -57,7 +57,7 @@ db[DO].insert([
 ])
 
 // amoniac
-db[amoniac].insert({_id:"ob_id", sq_val:0})
+db[amoniac].insert({_id:"ob_id", total:0})
 db[amoniac].insert([
 	{
 	   "_id" : getNextSequenceValue("ob_id", amoniac),
@@ -67,7 +67,7 @@ db[amoniac].insert([
 
 
 // nitrit
-db[nitrit].insert({_id:"ob_id", sq_val:0})
+db[nitrit].insert({_id:"ob_id", total:0})
 db[nitrit].insert([
 	{
 	   "_id" : getNextSequenceValue("ob_id", nitrit),
@@ -76,7 +76,7 @@ db[nitrit].insert([
 ])
 
 // nitrat
-db[nitrat].insert({_id:"ob_id", sq_val:0})
+db[nitrat].insert({_id:"ob_id", total:0})
 db[nitrat].insert([
 	{
 	   "_id" : getNextSequenceValue("ob_id", nitrat),
@@ -85,7 +85,7 @@ db[nitrat].insert([
 ])
 
 // hardness of tank
-db[hardness].insert({_id:"ob_id", sq_val:0})
+db[hardness].insert({_id:"ob_id", total:0})
 db[hardness].insert([
 	{
 	   "_id" : getNextSequenceValue("ob_id", hardness),

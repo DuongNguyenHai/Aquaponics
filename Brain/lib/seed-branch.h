@@ -8,20 +8,21 @@
 #include <iostream>
 #include <vector>
 #include "seed-config.h"
+#include "seed-parse-config.h"
 #include "seed-log.h"
 #include "seed-json.h"
-#include "TCP-IP.h"
+#include "seed-database.h"
 #include "seed-workspace.h"
 
 namespace TREE {
 
 class Leaf {
+
 public:
 	Leaf();
 	~Leaf();
-	char *name;
+	char *name;	// the name of sensor
 	bool state;
-	void Initial();
 };
 
 class Twig {
@@ -29,33 +30,35 @@ class Twig {
 public:
 	Twig();
 	~Twig();
-	// std::vector<Leaf> lonlyLeaf;
-	int totalLeaft;
+	std::vector<Leaf> leaves;
+	// std::string name;
+	char *name; // the name of sensor
 	bool state;
 };
 
-class Branch : public Workspace {
+class Branch : public Workspace, Database {
 
 public:
 	Branch();
 	~Branch();
-	std::vector<Twig> lonelyTwig;	// initial a twig (it contains all type of sensor)
-	Leaf leaf;
-	char *mmm;
-	void Start();
-	void ConnectToDatabase();
-
-	// friend void InitialTwig(Leaf lonlyleaf,char *str);
-private:
-
-	friend void HandleBranch(int clntSock, fd_set *set);
-	// Database *dt;
 	
+	void Start();		// start a branch
+
+	void ConnectToDatabase();
+	friend bool SetTwigs(char *str, const char *header);	// Initial twigs
+	static bool CheckUpdateTwig(char *str);	// Update twigs
+	bool SaveDataToTwig(char *str); // save data to twig (collection)
+	friend void CheckCommand(char *str);
+private:
+	friend void HandleBranch(int clntSock, fd_set *set);
+	
+	// Database dt;
 };
 
+bool SetTwigs(char *str, const char *header);
 void HandleBranch(int clntSock, fd_set *set);
-// void InitialTwig(Leaf lonlyleaf, char *str);
-
+// bool SaveDataToTwig(char *str);
+void CheckCommand(char *str);
 }	// end of namespace TREE
 
 

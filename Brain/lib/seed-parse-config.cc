@@ -2,7 +2,7 @@
 
 namespace TREE { 
 
-static int DEBUG_LEVEL = 2;
+static int DEBUG_LEVEL = 1;
 #define LOGFILE "seed-config.log" // the file is used for write log
 
 // Convert string to lowercase

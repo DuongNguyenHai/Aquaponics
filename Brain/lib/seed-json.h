@@ -17,10 +17,17 @@ namespace TREE {
 
 typedef cJSON Json;
 #define JsonParse(str) cJSON_Parse(str)
-#define JsonGetItem(root, str) cJSON_GetObjectItem(root, str)
-#define JsonArraySize(obj) cJSON_GetArraySize(obj)
-#define JsonGetArrayItem(obj, i) cJSON_GetArrayItem(obj, i)
-#define JsonItemVal(subitem) (subitem->string)
+#define JsonGetObjectItem(root, str) cJSON_GetObjectItem(root, str)
+#define JsonArraySize(arry) cJSON_GetArraySize(arry)
+#define JsonGetArrayItem(arry, i) cJSON_GetArrayItem(arry, i)
+#define JsonItemName(subitem) (subitem->string)
+#define JsonItemValBool(subitem) (subitem->valueint)
+#define JsonItemValInt(subitem) (subitem->valueint)
+#define JsonItemValStr(subitem) (subitem->valuestring)
+#define JsonItemDouble(subitem) (subitem->valuedouble)
+#define JsonDetachItemFromObject(object, string) cJSON_DetachItemFromObject(object, string)
+#define JsonInsertItemInArray(array, which, newitem) cJSON_InsertItemInArray(array, which, newitem)
+#define JsonAddNumberToObject(object, name, n) cJSON_AddNumberToObject(object,name,n)
 
 bool JsonIsValid(char *str);
 // bool JsonParse(char *str);

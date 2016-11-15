@@ -16,40 +16,21 @@ void error(const char *msg){
     exit(0);
 }
 
-char * dev = (char*)"{\"set\":"
+char * dev = (char*)"{\"device\":"
                                 "{"
-                                "\"temptTank\":{\"tempt1\": 1,\"tempt2\":0},"
-                                "\"DO\":{\"DO1\":1 },"
-                                "\"amoniac\":{\"amoniac1\":1},"
-                                "\"nitrit\":{\"nitrit1\":1},"
-                                "\"nitrat\":{\"nitrat1\":1}"
-                                "}"
-                            "}";
-
-
-char * update = (char*)"{\"update\":"
-                                "{"
-                                "\"temptTank\":{\"tempt1\": 1,\"tempt2\":0},"
-                                "\"DO\":{\"DO1\":1, \"DO2\":0},"
+                                "\"tempt\":{\"tempt1\": 1,\"tempt2\":0},"
+                                "\"DO\":{\"DO1\":1},"
                                 "\"amoniac\":{\"amoniac1\":1},"
                                 "\"nitrit\":{\"nitrit1\":1},"
                                 "\"nitrat\":{\"nitrat1\":1},"
                                 "\"hardness\":{\"hardness1\":1}"
                                 "}"
                             "}";
-
 char *data = (char *)   "{\"data\":\n"
                                 "{\n"
-                                    "\"temptTank\":{\n"
+                                    "\"tempt\":{\n"
                                         "\"tempt1\":25,\n"
                                         "\"tempt2\":26\n"
-                                    "}\n"
-                                "}\n"
-                            "}";
-char *dataDO = (char *)   "{\"data\":\n"
-                                "{\n"
-                                    "\"DO\":{\n"
-                                        "\"DO1\":25\n"
                                     "}\n"
                                 "}\n"
                             "}";
@@ -80,25 +61,15 @@ int main(int argc, char *argv[]){
     if (connect(sockfd,(struct sockaddr *) &serv_addr,sizeof(serv_addr)) < 0) 
         error("ERROR connecting");
     
-
-    // printf("send: %s \nsize of command \"set\": %ld bytes\n", dev, strlen(dev));
-    // if ( send(sockfd, dev,strlen(dev),0) < 0) 
-    //     error("ERROR writing to socket");
-
-    // sleep(1);
-
-    // printf("send: %s \nsize of command \"update\": %ld bytes\n", update, strlen(update));
-    //     if ( send(sockfd, update,strlen(update),0) < 0) 
-    //         error("ERROR writing to socket");
-    // sleep(1);
-    
-    printf("send: %s \nsize of command \"data\": %ld bytes\n", data, strlen(data));
-        if ( send(sockfd, data,strlen(data),0) < 0) 
+    // while(1){
+        printf("send: %s\n", dev);
+        if ( send(sockfd,dev,strlen(dev),0) < 0) 
             error("ERROR writing to socket");
 
-    sleep(1);
-    printf("send: %s \nsize of command \"dataDO\": %ld bytes\n", dataDO, strlen(dataDO));
-        if ( send(sockfd, dataDO,strlen(dataDO),0) < 0) 
+        sleep(1);
+    // }
+    printf("send: %s\n", data);
+        if ( send(sockfd,data,strlen(data),0) < 0) 
             error("ERROR writing to socket");
 
     close(sockfd);

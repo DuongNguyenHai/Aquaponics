@@ -17,5 +17,5 @@ const char *usage = 	"Write configs in file : sys-config.cfg \n"
 							"ex : \n"
 							"PRINT_MONITOR=true\n"
 							"PRINT_FILE=true\n"
-							"DEBUG_DATABASE_LV=2\n";
+							"DEBUG_DATABASE_LV=1\n";
 } // end of namespace TREE

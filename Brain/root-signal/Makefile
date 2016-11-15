@@ -1,6 +1,7 @@
 CC = gcc
 CXX = g++
 
+
 DIRLIB = ../lib
 # json-c dynamic library directory
 JSON_DIR = ../lib/base/lib-json/cJSON
@@ -34,9 +35,9 @@ $(EXECUTABLE): $(OBJECTS)
 -include $(OBJECTS:.o=.d)
 
 %.o: %.cc
-	$(CXX) -c $(CFLAGS) $(LDFLAGS) $(INCLUDES) $*.cc -o $*.o
+	$(CXX) -c $(CFLAGS) $(LDFLAGS) $(INCLUDES) $(LIBS) $*.cc -o $*.o
 
-	$(CXX) -MM $(CFLAGS) $(LDFLAGS) $(INCLUDES) $*.cc > $*.d
+	$(CXX) -MM $(CFLAGS) $(LDFLAGS) $(INCLUDES) $(LIBS) $*.cc > $*.d
 	@mv -f $*.d $*.d.tmp
 	@sed -e 's|.*:|$*.o:|' < $*.d.tmp > $*.d
 	@sed -e 's/.*://' -e 's/\\$$//' < $*.d.tmp | fmt -1 | \

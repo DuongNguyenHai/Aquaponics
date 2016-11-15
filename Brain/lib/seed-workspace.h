@@ -6,8 +6,10 @@
 #define SEED_WORKSPACE_H
 
 #include <iostream>
+#include "seed-json.h" // Print information and write to a log-file
 #include "TCP-IP.h"
 #include "seed-log.h"
+#include "seed-database.h"
 
 namespace TREE {
 

@@ -62,7 +62,7 @@
  /usr/local/include/libmongoc-1.0/mongoc-trace.h \
  /usr/local/include/libmongoc-1.0/mongoc-version.h \
  /usr/local/include/libmongoc-1.0/mongoc-version-functions.h \
- ../lib/seed-log.h ../lib/seed-config.h
+ ../lib/seed-json.h ../lib/cJSON.h ../lib/seed-log.h ../lib/seed-config.h
 ../lib/seed-database.cc:
 ../lib/seed-database.h:
 /usr/local/include/libmongoc-1.0/mongoc.h:
@@ -128,5 +128,7 @@
 /usr/local/include/libmongoc-1.0/mongoc-trace.h:
 /usr/local/include/libmongoc-1.0/mongoc-version.h:
 /usr/local/include/libmongoc-1.0/mongoc-version-functions.h:
+../lib/seed-json.h:
+../lib/cJSON.h:
 ../lib/seed-log.h:
 ../lib/seed-config.h:

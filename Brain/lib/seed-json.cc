@@ -2,8 +2,8 @@
 
 namespace TREE {
 
-#define LOGFILE "seed-TCP.log" // the file is used for write log
-static int DEBUG_LEVEL = 2; // DEBUG_DATABASE_LV was defined in seed-config.cc
+#define LOGFILE "seed-json.log" // the file is used for write log
+static int DEBUG_LEVEL = 1; // DEBUG_DATABASE_LV was defined in seed-config.cc
 
 bool JsonIsValid(char *str) {
 	char *out;

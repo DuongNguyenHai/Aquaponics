@@ -9,7 +9,6 @@
 
 using namespace TREE;
 
-#define DATABASE_NAME "duong"
 #define SENSOR "sensor"
 
 char insert[] = "{\"temp\": 25, \"heartTemp\":35, \"state\":1, \"warning\": \"none\" }";

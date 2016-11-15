@@ -25,7 +25,6 @@ namespace TREE {
 
 #define MAXPENDING 5
 #define BUFFSIZE 256
-#define PORT 8888
 
 // Create tcp server socket
 int CreateTCPServerSocket(unsigned short port);
