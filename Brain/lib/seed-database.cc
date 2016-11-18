@@ -2,47 +2,64 @@
 
 namespace TREE {
 
-// bool Database::flag_succeed = false;
-// stats_t Database::stats = {0};
 static bool flag_succeed= false;	// flag for query function know if query is succeed of not. 
-static stats_t stats= {0};;			// count the total query command.
+static stats_t stats= {0};			// count the total query command.
 
-#define LOGFILE "seed-database.log" // the file is used for write log
-static int DEBUG_LEVEL = 1; // DEBUG_DATABASE_LV was defined in seed-config.cc
+// Define a file which  is used for write log
 
-bool TurnFlag(char *s) {
-	if(s[strchr(s,'}')-s-2]-'0')
+#ifdef LOGFILE
+#undef LOGFILE
+#define LOGFILE "seed-database.log"
+#else
+#define LOGFILE "seed-database.log"
+#endif
+
+// static void command_started (const mongoc_apm_command_started_t *event);	// show start time of command
+static void command_excuted (const mongoc_apm_command_succeeded_t *event); // it was called if the query command succeeded
+static void command_failed (const mongoc_apm_command_failed_t *event); // it was called if the query command failed
+static bool TurnFlag(char *s); 		// this function will turn on flag_succeed if "n"/"ok" : 1 exist in string s and 
+									// if "n"/"ok" : 0 will turn off flag_succeed
+									// the issue :  command_excuted was static function. and so TurnFlag
+									// must be static function.
+
+static bool TurnFlag(char *s) {
+	if(s[strrchr(s,'}')-s-2]-'0')	// get value of "ok" : 1
 		flag_succeed = true;
 	else
 		flag_succeed = false;
 	return flag_succeed;
 }
 
-void command_started (const mongoc_apm_command_started_t *event) {
+// static void command_started (const mongoc_apm_command_started_t *event) {
+//    char *s;
+//    s = bson_as_json (mongoc_apm_command_started_get_command (event), NULL);
+//    SEED_VLOG << "Command " << mongoc_apm_command_started_get_command_name (event)
+//    			 << " started on " << mongoc_apm_command_started_get_host (event)->host
+//    			 << ":\n" << s << "\n";
+//    bson_free (s);
+// }
 
-   char *s;
-   s = bson_as_json (mongoc_apm_command_started_get_command (event), NULL);
-   SEED_VLOG << "Command " << mongoc_apm_command_started_get_command_name (event)
-   			 << " started on " << mongoc_apm_command_started_get_host (event)->host
-   			 << ":\n" << s << "\n";
-   bson_free (s);
-}
-
-void command_succeeded (const mongoc_apm_command_succeeded_t *event) {
-	SEED_LOG << "DEBUG_LEVEL: " << DEBUG_LEVEL;
+static void command_excuted (const mongoc_apm_command_succeeded_t *event) {
 	char *s;
+	char *e = strdup(mongoc_apm_command_succeeded_get_command_name (event));
 	s = bson_as_json (mongoc_apm_command_succeeded_get_reply (event), NULL);
 	if(TurnFlag(s)) {
-		SEED_VLOG << "Command " << mongoc_apm_command_succeeded_get_command_name (event)
-			<< " succeeded:\n" << s << "\n";
+
+		if( strcmp(e,"insert")==0 || strcmp(e,"update")==0 || strcmp(e,"delete")==0 )
+			SEED_LOG << "Command " << mongoc_apm_command_succeeded_get_command_name (event)
+				<< " succeeded:\n" << s << "\n";
+		else
+			SEED_VLOG << "Command " << mongoc_apm_command_succeeded_get_command_name (event)
+				<< " succeeded:\n" << s << "\n";
 	} else {
 		SEED_WARNING << "Command " << mongoc_apm_command_succeeded_get_command_name (event)
 			<< " missed:\n" << s << "\n";
 	}
    bson_free (s);
+   free(e);
 }
 
-void command_failed (const mongoc_apm_command_failed_t *event) {
+static void command_failed (const mongoc_apm_command_failed_t *event) {
 
    bson_error_t error;
    mongoc_apm_command_failed_get_error (event, &error);
@@ -64,59 +81,25 @@ Database::Database(const char *databaseName) {
 	mongoc_client_set_error_api (client, 2);
    	callbacks = mongoc_apm_callbacks_new ();
 
-	mongoc_apm_set_command_started_cb (callbacks, command_started);
-	mongoc_apm_set_command_succeeded_cb (callbacks, command_succeeded );
+	// mongoc_apm_set_command_started_cb (callbacks, command_started);	// really need more debug.
+	mongoc_apm_set_command_succeeded_cb (callbacks, command_excuted);
 	mongoc_apm_set_command_failed_cb (callbacks, command_failed);
 	mongoc_client_set_apm_callbacks (client, callbacks, NULL);
 
 	dtb = mongoc_client_get_database (client, dbName);
 	command = BCON_NEW ("ping", BCON_INT32 (1));
 	if (!mongoc_client_command_simple (client, "admin", command, NULL, &reply, &error)) {
-		bson_destroy (command);
 		SEED_ERROR << error.message << "\n\n" << "[Suggestion] Lets try turn on mongo: $ sudo service mongod start";
 	}
 
 	bson_destroy (command);
-	SEED_VLOG << "Database connection succeeded !";
+	SEED_LOG << "Database \""<< databaseName << "\" has connected successful !";
 }
 
 Database::~Database() {
 	mongoc_database_destroy (dtb);
 	mongoc_client_destroy (client);
 	mongoc_cleanup ();
-}
-
-bool Database::Start(const char *databaseName) {
-
-	DEBUG_LEVEL = 2; // set debug level for database
-	dbName = databaseName;
-	bson_t *command, reply;
-	bson_error_t error;
-	mongoc_apm_callbacks_t *callbacks;
-
-	mongoc_init ();
-	// Create a new client
-	client = mongoc_client_new ("mongodb://127.0.0.1/");
-
-	mongoc_client_set_error_api (client, 2);
-   	callbacks = mongoc_apm_callbacks_new ();
-
-	mongoc_apm_set_command_started_cb (callbacks, command_started);
-	mongoc_apm_set_command_succeeded_cb (callbacks, command_succeeded );
-	mongoc_apm_set_command_failed_cb (callbacks, command_failed);
-	mongoc_client_set_apm_callbacks (client, callbacks, NULL);
-
-	dtb = mongoc_client_get_database (client, dbName);
-	command = BCON_NEW ("ping", BCON_INT32 (1));
-	if (!mongoc_client_command_simple (client, "admin", command, NULL, &reply, &error)) {
-		bson_destroy (command);
-		SEED_ERROR << error.message << "\n\n" << "[Suggestion] Lets try turn on mongo: $ sudo service mongod start";
-	}
-
-	bson_destroy (command);
-	SEED_VLOG << "Database connection succeeded !";
-	
-	return RET_SUCCESS;
 }
 
 // char *json = (char *)"{\"temp\": 25, \"heartTemp\":35, \"state\":1, \"warning\": \"none\" }";
@@ -127,6 +110,8 @@ int Database::InsertData(const char *COLL_NAME, char* json) {
 	bson_error_t error;
 	db_collection *colt = mongoc_client_get_collection (client, dbName, COLL_NAME);
 	stats.started++;
+
+	SEED_LOG << "Command insert to \"" << COLL_NAME << "\" collection";
 
 	if( !(command = bson_new_from_json ((const uint8_t*)json, -1, &error))) {
 		goto JUMP_FAIL;
@@ -144,15 +129,12 @@ int Database::InsertData(const char *COLL_NAME, char* json) {
 		stats.succeeded++;
 	else {
 		stats.missed++;
-		SEED_LOG << "retrun RET_MISS";
 		return RET_MISS;
 	}
-	SEED_LOG << "return RET_SUCCESS";
 	return RET_SUCCESS;
 	
 	JUMP_FAIL:
 		stats.failed++;
-		SEED_LOG << "return RET_FAILURE";
 		mongoc_collection_destroy (colt);
 		SEED_WARNING << error.message;
 		return RET_FAILURE;
@@ -319,7 +301,7 @@ int64_t Database::TotalDocuments (const char *COLL_NAME){
 		return RET_FAILURE;
 	} else {
 		mongoc_collection_destroy (colt);
-		printf ("The \"%s\" collection has : %" PRId64 " documents.\n", COLL_NAME, count);
+		SEED_LOG << "The \"" << COLL_NAME << "\" collection has: " << count << " documents" ;
 		return count;
 	}
 }

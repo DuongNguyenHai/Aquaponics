@@ -6,30 +6,34 @@
 
 namespace TREE {
 
-#define LOGFILE "seed-branch.log" // the file is used for write log
-static int DEBUG_LEVEL = 1; // DEBUG_BRANCH_LV was defined in seed-config.cc
+// define the file is used for write log
+
+#ifdef LOGFILE
+#undef LOGFILE
+#define LOGFILE "seed-branch.log"
+#else
+#define LOGFILE "seed-branch.log"
+#endif
+
+#define OK "OK"
 
 static std::string header[] = {"set","update","data"};
 static std::string device[] = {"tempt","DO","amoniac","nitrit","nitrat","hardness"};
 
 static std::vector<Twig> twigs;   // initial a twig (it contains all name of sensor)
-// Database dt(DATABASE_NAME);
 // Check if str is the same to vec.name
 template <typename T>
 static bool CheckEqualVector(std::vector<T> &vec, char *str);
-void CheckCommand(char *str);
-// Printf tiwgs and leaf : name and state
-static void PrintTwigs();
+unsigned int Branch::cycle = 0;
+bool Branch::flag_twigs = false;
 
 Leaf::Leaf() {}
 Leaf::~Leaf() {
-    SEED_VLOG << "destructor Leaf was called";
     free(name);
 }
 
 Twig::Twig() {}
 Twig::~Twig() { 
-    SEED_VLOG << "destructor Twig was called";
     leaves.clear();
     free(name);
 } // must has this function for the case multi class use base class
@@ -37,58 +41,69 @@ Twig::~Twig() {
 Branch::Branch() {}
 Branch::~Branch() {} // must has this function for the case multi class use base class
 
+Database Branch::dt(DATABASE_NAME);
+
 void Branch::Start() {
-    Workspace::Start(HandleBranch, BRANCH_PORT);
-    dt.Check();
+    Workspace::CreateANewOnlineSpace(HandleBranch, BRANCH_PORT);
 }
 
-void HandleBranch(int clntSock, fd_set *set) {
+void Branch::HandleBranch(int clntSock, fd_set *set) {
 
     int recvMsgSize;                    /* Size of received message */
     char buffer[BUFFSIZE];
-    bzero(buffer,BUFFSIZE);
+    struct sockaddr_in cli_addr;
+    unsigned int clntLen = sizeof(cli_addr);
+    getpeername(clntSock, (struct sockaddr *) &cli_addr, &clntLen);
 
     recvMsgSize = recv(clntSock,buffer,BUFFSIZE,0);
     if (recvMsgSize < 0) 
         SEED_WARNING << "Error reading from socket";
     else if (recvMsgSize>0){
-        SEED_VLOG << ". Branch["<< clntSock-3<<"]: sending"; // abstract 3 for convenience
-        CheckCommand(buffer);
-        bzero(buffer,strlen(buffer));
+        SEED_VLOG << "Branch["<<inet_ntoa(cli_addr.sin_addr)<<"] is sending a message"; // abstract 3 for convenience
+        Branch::HandleCommand(clntSock, buffer);
+        bzero(buffer,strlen(buffer));   // need that to clear buffer. if dont do that, the next time will print some old stuffs at the end. Still dont know why
     }
     else {
-        SEED_VLOG << ". Branch["<< clntSock-3<<"]: disconnected";
+        SEED_VLOG << "Branch["<<inet_ntoa(cli_addr.sin_addr)<<"] has disconnected";
         close(clntSock);
         FD_CLR(clntSock, set);
     }     
 }
 
-void CheckCommand(char *str) {
-    JsonIsValid(str);
-    int index = JsonGetHeader(str, header, sizeof(header)/sizeof(header[0]));
+bool Branch::HandleCommand(int clntSock, char *str) {
+
+    if(JsonIsValid(str)==RET_FAILURE)
+        return RET_FAILURE;
+
+    int index = JsonGetHeader(str, header, sizeof(header)/sizeof(header[0])); // compare with header[] list to check what command is ?
     if(index>=0) {
-        SEED_VLOG << "The command is : " << header[index].c_str();
+        SEED_VLOG << "The command of Branch is : " << header[index].c_str();
 
         switch(index) {
-            case 0 : {
-                SetTwigs(str, header[0].c_str());
+            case 0 : {  // set sensor device (twig) to branch
+                Branch::SetTwigs(clntSock, str, header[0].c_str());
+                Branch::PrintTwigs();
             } break;
-            case 1 : {
-                Branch::CheckUpdateTwig(str);           // log any diff
-                SetTwigs(str, header[1].c_str());
+            case 1 : {  // update sensor device (twig) to branch
+                // Branch::CheckUpdateTwig(str);
+                // Clear all leaves in twigs and set new leaves
+                Branch::SetTwigs(clntSock, str, header[1].c_str());
+                Branch::PrintTwigs();
             } break;
-            case 2 : {
-                SaveDataToTwig(str);
-
+            case 2 : { // save data from sensor device (twig)
+                Branch::SaveDataToTwig(str);
             } break;
             default: break;
         }
+        return RET_SUCCESS;
     }
-    else
-        SEED_WARNING << "Not found command from branch";
+    else {
+        SEED_WARNING << "Not found command of branch";
+        return RET_FAILURE;
+    }
 }   
 
-bool SetTwigs(char *str, const char *header) {
+bool Branch::SetTwigs(int clntSock, char *str, const char *header) {
 
     twigs.clear();
     Json *root = JsonParse(str);
@@ -110,12 +125,19 @@ bool SetTwigs(char *str, const char *header) {
             twigs.at(i).leaves.at(j).state = JsonItemValBool(subitem);
         }
     }
-   
+
+    if ( send(clntSock, OK, strlen(OK),0) < 0) {
+        SEED_WARNING << "Inform OK to master false";
+        return RET_FAILURE;
+    }
+
     cJSON_Delete(root);
+    flag_twigs = true;
     return RET_SUCCESS;
 }
-
+// This function was written for future when really need to deal with each updating of sensor
 bool Branch::CheckUpdateTwig(char *str) {
+
     Json *root = JsonParse(str);
     Json *jnDevice = JsonGetObjectItem(root, header[1].c_str()); // get item form device
     int sizeJnDevice = JsonArraySize(jnDevice);
@@ -144,6 +166,7 @@ bool Branch::CheckUpdateTwig(char *str) {
 
 // save data to twig (collection)
 bool Branch::SaveDataToTwig(char *str) {
+
     Json *root = JsonParse(str);
     Json *data = JsonGetObjectItem(root, header[2].c_str()); // get item form data
     Json *leaf = JsonGetArrayItem(data, 0);
@@ -154,22 +177,32 @@ bool Branch::SaveDataToTwig(char *str) {
     return RET_SUCCESS;
 }
 
+void Branch::PrintTwigs() {
+    for (unsigned int i = 0; i < twigs.size(); ++i) {
+        SEED_LOG << "twig: " << twigs.at(i).name << ", state: " <<  ((twigs.at(i).state) ? "alive":"die");
+        for (unsigned int j = 0; j < twigs.at(i).leaves.size(); ++j)
+            SEED_LOG << "\t- leaf: " << twigs.at(i).leaves.at(j).name << ", state: " <<  ((twigs.at(i).leaves.at(j).state) ? "alive":"die");
+    }
+}
+
+void Branch::Interval(int T) {
+    cycle = T;
+    Workspace::CreateANewSpace(Request);
+}
+
+void Branch::Request() {
+    while(1) {
+        sleep(cycle);
+        SEED_LOG << "Resquest to master !";
+    }
+}
+
 template <typename T>
 static bool CheckEqualVector(std::vector<T> &vec, char *str) {
     for (unsigned int i = 0; i < vec.size(); ++i)
         if(strcmp(str, vec.at(i).name)==0)
             return true;
     return false;
-}
-
-static void PrintTwigs() {
-
-    for (unsigned int i = 0; i < twigs.size(); ++i) {
-        SEED_LOG << "twig: " << twigs.at(i).name << ", state: " <<  ((twigs.at(i).state) ? "alive":"die");
-        for (unsigned int j = 0; j < twigs.at(i).leaves.size(); ++j)
-            SEED_LOG << "\t- leaf: " << twigs.at(i).leaves.at(j).name << ", state: " <<  ((twigs.at(i).leaves.at(j).state) ? "alive":"die");
-    }
-
 }
 
 }	// end of namespace TREE

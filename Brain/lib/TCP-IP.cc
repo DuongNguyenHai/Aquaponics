@@ -6,8 +6,13 @@
 
 namespace TREE { 
 
-#define LOGFILE "seed-TCP.log" // the file is used for write log
-static int DEBUG_LEVEL = 1; // DEBUG_DATABASE_LV was defined in seed-config.cc
+// define the file is used for write log
+#ifdef LOGFILE
+#undef LOGFILE
+#define LOGFILE "seed-TCP.log"
+#else
+#define LOGFILE "seed-TCP.log"
+#endif
 
 int CreateTCPServerSocket(unsigned short port){
     int servSock;                           /* socket to create */
@@ -17,22 +22,20 @@ int CreateTCPServerSocket(unsigned short port){
     if ((servSock = socket(PF_INET, SOCK_STREAM, IPPROTO_TCP)) == -1)
         SEED_ERROR << "ERROR opening socket";
     
-    int reuse=1;
-    if (setsockopt(servSock, SOL_SOCKET, SO_REUSEADDR, (char *)&reuse, sizeof(int)) == -1){
-        SEED_ERROR << "Reuse port Error: " << strerror(errno);
-    }
+    int reuse = 1;
+    if (setsockopt(servSock, SOL_SOCKET, SO_REUSEADDR, (const char*)&reuse, sizeof(reuse)) < 0)
+        SEED_ERROR << "setsockopt(SO_REUSEADDR) failed";
+
+    #ifdef SO_REUSEPORT
+        if (setsockopt(servSock, SOL_SOCKET, SO_REUSEPORT, (const char*)&reuse, sizeof(reuse)) < 0) 
+            SEED_ERROR << "setsockopt(SO_REUSEPORT) failed";
+    #endif
 
     // Construct local address structure 
     memset(&serv_addr, 0, sizeof(serv_addr));       /* Zero out structure */
     serv_addr.sin_family = PF_INET;                 /* Internet address family */
     serv_addr.sin_addr.s_addr = htonl(INADDR_ANY);  /* Any incoming interface */
     serv_addr.sin_port = htons(port);               /* Local port */
-
-    // int enable = 1;
-    // if (setsockopt(servSock, SOL_SOCKET, SO_REUSEADDR, &enable, sizeof(int)) < 0)
-    //     SEED_ERROR <<"setsockopt(SO_REUSEADDR) failed";
-
-    
 
     // Bind to the local address
     if (bind(servSock, (struct sockaddr *) &serv_addr, sizeof(serv_addr)) == -1)

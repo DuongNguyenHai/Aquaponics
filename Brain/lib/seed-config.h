@@ -13,11 +13,11 @@ extern bool PRINT_FILE;     // print infor to file (log file)
 
 // There are 3 level of debug level  from 1->3
 // Higher level will debug more information
-// Set  DEBUG_..._LV 0 means : show WARNING, ERROR but no LOG.
-// 		DEBUG_..._LV 1 means : show WARNING, ERROR and LOG.
-// 		DEBUG_..._LV 2 means : show WARNING, ERROR and LOG and VERBOSE.
-// ex : int DEBUG_DATABASE_LV = 1; // note : define in seed-config.cc
-extern int DEBUG_DATABASE_LV;
+// Set  DEBUG_LEVEL 0 means : show WARNING, ERROR but no LOG.
+// 		DEBUG_LEVEL 1 means : show WARNING, ERROR and LOG.
+// 		DEBUG_LEVEL 2 means : show WARNING, ERROR and LOG and VERBOSE.
+// ex : int DEBUG_LEVEL = 1; // note : define in seed-config.cc
+extern int DEBUG_LEVEL;
 
 // Type of return. All function of system will return one of three types.
 #define RET_MISS -1

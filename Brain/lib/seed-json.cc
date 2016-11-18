@@ -2,22 +2,28 @@
 
 namespace TREE {
 
-#define LOGFILE "seed-json.log" // the file is used for write log
-static int DEBUG_LEVEL = 1; // DEBUG_DATABASE_LV was defined in seed-config.cc
+// Define a file which is used for write log
+
+#ifdef LOGFILE
+#undef LOGFILE
+#define LOGFILE "seed-json.log"
+#else
+#define LOGFILE "seed-json.log"
+#endif
 
 bool JsonIsValid(char *str) {
-	char *out;
-
+	
     cJSON *json = cJSON_Parse(str);
     if (!json) {
     	SEED_WARNING << "Error before : " << cJSON_GetErrorPtr();
+        cJSON_Delete(json);
         return RET_FAILURE;
     }
     else {
-        out = cJSON_Print(json);
-        cJSON_Delete(json);
-        SEED_VLOG << out;
+        char *out = cJSON_Print(json);
+        SEED_LOG << "Branch's message : \n" << out;
         free(out);
+        cJSON_Delete(json);
         return RET_SUCCESS;
     }
 }

@@ -4,28 +4,22 @@
 #include "seed-log.h"
 #include "seed-parse-config.h"
 #include "seed-branch.h"
+#include <unistd.h>
 
 using namespace TREE;
 
-#define LOGFILE "seed-main.log" // the file is used for write log
-static int DEBUG_LEVEL = 2; // DEBUG_DATABASE_LV was defined in seed-config.cc
-
 int main(int argc, char const *argv[])
 {
+	// Set config for system
     ParseOptions po("../config/sys-config.cfg");
 
     Branch SongHe;
-    SongHe.Start();
-    while(1);
+    
+    pause();	// suspend the calling thread until delivery of a signal whose action is either to execute a signal-catching function or to terminate the process
+    // pause() is not safe in some case. Think about sigsuspend()
+    
+    // while (!usr_interrupt)
+  		// sleep (1);
 
 	return 0;
 }
-
-/* 
-
-Note : Each item level has to create a new link
-
-    cJSON *obj = cJSON_GetObjectItem(root, "item"); // create a new link to item
-
-
-*/

@@ -13,33 +13,46 @@ namespace TREE {
 #define BUFFSIZE 1024
 #endif
 
-#define LOGFILE "seed-workspace.log" // the file is used for write log
-static int DEBUG_LEVEL = 2; // DEBUG_DATABASE_LV was defined in seed-config.cc
+// Define a file which is used for write log
+
+#ifdef LOGFILE
+#undef LOGFILE
+#define LOGFILE "seed-workspace.log"
+#else
+#define LOGFILE "seed-workspace.log"
+#endif
+
+unsigned int Workspace::childProcCount = 0;
 
 Workspace::Workspace() {}
+
 Workspace::~Workspace() {
-	clearFork(processID, childProcCount);
+    clearFork();
 }
 
-void Workspace::Start(void (*Handle)(int, fd_set*), int portNumber) {
-
-    port = portNumber;
+void Workspace::CreateANewOnlineSpace(void (*Handle)(int, fd_set*), int port) {
     if ( (processID = fork()) < 0) 
-        SEED_ERROR << "fork() failed";
+        SEED_ERROR << "Cant create a new Workspace cause fork() failed";
     else if (processID == 0) {
         childProcCount++;
-        CreatNewSpace(Handle);
-        exit(0);
+        PutOnline(Handle, port);
     }
-
 }
 
-void Workspace::CreatNewSpace(void (*Handle)(int, fd_set*)) {
-    int servSock;       // fd for socket
+void Workspace::CreateANewSpace(void (*func)()) {
+    if ( (processID = fork()) < 0) 
+        SEED_ERROR << "Cant create a new Workspace cause fork() failed";
+    else if (processID == 0) {
+        childProcCount++;
+        func();
+    }
+}
+
+void Workspace::PutOnline(void (*Handle)(int, fd_set*), int port) {
+
     fd_set socks;       // save vector of file-desciptor, it includes original socket
     fd_set readsocks;   // save vector of file-desciptor
     int maxsock;        // the maximum of socket. it will be auto increase if there is a new connection
-
 
     servSock = CreateTCPServerSocket(port);  // creat a new master socket
 
@@ -51,7 +64,6 @@ void Workspace::CreatNewSpace(void (*Handle)(int, fd_set*)) {
     while (1) {
         int soc;
         readsocks = socks;
-        // printf("run select()\n");
         if (select(maxsock + 1, &readsocks, NULL, NULL, NULL) == -1) {
             SEED_ERROR << "Error on select";
         }
@@ -80,7 +92,7 @@ void Workspace::CreatNewSpace(void (*Handle)(int, fd_set*)) {
     }
 }
 
-void Workspace::clearFork(pid_t processID, unsigned int childProcCount) {
+void Workspace::clearFork() {
     while (childProcCount){
         processID = waitpid((pid_t) -1, NULL, WNOHANG); /* Nonblocking wait */
         if (processID < 0) /* waitpid() sd_error? */
@@ -88,7 +100,7 @@ void Workspace::clearFork(pid_t processID, unsigned int childProcCount) {
         else if (processID == 0) {  /* No zombie to wait on */
             break;
         }
-        else{
+        else {
             childProcCount--; /* Cleaned up after a child */
         }
     }

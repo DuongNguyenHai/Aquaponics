@@ -18,14 +18,15 @@ class Workspace {
 public:
 	Workspace();
 	~Workspace();
-	void Start(void (*Handle)(int, fd_set*), int portNumber);
+	void CreateANewOnlineSpace(void (*Handle)(int, fd_set*), int port);
+	void CreateANewSpace(void (*func)());
 private:
-	int port;
-	unsigned int childProcCount = 0;
+	int servSock; // fd for socket
+	static unsigned int childProcCount;
 	pid_t processID;
 	
-	void CreatNewSpace(void (*Handle)(int, fd_set*));
-	void clearFork(pid_t processID, unsigned int childProcCount);
+	void PutOnline(void (*Handle)(int, fd_set*), int port);
+	void clearFork();
 };
 
 }	// end of namespace TREE

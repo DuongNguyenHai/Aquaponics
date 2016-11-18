@@ -6,8 +6,15 @@
 
 namespace TREE {
 
-#define LOGFILE "seed-console.log" // the file is used for write log
-static int DEBUG_LEVEL = 2; // DEBUG_DATABASE_LV was defined in seed-config.cc
+// Define a file which is used for write log
+
+#ifdef LOGFILE
+#undef LOGFILE
+#define LOGFILE "seed-console.log"
+#else
+#define LOGFILE "seed-console.log"
+#endif
+
 
 Console::~Console() {} // must has this function for the case multi class use base class
 

@@ -1,0 +1,231 @@
+LOG (JsonIsValid():lib/seed-json.cc:24) Branch's message : 
+{
+	"set":	{
+		"temptTank":	{
+			"tempt1":	1,
+			"tempt2":	0
+		},
+		"DO":	{
+			"DO1":	1
+		},
+		"amoniac":	{
+			"amoniac1":	1
+		},
+		"nitrit":	{
+			"nitrit1":	1
+		},
+		"nitrat":	{
+			"nitrat1":	1
+		}
+	}
+}
+LOG (JsonIsValid():lib/seed-json.cc:24) Branch's message : 
+{
+	"update":	{
+		"temptTank":	{
+			"tempt1":	1,
+			"tempt2":	0
+		},
+		"DO":	{
+			"DO1":	1,
+			"DO2":	0
+		},
+		"amoniac":	{
+			"amoniac1":	1
+		},
+		"nitrit":	{
+			"nitrit1":	1
+		},
+		"nitrat":	{
+			"nitrat1":	1
+		},
+		"hardness":	{
+			"hardness1":	1
+		}
+	}
+}
+LOG (JsonIsValid():lib/seed-json.cc:24) Branch's message : 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt1":	25,
+			"tempt2":	26
+		}
+	}
+}
+LOG (JsonIsValid():lib/seed-json.cc:24) Branch's message : 
+{
+	"data":	{
+		"DO":	{
+			"DO1":	25
+		}
+	}
+}
+LOG (JsonIsValid():lib/seed-json.cc:24) Branch's message : 
+{
+	"set":	{
+		"temptTank":	{
+			"tempt1":	1,
+			"tempt2":	0
+		},
+		"DO":	{
+			"DO1":	1
+		},
+		"amoniac":	{
+			"amoniac1":	1
+		},
+		"nitrit":	{
+			"nitrit1":	1
+		},
+		"nitrat":	{
+			"nitrat1":	1
+		}
+	}
+}
+LOG (JsonIsValid():lib/seed-json.cc:24) Branch's message : 
+{
+	"set":	{
+		"temptTank":	{
+			"tempt1":	1,
+			"tempt2":	0
+		},
+		"DO":	{
+			"DO1":	1
+		},
+		"amoniac":	{
+			"amoniac1":	1
+		},
+		"nitrit":	{
+			"nitrit1":	1
+		},
+		"nitrat":	{
+			"nitrat1":	1
+		}
+	}
+}
+LOG (JsonIsValid():lib/seed-json.cc:24) Branch's message : 
+{
+	"set":	{
+		"temptTank":	{
+			"tempt1":	1,
+			"tempt2":	0
+		},
+		"DO":	{
+			"DO1":	1
+		},
+		"amoniac":	{
+			"amoniac1":	1
+		},
+		"nitrit":	{
+			"nitrit1":	1
+		},
+		"nitrat":	{
+			"nitrat1":	1
+		}
+	}
+}
+LOG (JsonIsValid():lib/seed-json.cc:24) Branch's message : 
+{
+	"set":	{
+		"temptTank":	{
+			"tempt1":	1,
+			"tempt2":	0
+		},
+		"DO":	{
+			"DO1":	1
+		},
+		"amoniac":	{
+			"amoniac1":	1
+		},
+		"nitrit":	{
+			"nitrit1":	1
+		},
+		"nitrat":	{
+			"nitrat1":	1
+		}
+	}
+}
+LOG (JsonIsValid():lib/seed-json.cc:24) Branch's message : 
+{
+	"set":	{
+		"temptTank":	{
+			"tempt1":	1,
+			"tempt2":	0
+		},
+		"DO":	{
+			"DO1":	1
+		},
+		"amoniac":	{
+			"amoniac1":	1
+		},
+		"nitrit":	{
+			"nitrit1":	1
+		},
+		"nitrat":	{
+			"nitrat1":	1
+		}
+	}
+}
+LOG (JsonIsValid():lib/seed-json.cc:24) Branch's message : 
+{
+	"set":	{
+		"temptTank":	{
+			"tempt1":	1,
+			"tempt2":	0
+		},
+		"DO":	{
+			"DO1":	1
+		},
+		"amoniac":	{
+			"amoniac1":	1
+		},
+		"nitrit":	{
+			"nitrit1":	1
+		},
+		"nitrat":	{
+			"nitrat1":	1
+		}
+	}
+}
+LOG (JsonIsValid():lib/seed-json.cc:24) Branch's message : 
+{
+	"set":	{
+		"temptTank":	{
+			"tempt1":	1,
+			"tempt2":	0
+		},
+		"DO":	{
+			"DO1":	1
+		},
+		"amoniac":	{
+			"amoniac1":	1
+		},
+		"nitrit":	{
+			"nitrit1":	1
+		},
+		"nitrat":	{
+			"nitrat1":	1
+		}
+	}
+}
+LOG (JsonIsValid():lib/seed-json.cc:24) Branch's message : 
+{
+	"set":	{
+		"temptTank":	{
+			"tempt1":	1,
+			"tempt2":	0
+		},
+		"DO":	{
+			"DO1":	1
+		},
+		"amoniac":	{
+			"amoniac1":	1
+		},
+		"nitrit":	{
+			"nitrit1":	1
+		},
+		"nitrat":	{
+			"nitrat1":	1
+		}
+	}
+}

@@ -51,7 +51,8 @@ int main(int argc, char *argv[]){
     return 0; 
 }
 
-inline void *HandleThreadClient(void *threadArgs){
+inline void *HandleThreadClient(void *threadArgs) {
+    
     int clntSock;
     int recvMsgSize;
     char buffer[BUFFSIZE];
@@ -59,7 +60,7 @@ inline void *HandleThreadClient(void *threadArgs){
 
     clntSock = ((struct ThreadArgs *) threadArgs) -> clntSock;
     
-    while(1){
+    while(1) {
         recvMsgSize = recv(clntSock,buffer,BUFFSIZE,0);
         if (recvMsgSize < 0) 
             sd_error("ERROR reading from socket");

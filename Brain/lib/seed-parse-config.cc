@@ -2,8 +2,14 @@
 
 namespace TREE { 
 
-static int DEBUG_LEVEL = 1;
-#define LOGFILE "seed-config.log" // the file is used for write log
+// Define a file which is used for write log
+
+#ifdef LOGFILE
+#undef LOGFILE
+#define LOGFILE "seed-config.log"
+#else
+#define LOGFILE "seed-config.log"
+#endif	
 
 // Convert string to lowercase
 static bool ToLowerCase(std::string &str){
@@ -108,7 +114,7 @@ void ParseOptions::GetOptions() {
 	std::string args[NUM_ROW(DEFINE_ARGS)][2];
 
 	if(ParseArgs(args, NUM_ROW(args)) == RET_FAILURE) {// parse option from file.
-		SEED_LOG << "Need a config file : \"sys-config.cfg\". All configuration was writed in it";
+		SEED_LOG << "Need a config file : \"sys-config.cfg\" in a \"log\" folder. All configuration was written in it";
 		PrintUsage();
 	}
 
@@ -118,40 +124,39 @@ void ParseOptions::GetOptions() {
 		for (unsigned int j = 0; j < NUM_ROW(DEFINE_ARGS); j++) {
 			if(strcmp(args[i][0].c_str(), DEFINE_ARGS[j][0].c_str())==0) {
 				switch (j) {
-					case 0 : {
-									int val = ToBool(args[i][1]);
-									if(val!=-1)
-										PRINT_MONITOR = val;
-									else {
-										SEED_WARNING << "Config : \"" << args[i][0] << "=" << args[i][1] << "\" is wrong \n";
-									}
-								}
-								break;
-
-					case 1 : {
-									int val = ToBool(args[i][1]);
-									if(val!=-1)
-										PRINT_FILE = val;
-									else {
-										SEED_WARNING << "Config : \"" << args[i][0] << "=" << args[i][1] << "\" is wrong \n";
-										flag_err=true;
-									}
-								}
-								break;
-					case 2 : {
-									if(ToInt(args[i][1], DEBUG_DATABASE_LV)) {
-										if(!Check_Args_DEBUG_LV(DEBUG_DATABASE_LV)) {
-											SEED_WARNING << "Config : \"" << args[i][0] << "=" << args[i][1] << "\" out of range \n";
-											flag_err=true;
-										}
-									}
-									else {
-										SEED_WARNING << "Config : \"" << args[i][0] << "=" << args[i][1] << "\" is wrong \n";
-										flag_err=true;
-									}
-								}
-								break;
+					case 0 : {	// Set PRINT_MONITOR
+						int val = ToBool(args[i][1]);
+						if(val!=-1)
+							PRINT_MONITOR = val;
+						else {
+							SEED_WARNING << "Config : \"" << args[i][0] << "=" << args[i][1] << "\" is wrong \n";
+							flag_err=true;
+						}
+					} break;
+					case 1 : { // Set PRINT_FILE
+						int val = ToBool(args[i][1]);
+						if(val!=-1)
+							PRINT_FILE = val;
+						else {
+							SEED_WARNING << "Config : \"" << args[i][0] << "=" << args[i][1] << "\" is wrong \n";
+							flag_err=true;
+						}
+					} break;
+					case 2 : { // Set DEBUG_LEVEL
+						if(ToInt(args[i][1], DEBUG_LEVEL)) {
+							if(!Check_Args_DEBUG_LV(DEBUG_LEVEL)) {
+								SEED_WARNING << "Config : \"" << args[i][0] << "=" << args[i][1] << "\" out of range \n";
+								flag_err=true;
+							}
+						}
+						else {
+							SEED_WARNING << "Config : \"" << args[i][0] << "=" << args[i][1] << "\" is wrong \n";
+							flag_err=true;
+						}
+					} break;
+					default: break;
 				}
+
 				break;
 			}
 			if(j==NUM_ROW(DEFINE_ARGS)-1) {	// not found in config array

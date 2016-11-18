@@ -18,6 +18,8 @@
 
 namespace TREE {
 
+#define LOGFILE "../log/sys.log"  // define a log-file for system. its may be redefined to log in specific log-file in each prog.
+
 extern const char *g_program_name;
 
 struct LogMessageEnvelope {
@@ -41,7 +43,7 @@ class MessageLogger {
 public:
 
 	MessageLogger(LogMessageEnvelope::Severity severity, const char *func,
-	              const char *file, int32_t line, const char *LOGFILE, int DEBUG_LEVEL);
+	              const char *file, int32_t line, const char *logFile);
 	~MessageLogger();
 	inline std::ostream &stream() { return ss_; }
 
@@ -53,16 +55,16 @@ private:
 
 #define SEED_ERROR \
 	MessageLogger(LogMessageEnvelope::Error, \
-                         __FUNCTION__, __FILE__, __LINE__, LOGFILE, DEBUG_LEVEL).stream()
+                         __FUNCTION__, __FILE__, __LINE__, LOGFILE).stream()
 #define SEED_WARNING \
 	MessageLogger(LogMessageEnvelope::Warning, \
-                         __FUNCTION__, __FILE__, __LINE__, LOGFILE, DEBUG_LEVEL).stream()
+                         __FUNCTION__, __FILE__, __LINE__, LOGFILE).stream()
 #define SEED_LOG \
 	MessageLogger(LogMessageEnvelope::Info, \
-                         __FUNCTION__, __FILE__, __LINE__, LOGFILE, DEBUG_LEVEL).stream()
+                         __FUNCTION__, __FILE__, __LINE__, LOGFILE).stream()
 #define SEED_VLOG \
 	MessageLogger(LogMessageEnvelope::Verbose, \
-                         __FUNCTION__, __FILE__, __LINE__, LOGFILE, DEBUG_LEVEL).stream()
+                         __FUNCTION__, __FILE__, __LINE__, LOGFILE).stream()
 
 } // end of namespace TREE
 

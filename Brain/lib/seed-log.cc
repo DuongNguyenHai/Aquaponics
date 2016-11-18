@@ -48,27 +48,28 @@ static void SendToLog(	const LogMessageEnvelope &envelope,
 
 	if (PRINT_MONITOR)
 		printf("%s %s\n", header_str.c_str(), message);
-	
 
 	if (PRINT_FILE) {
 		std::ofstream logFile(pfile, std::ios::out | std::ios::app);
+		// printf("What the hell is going on\n");
 		if (logFile.is_open()) {
 			logFile << header_str.c_str() << " " << message << std::endl;
 			logFile.close();
+		} else {
+			printf("Error open file: \"%s\" \n", pfile);
 		}
 	}
-		
 
 }
 
 MessageLogger::MessageLogger(LogMessageEnvelope::Severity severity,
-                             const char *func, const char *file, int32_t line, const char *LOGFILE, int DEBUG_LEVEL) {
+                             const char *func, const char *file, int32_t line, const char *logFile) {
 	// Obviously, we assume the strings survive the destruction of this object.
 	envelope_.severity = severity;
 	envelope_.func = func;
 	envelope_.file = GetShortFileName(file);  // Pointer inside 'file'.
 	envelope_.line = line;
-	envelope_.log = LOGFILE;
+	envelope_.log = logFile;
 	envelope_.logLevel = DEBUG_LEVEL;
 }
 
@@ -78,17 +79,24 @@ MessageLogger::~MessageLogger() {
 	while (!str.empty() && str[str.length() - 1] == '\n')
 		str.resize(str.length() - 1);
 
-	if(envelope_.severity == LogMessageEnvelope::Verbose) {
-		if(envelope_.logLevel > 1)
-			SendToLog(envelope_, envelope_.log, str.c_str());
-	}else if((envelope_.logLevel > 0) ||
-			 (envelope_.severity == LogMessageEnvelope::Warning) ||
-			 (envelope_.severity == LogMessageEnvelope::Error) ) {
+	// Print error and exit if program got error message
+	if(envelope_.severity == LogMessageEnvelope::Error) {
+		SendToLog(envelope_, envelope_.log, str.c_str());
+		exit(EXIT_FAILURE);
+	}
 
+	// Log corresponds to DEBUG_LEVEL
+	switch(envelope_.logLevel) {
+		case 1: {
+			if(envelope_.severity != LogMessageEnvelope::Verbose)
 				SendToLog(envelope_, envelope_.log, str.c_str());
-				if((envelope_.severity == LogMessageEnvelope::Error)) // if it was error message, program will exit
-					exit(EXIT_FAILURE);
-			}
+		} break;
+		case 2: {
+			SendToLog(envelope_, envelope_.log, str.c_str());
+		} break;
+		default:break;
+	}
+
 }
 
 } // end of namspace TREE

@@ -26,7 +26,7 @@ int main (int   argc, char *argv[]) {
 
 	dt.InsertData(SENSOR, json);
 	dt.UpdateData(SENSOR, jsonUpdate, jsonSelector);
-	// dt.DeleteData(SENSOR, jsonSelector2);
+	dt.DeleteData(SENSOR, jsonSelector2);
 	dt.TotalDocuments(SENSOR);
 	dt.DisplayTotalQuery();
 	

@@ -6,15 +6,12 @@
 
 #include <iostream>
 #include <string.h>
-
-// json external [ I WANT WRITE MY OWN JSON LIBRARY ]
-// json json-c
 #include "cJSON.h"
-// seed log
 #include "seed-log.h"
 
 namespace TREE {
 
+// Rededine marco from cJSON.h
 typedef cJSON Json;
 #define JsonParse(str) cJSON_Parse(str)
 #define JsonGetObjectItem(root, str) cJSON_GetObjectItem(root, str)
@@ -29,12 +26,9 @@ typedef cJSON Json;
 #define JsonInsertItemInArray(array, which, newitem) cJSON_InsertItemInArray(array, which, newitem)
 #define JsonAddNumberToObject(object, name, n) cJSON_AddNumberToObject(object,name,n)
 
-bool JsonIsValid(char *str);
-// bool JsonParse(char *str);
-
-bool JsonHasItem(char *str, const char *check);
-int JsonGetHeader(char *str, std::string header[], int sizeHd);
-int JsonGetDevice(char *str, std::string device[], int sizeDv);
+bool JsonIsValid(char *str); // check string json is valid or not.
+bool JsonHasItem(char *str, const char *item);	// check whether item is exist in str
+int JsonGetHeader(char *str, std::string header[], int sizeHd);	// Get a header of string and checking whether it is exist on header[] list, if it exist, return the index of header in header[] else return -1
 
 } // end of namspace TREE
 
@@ -45,13 +39,10 @@ int JsonGetDevice(char *str, std::string device[], int sizeDv);
 
 test API:
 
--	test vaild json : pass
--	test invalid json : pass
--	test create a new json : pass
--	test get data from string json : fail when there are many tests
+-	JsonIsValid : passed
+-	JsonHasItem : passed
+-	JsonGetHeader : passed
 
 test bug:
-
--	test other type in OBJECT_PROP[][2] : pass
 
 */
