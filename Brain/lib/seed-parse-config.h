@@ -16,12 +16,6 @@
 
 namespace TREE {
 
-// config-file: <option> = <content>
-// ex in config file:
-// PRINT_MONITOR=true
-// DEBUG_LEVEL=2
-// # comment line
-
 #define NUM_ROW(ARG) (sizeof(ARG)/sizeof(ARG[0][0])/2)
 
 class ParseFile {

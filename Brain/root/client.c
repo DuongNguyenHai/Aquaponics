@@ -9,7 +9,7 @@
 #include <unistd.h>     /* for close() */
 
 #define BUFFSIZE 256
-#define PORT 8886
+#define PORT 8888
 
 void error(const char *msg){
     perror(msg);

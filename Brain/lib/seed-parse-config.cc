@@ -11,10 +11,11 @@ namespace TREE {
 #define LOGFILE "seed-config.log"
 #endif	
 
+static bool flag_err = false;
+
 // Convert string to lowercase
 static bool ToLowerCase(std::string &str){
     int i = 0;
-    // char *str = strdup(s);
     while (str[i]){
         if (str[i] >= 65 && str[i] <= 90)
             str[i] += 32;
@@ -37,26 +38,30 @@ static int ToBool(std::string str) {
 }
 
 // Convert string to int
-static bool ToInt(const std::string &str, int32_t &result) {
+bool ToInt(std::string str, int &result) {
 	try {
-	  std::size_t lastChar;
-	  result = std::stoi(str, &lastChar, 10);
-	  return lastChar == str.size();
+	  	result = std::stoi(str);
+	  	return true;
 	} 
 	catch (std::invalid_argument&) {
-	  return false;
+	  	return false;
 	}
 	catch (std::out_of_range&) {
-	  return false;
+	  	return false;
 	}
 }
-// Check debug level : level must be : 0,1 or 2
-static bool Check_Args_DEBUG_LV(int32_t i) {
-	if( 0<=i && i<=2 )
-		return true;
-	else {
-		return false;
-	}
+// Check debug level : level must in range [0,3]
+static bool Check_Args_DEBUG_LEVEL(int32_t num) {
+	return (0<=num && num<=3) ? true : false;
+}
+// must be > 0
+static bool Check_Args_INTERVAL_REQUEST(int32_t num) {
+	return (num>=0) ? true : false;
+}
+
+static void PrintWarning(std::string arg, std::string val, std::string log) {
+	SEED_WARNING << "Config : \"" << arg << "=" << val << "\" "<< log <<"\n";
+	flag_err=true;
 }
 
 ParseFile::ParseFile(const char *file) {
@@ -118,53 +123,57 @@ void ParseOptions::GetOptions() {
 		PrintUsage();
 	}
 
-	bool flag_err = false;
-	for (unsigned int i = 0; i < NUM_ROW(DEFINE_ARGS); i++) {
-
-		for (unsigned int j = 0; j < NUM_ROW(DEFINE_ARGS); j++) {
-			if(strcmp(args[i][0].c_str(), DEFINE_ARGS[j][0].c_str())==0) {
-				switch (j) {
-					case 0 : {	// Set PRINT_MONITOR
-						int val = ToBool(args[i][1]);
-						if(val!=-1)
-							PRINT_MONITOR = val;
-						else {
-							SEED_WARNING << "Config : \"" << args[i][0] << "=" << args[i][1] << "\" is wrong \n";
-							flag_err=true;
-						}
-					} break;
-					case 1 : { // Set PRINT_FILE
-						int val = ToBool(args[i][1]);
-						if(val!=-1)
-							PRINT_FILE = val;
-						else {
-							SEED_WARNING << "Config : \"" << args[i][0] << "=" << args[i][1] << "\" is wrong \n";
-							flag_err=true;
-						}
-					} break;
-					case 2 : { // Set DEBUG_LEVEL
-						if(ToInt(args[i][1], DEBUG_LEVEL)) {
-							if(!Check_Args_DEBUG_LV(DEBUG_LEVEL)) {
-								SEED_WARNING << "Config : \"" << args[i][0] << "=" << args[i][1] << "\" out of range \n";
-								flag_err=true;
+	for (unsigned int i = 0; i < NUM_ROW(args); i++) {
+	
+		if(!args[i][0].empty())	{	// Check wherether args[i][0] is empty or not.
+			for (unsigned int j = 0; j < NUM_ROW(args); j++) {
+				if(strcmp(args[i][0].c_str(), DEFINE_ARGS[j][0].c_str())==0) {
+					switch (j) {
+						case 0 : {	// Set PRINT_MONITOR
+							int val = ToBool(args[i][1]);
+							if(val!=-1)
+								PRINT_MONITOR = val;
+							else
+								PrintWarning(args[i][0], args[i][1], "is wrong");
+						} break;
+						case 1 : { // Set PRINT_FILE
+							int val = ToBool(args[i][1]);
+							if(val!=-1)
+								PRINT_FILE = val;
+							else
+								PrintWarning(args[i][0], args[i][1], "is wrong");
+						} break;
+						case 2 : { // Set DEBUG_LEVEL
+							if(ToInt(args[i][1], DEBUG_LEVEL)) { // string convert to int
+								if(!Check_Args_DEBUG_LEVEL(DEBUG_LEVEL)) {	// out of range
+									DEBUG_LEVEL = 1;	// must set DEBUG_LEVEL > 0 for use SEED_WARNING
+									PrintWarning(args[i][0], args[i][1], "out of range");
+								}
 							}
-						}
-						else {
-							SEED_WARNING << "Config : \"" << args[i][0] << "=" << args[i][1] << "\" is wrong \n";
-							flag_err=true;
-						}
-					} break;
-					default: break;
-				}
+							else
+								PrintWarning(args[i][0], args[i][1], "is wrong");
 
-				break;
+						} break;
+						case 3 : {	// set INTERVAL_REQUEST
+							if(ToInt(args[i][1], INTERVAL_REQUEST)) { // string convert to int
+								if(!Check_Args_INTERVAL_REQUEST(INTERVAL_REQUEST)) // out of range
+									PrintWarning(args[i][0], args[i][1], "out of range");
+							}
+							else
+								PrintWarning(args[i][0], args[i][1], "is wrong");
+						}
+						default: break;
+					}
+
+					break;
+				}
+				if(j==NUM_ROW(DEFINE_ARGS)-1) {	// not found in config array
+					PrintWarning(args[i][0], args[i][1], "is not config");
+				}
 			}
-			if(j==NUM_ROW(DEFINE_ARGS)-1) {	// not found in config array
-				SEED_WARNING << "Config : \"" << args[i][0] << "=" << args[i][1] << "\" is not config\n";
-				flag_err=true;
-			}
-		}
 		
+		}
+
 	}
 
 	if(flag_err)

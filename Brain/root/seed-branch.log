@@ -20202,3 +20202,38 @@ LOG (Request():lib/seed-branch.cc:196) Resquest to master !
 LOG (Request():lib/seed-branch.cc:196) Resquest to master !
 LOG (Request():lib/seed-branch.cc:196) Resquest to master !
 LOG (Request():lib/seed-branch.cc:196) Resquest to master !
+VERBOSE (HandleBranch():lib/seed-branch.cc:62) Branch[127.0.0.1] is sending a message
+VERBOSE (HandleCommand():lib/seed-branch.cc:81) The command of Branch is : set
+LOG (PrintTwigs():lib/seed-branch.cc:183) twig: temptTank, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: tempt1, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: tempt2, state: die
+LOG (PrintTwigs():lib/seed-branch.cc:183) twig: DO, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: DO1, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:183) twig: amoniac, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: amoniac1, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:183) twig: nitrit, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: nitrit1, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:183) twig: nitrat, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: nitrat1, state: alive
+VERBOSE (HandleBranch():lib/seed-branch.cc:62) Branch[127.0.0.1] is sending a message
+VERBOSE (HandleCommand():lib/seed-branch.cc:81) The command of Branch is : update
+LOG (PrintTwigs():lib/seed-branch.cc:183) twig: temptTank, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: tempt1, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: tempt2, state: die
+LOG (PrintTwigs():lib/seed-branch.cc:183) twig: DO, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: DO1, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: DO2, state: die
+LOG (PrintTwigs():lib/seed-branch.cc:183) twig: amoniac, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: amoniac1, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:183) twig: nitrit, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: nitrit1, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:183) twig: nitrat, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: nitrat1, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:183) twig: hardness, state: alive
+LOG (PrintTwigs():lib/seed-branch.cc:185) 	- leaf: hardness1, state: alive
+VERBOSE (HandleBranch():lib/seed-branch.cc:62) Branch[127.0.0.1] is sending a message
+VERBOSE (HandleCommand():lib/seed-branch.cc:81) The command of Branch is : data
+VERBOSE (HandleBranch():lib/seed-branch.cc:62) Branch[127.0.0.1] is sending a message
+VERBOSE (HandleCommand():lib/seed-branch.cc:81) The command of Branch is : data
+WARNING (HandleBranch():lib/seed-branch.cc:60) Error reading from socket
+VERBOSE (HandleBranch():lib/seed-branch.cc:67) Branch[127.0.0.1] has disconnected

@@ -5,6 +5,7 @@
 #define SEED_CONFIG_H
 
 #include <iostream>
+#include <inttypes.h>	// int32_t int64_t
 
 namespace TREE {
 
@@ -13,12 +14,12 @@ extern bool PRINT_FILE;     // print infor to file (log file)
 
 // There are 3 level of debug level  from 1->3
 // Higher level will debug more information
-// Set  DEBUG_LEVEL 0 means : show WARNING, ERROR but no LOG.
-// 		DEBUG_LEVEL 1 means : show WARNING, ERROR and LOG.
-// 		DEBUG_LEVEL 2 means : show WARNING, ERROR and LOG and VERBOSE.
-// ex : int DEBUG_LEVEL = 1; // note : define in seed-config.cc
-extern int DEBUG_LEVEL;
-
+// Set  DEBUG_LEVEL=0 means : show nothing.
+// 		DEBUG_LEVEL=1 means : show WARNING, ERROR but no LOG.
+// 		DEBUG_LEVEL=2 means : show WARNING, ERROR and LOG.
+// 		DEBUG_LEVEL=3 means : show WARNING, ERROR and LOG and VERBOSE.
+extern int32_t DEBUG_LEVEL;
+extern int32_t INTERVAL_REQUEST; // a period of time between two request events
 // Type of return. All function of system will return one of three types.
 #define RET_MISS -1
 #define RET_SUCCESS 0
@@ -32,10 +33,10 @@ extern int DEBUG_LEVEL;
 #define Tp_INT	"2"
 #define Tp_FLOAT "3"
 #define Tp_DOUBLE "4"
-extern std::string DEFINE_ARGS[3][2];
+extern std::string DEFINE_ARGS[4][2];
 
 // Define port for ...
-#define BRANCH_PORT 8886
+#define BRANCH_PORT 8888
 #define CONSOLE_PORT 8885
 
 // Database

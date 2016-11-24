@@ -73,6 +73,13 @@ MessageLogger::MessageLogger(LogMessageEnvelope::Severity severity,
 	envelope_.logLevel = DEBUG_LEVEL;
 }
 
+// There are 3 level of debug level  from 1->3
+// Higher level will debug more information
+// Set  DEBUG_LEVEL=0 means : show nothing.
+// 		DEBUG_LEVEL=1 means : show WARNING, ERROR but no LOG.
+// 		DEBUG_LEVEL=2 means : show WARNING, ERROR and LOG.
+// 		DEBUG_LEVEL=3 means : show WARNING, ERROR and LOG and VERBOSE.
+
 MessageLogger::~MessageLogger() {
 
 	std::string str = ss_.str();
@@ -88,10 +95,15 @@ MessageLogger::~MessageLogger() {
 	// Log corresponds to DEBUG_LEVEL
 	switch(envelope_.logLevel) {
 		case 1: {
-			if(envelope_.severity != LogMessageEnvelope::Verbose)
+			if( envelope_.severity != LogMessageEnvelope::Info &&
+				envelope_.severity != LogMessageEnvelope::Verbose )
 				SendToLog(envelope_, envelope_.log, str.c_str());
 		} break;
 		case 2: {
+			if(envelope_.severity != LogMessageEnvelope::Verbose)
+				SendToLog(envelope_, envelope_.log, str.c_str());
+		} break;
+		case 3: {
 			SendToLog(envelope_, envelope_.log, str.c_str());
 		} break;
 		default:break;

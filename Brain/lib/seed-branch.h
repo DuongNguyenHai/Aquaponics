@@ -1,4 +1,4 @@
-// lib/seed-workspace.h
+// lib/seed-branch.h
 // Nguyen Hai Duong
 // Date : Nov 2016
 
@@ -16,6 +16,11 @@
 
 namespace TREE {
 
+#define BRANCH_READ 0
+#define REQUEST_WRITE 1
+#define REQUEST_READ 2
+#define BRANCH_WRITE 3
+#define VOID_TO_INT(ARG) *( (int *)&ARG)
 // Leaf is a sensor
 class Leaf {
 
@@ -44,7 +49,7 @@ public:
 	Branch();
 	~Branch();
 	void Start();		// start a branch. Have not used it.
-	void Interval(int T); // cycle time between 2 event request data from master
+	void InitalRequest(int T); // cycle time between 2 event request data from master
 	static bool IsConnect(){ return flag_twigs; };
 private:
 	static bool SetTwigs(int clntSock, char *str, const char *header);	// Initial twigs
@@ -55,7 +60,7 @@ private:
 										  // "data" : save data from all sensor (leaf).
 	static void HandleBranch(int clntSock, fd_set *set); // Get data from master through TCP. 
 	static void PrintTwigs();	// Print twigs
-	static void Request();
+	static void *RequestDataFromMaster(void *var);
 	static Database dt;
 	static unsigned int cycle;
 	static bool flag_twigs;

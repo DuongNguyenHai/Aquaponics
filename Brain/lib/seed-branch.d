@@ -1,7 +1,7 @@
 ../lib/seed-branch.o: ../lib/seed-branch.cc ../lib/seed-branch.h \
  ../lib/seed-config.h ../lib/seed-parse-config.h ../lib/seed-log.h \
- ../lib/seed-json.h ../lib/cJSON.h ../lib/seed-database.h \
- /usr/local/include/libmongoc-1.0/mongoc.h \
+ ../lib/seed-json.h ../lib/base/lib-json/cJSON/include/cJSON.h \
+ ../lib/seed-database.h /usr/local/include/libmongoc-1.0/mongoc.h \
  /usr/local/include/libbson-1.0/bson.h \
  /usr/local/include/libbson-1.0/bson-compat.h \
  /usr/local/include/libbson-1.0/bson-config.h \
@@ -71,7 +71,7 @@
 ../lib/seed-parse-config.h:
 ../lib/seed-log.h:
 ../lib/seed-json.h:
-../lib/cJSON.h:
+../lib/base/lib-json/cJSON/include/cJSON.h:
 ../lib/seed-database.h:
 /usr/local/include/libmongoc-1.0/mongoc.h:
 /usr/local/include/libbson-1.0/bson.h:

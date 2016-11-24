@@ -10,7 +10,7 @@
 #include <stdbool.h>    // for bool type
 
 #define BUFFSIZE 256
-#define PORT 8886
+#define PORT 8888
 #define OK "OK"
 #define SIZE_OF_ARRAY(arry) (sizeof(arry)/sizeof(arry[0]))
 
@@ -33,16 +33,17 @@ bool ReadAllLeaf();
 bool SendAllData();
 int GetCommand();
 
-char * setDevice = (char*)"{\"set\":"
-                                "{"
-                                "\"temptTank\":{\"tempt1\": 1,\"tempt2\":0},"
-                                "\"DO\":{\"DO1\":1},"
-                                "\"amoniac\":{\"amoniac1\":1},"
-                                "\"nitrit\":{\"nitrit1\":1},"
-                                "\"nitrat\":{\"nitrat1\":1}"
-                                "}"
-                            "}";
+// char * setDevice = (char*)"{\"set\":"
+//                                 "{"
+//                                 "\"temptTank\":{\"tempt1\": 1,\"tempt2\":0},"
+//                                 "\"DO\":{\"DO1\":1},"
+//                                 "\"amoniac\":{\"amoniac1\":1},"
+//                                 "\"nitrit\":{\"nitrit1\":1},"
+//                                 "\"nitrat\":{\"nitrat1\":1}"
+//                                 "}"
+//                             "}";
 
+char * setDevice = (char*)"{\"set\":{\"temptTank\":{\"tempt1\": 1,\"tempt2\":0},\"DO\":{\"DO1\":1},\"amoniac\":{\"amoniac1\":1}}}";
 
 char * update = (char*)"{\"update\":"
                                 "{"
@@ -108,7 +109,9 @@ int main(int argc, char *argv[]){
         printf("Set device failed !\n");
 
     while(1) {
+
         index = GetCommand();
+        printf("Index: %d\n", index);
         switch(index) {
             case 0 : { // command: update
                 HandleUpdate();
@@ -164,7 +167,6 @@ bool CheckOK() {
 int GetCommand() {
     int recvMsgSize;
     bzero(buffer,BUFFSIZE);
-        
     recvMsgSize = recv(sockfd, buffer, BUFFSIZE,0);
     if (recvMsgSize < 0) {
         printf("ERROR reading from socket");
@@ -201,6 +203,7 @@ bool HandleUpdate() {
 }
 
 bool HandleData() {
+
     ReadAllLeaf();
     GenerateJson();
     SendToServer(dataDO);

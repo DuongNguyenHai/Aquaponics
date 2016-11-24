@@ -3,7 +3,7 @@
 // Nguyen Hai Duong
 // Date : 11 jun 2016
 
-// compile : g++ -o server-thread server-thread.cc ../lib/TCP-IP.cc ../lib/seed-log.cc -lpthread
+// compile :  g++ -o server-thread server-thread.cc ../lib/TCP-IP.cc ../lib/seed-log.cc ../lib/seed-config.cc -lpthread
 
 
 #include "../lib/TCP-IP.h"
@@ -15,6 +15,8 @@ struct ThreadArgs{
 
 inline void *HandleThreadClient(void *threadArgs);
 
+using namespace TREE;
+
 int main(int argc, char *argv[]){
 
     int servSock, clntSock;
@@ -25,7 +27,7 @@ int main(int argc, char *argv[]){
 
     clntLen = sizeof(cli_addr);
 
-    servSock = CreateTCPServerSocket(PORT);
+    servSock = CreateTCPServerSocket(8888);
 
     while(1) {
 
@@ -63,7 +65,7 @@ inline void *HandleThreadClient(void *threadArgs) {
     while(1) {
         recvMsgSize = recv(clntSock,buffer,BUFFSIZE,0);
         if (recvMsgSize < 0) 
-            sd_error("ERROR reading from socket");
+            printf("ERROR reading from socket");
         else if(recvMsgSize>0){
             printf(". Client[%d]: %s\n",clntSock,buffer);
             bzero(buffer,strlen(buffer));

@@ -7,8 +7,9 @@ DIRLIB = ../lib
 JSON_DIR = ../lib/base/lib-json/cJSON
 
 CFLAGS += -std=c++11 -Wall -g `pkg-config --cflags --libs libmongoc-1.0`
-LDFLAGS += `pkg-config --cflags --libs libmongoc-1.0` -L$(JSON_DIR)/lib
+LDFLAGS += `pkg-config --cflags --libs libmongoc-1.0` -lpthread -L$(JSON_DIR)/lib
 INCLUDES += -I../lib -I$(JSON_DIR)/include
+# I dont know why that I have to put -lpthread in LDFLAGS but CFLAGS. It -lpthread is in CFLAGS. It will not working
 
 # link dynamic library
 LIBS = -Wl,-rpath='$(JSON_DIR)/lib' -lcJSON

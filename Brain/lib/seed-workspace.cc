@@ -1,4 +1,4 @@
-// lib/seed-Workspace.cc
+// lib/seed-workspace.cc
 // Nguyen Hai Duong
 // Date : Nov 2016
 
@@ -23,6 +23,10 @@ namespace TREE {
 #endif
 
 unsigned int Workspace::childProcCount = 0;
+// int Workspace::indexOfPine = 0;
+// int Workspace::fd[2*NUM_PIPES] = {0};
+
+static std::vector<struct threadAndClient> threadAndClnt;
 
 Workspace::Workspace() {}
 
@@ -30,12 +34,12 @@ Workspace::~Workspace() {
     clearFork();
 }
 
-void Workspace::CreateANewOnlineSpace(void (*Handle)(int, fd_set*), int port) {
+void Workspace::CreateANewOnlineSpace(void (*Handle)(int, fd_set*), int port, void *(*func)(void *)) {
     if ( (processID = fork()) < 0) 
         SEED_ERROR << "Cant create a new Workspace cause fork() failed";
     else if (processID == 0) {
         childProcCount++;
-        PutOnline(Handle, port);
+        PutOnline(Handle, port, func);
     }
 }
 
@@ -48,7 +52,32 @@ void Workspace::CreateANewSpace(void (*func)()) {
     }
 }
 
-void Workspace::PutOnline(void (*Handle)(int, fd_set*), int port) {
+void Workspace::CreateANewWork(void *(*func)(void *), void *var) {
+
+    threadAndClnt.resize(threadAndClnt.size()+1);   // increase a threadAndClnt size
+    threadAndClnt.back().sock = VOID_TO_INT(var);   // save newsock to threadAndClnt
+
+    if (pthread_create(&threadAndClnt.back().threadID, NULL, func, var))
+        SEED_WARNING << "pthread_create() failed";
+
+    PrintVectorThreadAndClient();
+}
+
+// NOT use this function.
+// int Workspace::CreateAPairOfPine(int index) {
+//     if( fd[index] !=0 || fd[index+1] !=0 ) {
+//         SEED_WARNING << "The pair of descriptor from [" << index << "] was created";
+//         return RET_FAILURE;
+//     }
+//     if (pipe(fd+(index)) < 0) {
+//         SEED_WARNING << "Failed to allocate pipes";
+//         return RET_FAILURE;
+//     }
+//     SEED_LOG << "fd["<<index<<"]: " << fd[index] << ", fd["<<index+1<<"]: " << fd[index+1];
+//     return RET_SUCCESS; 
+// }
+
+void Workspace::PutOnline(void (*Handle)(int, fd_set*), int port, void *(*func)(void *)) {
 
     fd_set socks;       // save vector of file-desciptor, it includes original socket
     fd_set readsocks;   // save vector of file-desciptor
@@ -72,11 +101,21 @@ void Workspace::PutOnline(void (*Handle)(int, fd_set*), int port) {
                 if (soc == servSock) {
                     /* New connection */
                     int newsock = AcceptTCPConnection(servSock);
+
+                    // show address of master which connected 
+                    struct sockaddr_in cli_addr;
+                    unsigned int clntLen = sizeof(cli_addr);
+                    getpeername(newsock, (struct sockaddr *) &cli_addr, &clntLen);
+                    SEED_LOG << "Branch["<<inet_ntoa(cli_addr.sin_addr)<<"] has created";
+
+                    if(func!=NULL) {
+                        Workspace::CreateANewWork(func, (void*)(intptr_t)newsock);
+                    }
+
                     if (newsock == -1) {
-                        SEED_ERROR << "Error on accept";
+                        SEED_ERROR << "Error on accept a new connection";
                     }
                     else {
-                        
                         FD_SET(newsock, &socks);
                         if (newsock > maxsock) {
                             maxsock = newsock;
@@ -94,7 +133,7 @@ void Workspace::PutOnline(void (*Handle)(int, fd_set*), int port) {
 
 void Workspace::clearFork() {
     while (childProcCount){
-        processID = waitpid((pid_t) -1, NULL, WNOHANG); /* Nonblocking wait */
+        processID = waitpid((pid_t)-1, NULL, WNOHANG); /* Nonblocking wait */
         if (processID < 0) /* waitpid() sd_error? */
             SEED_ERROR << "waitpid() failed";
         else if (processID == 0) {  /* No zombie to wait on */
@@ -106,5 +145,29 @@ void Workspace::clearFork() {
     }
 }
 
+void Workspace::ClearThread(int sock) {
+
+    for (unsigned int i = 0; i < threadAndClnt.size(); ++i) {
+        if (sock==threadAndClnt[i].sock)
+        {
+            pthread_cancel(threadAndClnt[i].threadID);
+            for (unsigned int j = i; j < threadAndClnt.size()-1; ++j)
+            {
+                threadAndClnt[j].sock = threadAndClnt[j+1].sock;
+                threadAndClnt[j].threadID = threadAndClnt[j+1].threadID;
+            }
+        }
+    }
+    threadAndClnt.pop_back();
+    SEED_LOG << "Clear thread : ";
+    PrintVectorThreadAndClient();
+}
+
+void Workspace::PrintVectorThreadAndClient() {
+    SEED_LOG << "threadAndClient size: " << threadAndClnt.size();
+    for (unsigned int i = 0; i < threadAndClnt.size(); ++i) {
+        SEED_LOG << "threadID: " << threadAndClnt[i].threadID << ", sock: " << threadAndClnt[i].sock;
+    }
+}
 
 }	// end of namespace TREE
