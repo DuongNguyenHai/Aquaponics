@@ -8,12 +8,12 @@ namespace TREE {
 
 // define the file is used for write log
 
-#ifdef LOGFILE
-#undef LOGFILE
-#define LOGFILE "seed-branch.log"
-#else
-#define LOGFILE "seed-branch.log"
-#endif
+// #ifdef LOGFILE
+// #undef LOGFILE
+// #define LOGFILE "../log/seed-branch.log"
+// #else
+// #define LOGFILE "../log/seed-branch.log"
+// #endif
 
 #define OK "OK"
 
@@ -44,14 +44,7 @@ Branch::~Branch() {}
 Database Branch::dt(DATABASE_NAME);
 
 void Branch::Start() {
-
-    if(Branch::cycle>0)  {// check interval time for request
-        Workspace::CreateANewOnlineSpace(HandleBranch, BRANCH_PORT, RequestDataFromMaster);
-    }
-    else {
-        SEED_WARNING << "Interval of Request() = "<<Branch::cycle << ". It must be larger > 0";
-        Workspace::CreateANewOnlineSpace(HandleBranch, BRANCH_PORT);
-    }
+    Workspace::CreateANewOnlineSpace(HandleBranch, BRANCH_PORT, RequestDataFromMaster);
 }
 
 void Branch::HandleBranch(int clntSock, fd_set *set) {
@@ -63,24 +56,30 @@ void Branch::HandleBranch(int clntSock, fd_set *set) {
     getpeername(clntSock, (struct sockaddr *) &cli_addr, &clntLen);
 
     recvMsgSize = recv(clntSock, buffer, BUFFSIZE, 0);
-    if (recvMsgSize < 0) 
-        SEED_WARNING << "Error reading from socket";
-    else if (recvMsgSize>0){
-        SEED_VLOG << "Branch["<<inet_ntoa(cli_addr.sin_addr)<<"] is sending a message"; // abstract 3 for convenience
+    if (recvMsgSize==-1) {
+        SEED_WARNING << "Error reading from socket: " << strerror (errno);
+        sleep(5);
+        SendStringToMaster(clntSock , (char*)"data");
+    }
+    else if (recvMsgSize>0) {
+        SEED_VLOG << "Branch["<<inet_ntoa(cli_addr.sin_addr)<<"] has sended message"; // abstract 3 for convenience
         Branch::HandleCommand(clntSock, buffer);
         bzero(buffer,strlen(buffer));   // need bzero to clear buffer. if dont do that, the next time will print some old stuffs at the end. Still dont know why
     }
-    else {
+    else if(recvMsgSize==0) {
         SEED_LOG << "Branch["<<inet_ntoa(cli_addr.sin_addr)<<"] has disconnected";
-        close(clntSock);
-        Workspace::ClearThread(clntSock);
-        FD_CLR(clntSock, set);
+        sleep(5);
+        SendStringToMaster(clntSock , (char*)"data");
+        // close(clntSock);
+        // Workspace::ClearThread(clntSock);
+        // FD_CLR(clntSock, set);
     }
 
 }
 
 bool Branch::HandleCommand(int clntSock, char *str) {
 
+    PrintJson((char *)"Branch's message: \n", str);
     if(JsonIsValid(str)==RET_FAILURE)
         return RET_FAILURE;
 
@@ -123,7 +122,7 @@ bool Branch::SetTwigs(int clntSock, char *str, const char *header) {
     Json *jnDevice = JsonGetObjectItem(root, header);  // get item form device
     int sizeJnDevice = JsonArraySize(jnDevice);
     twigs.resize(sizeJnDevice);
-    cJSON *item, *subitem;
+    Json *item, *subitem;
     // Create twigs
     for (int i = 0 ; i < sizeJnDevice; ++i) {
         item = JsonGetArrayItem(jnDevice, i);
@@ -139,7 +138,7 @@ bool Branch::SetTwigs(int clntSock, char *str, const char *header) {
         }
     }
     
-    cJSON_Delete(root);
+    JsonDelete(root);
     flag_twigs = true;
     return RET_SUCCESS;
 }
@@ -169,7 +168,7 @@ bool Branch::CheckUpdateTwig(char *str) {
         }
     }
 
-    cJSON_Delete(root);
+    JsonDelete(root);
     return RET_SUCCESS;
 }
 
@@ -179,9 +178,10 @@ bool Branch::SaveDataToTwig(char *str) {
     Json *root = JsonParse(str);
     Json *data = JsonGetObjectItem(root, header[2].c_str()); // get item form data
     Json *leaf = JsonGetArrayItem(data, 0);
+    
     char *out = cJSON_Print(leaf);
     dt.InsertDataWithIdAutoIncrement(JsonItemName(leaf), out);
-    cJSON_Delete(root);
+    JsonDelete(root);
     free(out);
     return RET_SUCCESS;
 }
@@ -194,20 +194,38 @@ void Branch::PrintTwigs() {
     }
 }
 
-void Branch::InitalRequest(int T) {
-    Branch::cycle = T;
-}
-
 void *Branch::RequestDataFromMaster(void *var) {
 
     pthread_setcancelstate(PTHREAD_CANCEL_ENABLE, NULL);
     int clntSock = VOID_TO_INT(var);
-    while(1) {
-        sleep(Branch::cycle);
-        if(SendStringToMaster(clntSock , (char*)"data")==RET_FAILURE) {
-            // pthread_exit(NULL);
+    if(INTERVAL_REQUEST>0) {
+        while(1) {
+            SEED_LOG << "Request data after: " << INTERVAL_REQUEST << "s";
+            sleep(INTERVAL_REQUEST);
+            if(SendStringToMaster(clntSock , (char*)"data")==RET_FAILURE) {
+                pthread_exit(NULL);
+            }
         }
+    } else {
+        time_t rawtime;
+        struct tm * tnow;
+        while(1) {
+            for (unsigned int i = 0; i < SCHEDULE.size(); ++i) {
+                time ( &rawtime );
+                tnow = localtime ( &rawtime );
+                int timer = SCHEDULE[i] - ( tnow->tm_hour*3600 + tnow->tm_min*60 + tnow->tm_sec );
+                if(timer<0)
+                    timer = timer + 24*3600;
+                char *date = DateAndTime(rawtime+timer);
+                SEED_LOG << "Next request data at \""<< date << "\"";
+                free(date);
+                sleep(timer);
 
+                if(SendStringToMaster(clntSock , (char*)"data")==RET_FAILURE) {
+                    pthread_exit(NULL);
+                }
+            }
+        }
     }
 }
 

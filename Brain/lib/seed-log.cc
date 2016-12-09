@@ -6,6 +6,7 @@
 namespace TREE {
 
 const char *g_program_name = NULL;
+time_t rawtime;
 // If the program name was set (g_program_name != ""), the function
 // GetProgramName returns the program name (without the path) followed by a
 // colon, e.g. "gmm-align:".  Otherwise it returns the empty string "".
@@ -27,8 +28,7 @@ const char *GetShortFileName(const char *filename) {
 }
 // Print log/error/warning/verbose on terminal an log file
 static void SendToLog(	const LogMessageEnvelope &envelope,
-						const char *pfile,
-                      	const char *message) {
+                        const char *message) {
 
 	// Otherwise, use Kaldi default logging.
 	std::stringstream header;
@@ -40,36 +40,37 @@ static void SendToLog(	const LogMessageEnvelope &envelope,
 		header << "ERROR (";
 	else
 		header << "VERBOSE (";
-	
-	header << GetProgramName() << envelope.func << "():"
-	     << envelope.file << ':' << envelope.line << ")";
 
+	time (&rawtime);
+	char *date = DateAndTime(rawtime);
+	header << GetProgramName() << envelope.func << "():"
+	     << envelope.file << ':' << envelope.line << ")"
+	     << "["<< date << "]";
+
+	free(date);
 	std::string header_str = header.str();
 
 	if (PRINT_MONITOR)
 		printf("%s %s\n", header_str.c_str(), message);
 
 	if (PRINT_FILE) {
-		std::ofstream logFile(pfile, std::ios::out | std::ios::app);
-		// printf("What the hell is going on\n");
+		std::ofstream logFile(LOG_FILE.c_str(), std::ios::out | std::ios::app);
 		if (logFile.is_open()) {
 			logFile << header_str.c_str() << " " << message << std::endl;
 			logFile.close();
 		} else {
-			printf("Error open file: \"%s\" \n", pfile);
+			printf("%s Can not log to \"%s\" file. The file cannot be found\n", header_str.c_str(), LOG_FILE.c_str());
 		}
 	}
-
 }
 
 MessageLogger::MessageLogger(LogMessageEnvelope::Severity severity,
-                             const char *func, const char *file, int32_t line, const char *logFile) {
+                             const char *func, const char *file, int32_t line) {
 	// Obviously, we assume the strings survive the destruction of this object.
 	envelope_.severity = severity;
 	envelope_.func = func;
 	envelope_.file = GetShortFileName(file);  // Pointer inside 'file'.
 	envelope_.line = line;
-	envelope_.log = logFile;
 	envelope_.logLevel = DEBUG_LEVEL;
 }
 
@@ -88,7 +89,7 @@ MessageLogger::~MessageLogger() {
 
 	// Print error and exit if program got error message
 	if(envelope_.severity == LogMessageEnvelope::Error) {
-		SendToLog(envelope_, envelope_.log, str.c_str());
+		SendToLog(envelope_, str.c_str());
 		exit(EXIT_FAILURE);
 	}
 
@@ -97,18 +98,25 @@ MessageLogger::~MessageLogger() {
 		case 1: {
 			if( envelope_.severity != LogMessageEnvelope::Info &&
 				envelope_.severity != LogMessageEnvelope::Verbose )
-				SendToLog(envelope_, envelope_.log, str.c_str());
+				SendToLog(envelope_, str.c_str());
 		} break;
 		case 2: {
 			if(envelope_.severity != LogMessageEnvelope::Verbose)
-				SendToLog(envelope_, envelope_.log, str.c_str());
+				SendToLog(envelope_, str.c_str());
 		} break;
 		case 3: {
-			SendToLog(envelope_, envelope_.log, str.c_str());
+			SendToLog(envelope_, str.c_str());
 		} break;
 		default:break;
 	}
 
+}
+
+char *DateAndTime(time_t rawtime) {
+	// struct tm *info = localtime( &rawtime );
+	char buffer[80];
+	strftime(buffer, sizeof(buffer),"%X - %x", localtime(&rawtime));
+	return strdup(buffer);
 }
 
 } // end of namspace TREE

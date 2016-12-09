@@ -7,12 +7,12 @@ static stats_t stats= {0};			// count the total query command.
 
 // Define a file which  is used for write log
 
-#ifdef LOGFILE
-#undef LOGFILE
-#define LOGFILE "seed-database.log"
-#else
-#define LOGFILE "seed-database.log"
-#endif
+// #ifdef LOGFILE
+// #undef LOGFILE
+// #define LOGFILE "../log/seed-database.log"
+// #else
+// #define LOGFILE "../log/seed-database.log"
+// #endif
 
 // static void command_started (const mongoc_apm_command_started_t *event);	// show start time of command
 static void command_excuted (const mongoc_apm_command_succeeded_t *event); // it was called if the query command succeeded
@@ -47,7 +47,7 @@ static void command_excuted (const mongoc_apm_command_succeeded_t *event) {
 
 		if( strcmp(e,"insert")==0 || strcmp(e,"update")==0 || strcmp(e,"delete")==0 )
 			SEED_LOG << "Command " << mongoc_apm_command_succeeded_get_command_name (event)
-				<< " succeeded:\n" << s << "\n";
+				<< " succeeded\n" << "\n";
 		else
 			SEED_VLOG << "Command " << mongoc_apm_command_succeeded_get_command_name (event)
 				<< " succeeded:\n" << s << "\n";
@@ -93,7 +93,7 @@ Database::Database(const char *databaseName) {
 	}
 
 	bson_destroy (command);
-	SEED_LOG << "Database \""<< databaseName << "\" has connected successful !";
+	SEED_VLOG << "Database \""<< databaseName << "\" has connected successful !";
 }
 
 Database::~Database() {
@@ -106,6 +106,9 @@ Database::~Database() {
 // object.InsertData("collection name", json);
 int Database::InsertData(const char *COLL_NAME, char* json) {
 	
+	time_t rawtime = time(NULL);
+	time_t localTime = mktime(localtime(&rawtime)) + 7*3600;	// dont know why bson_append_time_t() abstract GMT time. my GMT is 7. so to append exactly, localTime nead add 7*3600
+
 	bson_t *command;
 	bson_error_t error;
 	db_collection *colt = mongoc_client_get_collection (client, dbName, COLL_NAME);
@@ -116,6 +119,8 @@ int Database::InsertData(const char *COLL_NAME, char* json) {
 	if( !(command = bson_new_from_json ((const uint8_t*)json, -1, &error))) {
 		goto JUMP_FAIL;
 	}
+	// bson_append_now_utc(command, "date", -1);
+	bson_append_time_t (command, "date", -1, localTime);
 
 	if( !mongoc_collection_insert (colt, MONGOC_INSERT_NONE, command, NULL, &error)) {
 		bson_destroy (command);
@@ -152,9 +157,11 @@ int Database::InsertDataWithIdAutoIncrement(const char *COLL_NAME, char* json) {
 	db_collection *colt = mongoc_client_get_collection (client, dbName, COLL_NAME);
 
 	// get value total
-	mongoc_cursor_t *cursor = mongoc_collection_find (colt, MONGOC_QUERY_NONE, 0, 0, 0, query, NULL, NULL);
+	// mongoc_cursor_t *cursor = mongoc_collection_find (colt, MONGOC_QUERY_NONE, 0, 0, 0, query, NULL, NULL);
+	mongoc_cursor_t *cursor = mongoc_collection_find_with_opts (colt, query, NULL, NULL);
 
-	while (mongoc_cursor_more (cursor) && mongoc_cursor_next (cursor, &doc)) {
+	// while (mongoc_cursor_more (cursor) && mongoc_cursor_next (cursor, &doc)) {
+	while (mongoc_cursor_next (cursor, &doc)) {
 		char *str = bson_as_json (doc, NULL);
 		Json *tot = JsonParse(str);
 		Json *item = JsonGetArrayItem(tot, 1);	// get item "total"
@@ -180,7 +187,7 @@ int Database::InsertDataWithIdAutoIncrement(const char *COLL_NAME, char* json) {
     	cJSON_Delete(root);
     	bson_destroy (query);
     	mongoc_collection_destroy (colt);
-    	SEED_WARNING << "InsertData() error";
+    	SEED_WARNING << "InsertData() missed";
     	return RET_FAILURE;
     }
     
@@ -203,6 +210,7 @@ int Database::InsertDataWithIdAutoIncrement(const char *COLL_NAME, char* json) {
 	mongoc_collection_destroy (colt);
     return RET_SUCCESS;
 }
+
 // char *jsonSelector = (char *)"{\"temp\":25}";
 // char *jsonUpdate = (char *)"{\"$set\":{\"heartTemp\":100}}";
 // object.UpdateData("collection name", jsonUpdate, jsonSelector);

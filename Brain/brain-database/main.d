@@ -1,4 +1,5 @@
-main.o: main.cc ../lib/seed-config.h ../lib/seed-database.h \
+main.o: main.cc ../lib/seed-config.h ../lib/seed-log.h \
+ ../lib/seed-config.h ../lib/seed-database.h \
  /usr/local/include/libmongoc-1.0/mongoc.h \
  /usr/local/include/libbson-1.0/bson.h \
  /usr/local/include/libbson-1.0/bson-compat.h \
@@ -62,9 +63,11 @@ main.o: main.cc ../lib/seed-config.h ../lib/seed-database.h \
  /usr/local/include/libmongoc-1.0/mongoc-trace.h \
  /usr/local/include/libmongoc-1.0/mongoc-version.h \
  /usr/local/include/libmongoc-1.0/mongoc-version-functions.h \
- ../lib/seed-config.h ../lib/seed-log.h ../lib/seed-json.h ../lib/cJSON.h \
+ ../lib/seed-json.h ../lib/base/lib-json/cJSON/include/cJSON.h \
  ../lib/seed-parse-config.h
 main.cc:
+../lib/seed-config.h:
+../lib/seed-log.h:
 ../lib/seed-config.h:
 ../lib/seed-database.h:
 /usr/local/include/libmongoc-1.0/mongoc.h:
@@ -130,8 +133,6 @@ main.cc:
 /usr/local/include/libmongoc-1.0/mongoc-trace.h:
 /usr/local/include/libmongoc-1.0/mongoc-version.h:
 /usr/local/include/libmongoc-1.0/mongoc-version-functions.h:
-../lib/seed-config.h:
-../lib/seed-log.h:
 ../lib/seed-json.h:
-../lib/cJSON.h:
+../lib/base/lib-json/cJSON/include/cJSON.h:
 ../lib/seed-parse-config.h:

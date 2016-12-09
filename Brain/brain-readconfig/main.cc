@@ -7,7 +7,7 @@ using namespace TREE;
 
 int main(int argc, char const *argv[])
 {
-	ParseOptions po("sys-config.cfg");
+	ParseOptions po("root.conf");
 	
 	std::cout << "PRINT_MONITOR : " << ((PRINT_MONITOR) ? "true" : "false") << "\n"
 				<< "PRINT_FILE : " << ((PRINT_FILE) ? "true" : "false") << "\n"

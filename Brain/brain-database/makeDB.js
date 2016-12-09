@@ -37,61 +37,59 @@ function getNextSequenceValue(sequenceName, docName){
 }
 
 // Temperature of tank
-db[tempt].insert({_id:"ob_id", total:0})
-db[tempt].insert([
-	{
-	   "_id" : getNextSequenceValue("ob_id", tempt),
-	   "tempt1" : "describe infor",
-	   "tempt2" : "describe infor"
-	}
-])
+db[tempt].insert({_id:"ob_id", total:0, tempt:"The temperature of fish tank"})
+// db[tempt].insert([
+// 	{
+// 	   "_id" : getNextSequenceValue("ob_id", tempt),
+// 	   "tempt" : "The temperature of fish tank",
+// 	}
+// ])
 
 // DO of tank
-db[DO].insert({_id:"ob_id", total:0})
-db[DO].insert([
-	{
-	   "_id" : getNextSequenceValue("ob_id", DO),
-	   "DO1" : "describe infor",
-	   "DO2" : "describe infor"
-	}
-])
+db[DO].insert({_id:"ob_id", total:0, DO:"The DO of fish tank"})
+// db[DO].insert([
+// 	{
+// 	   "_id" : getNextSequenceValue("ob_id", DO),
+// 	   "DO1" : "describe infor",
+// 	}
+// ])
 
 // amoniac
-db[amoniac].insert({_id:"ob_id", total:0})
-db[amoniac].insert([
-	{
-	   "_id" : getNextSequenceValue("ob_id", amoniac),
-	   "amoniac" : "describe infor"
-	}
-])
+db[amoniac].insert({_id:"ob_id", total:0, amoniac:"The amoniac of fish tank"})
+// db[amoniac].insert([
+// 	{
+// 	   "_id" : getNextSequenceValue("ob_id", amoniac),
+// 	   "amoniac" : "describe infor"
+// 	}
+// ])
 
 
 // nitrit
-db[nitrit].insert({_id:"ob_id", total:0})
-db[nitrit].insert([
-	{
-	   "_id" : getNextSequenceValue("ob_id", nitrit),
-	   "nitrit" : "describe infor"
-	}
-])
+db[nitrit].insert({_id:"ob_id", total:0, nitrit:"The nitrit of fish tank"})
+// db[nitrit].insert([
+// 	{
+// 	   "_id" : getNextSequenceValue("ob_id", nitrit),
+// 	   "nitrit" : "describe infor"
+// 	}
+// ])
 
 // nitrat
-db[nitrat].insert({_id:"ob_id", total:0})
-db[nitrat].insert([
-	{
-	   "_id" : getNextSequenceValue("ob_id", nitrat),
-	   "nitrat" : "describe infor"
-	}
-])
+db[nitrat].insert({_id:"ob_id", total:0, nitrat:"The nitrat of fish tank"})
+// db[nitrat].insert([
+// 	{
+// 	   "_id" : getNextSequenceValue("ob_id", nitrat),
+// 	   "nitrat" : "describe infor"
+// 	}
+// ])
 
 // hardness of tank
-db[hardness].insert({_id:"ob_id", total:0})
-db[hardness].insert([
-	{
-	   "_id" : getNextSequenceValue("ob_id", hardness),
-	   "hardness" : "describe infor"
-	}
-])
+db[hardness].insert({_id:"ob_id", total:0, hardness:"The hardness of fish tank"})
+// db[hardness].insert([
+// 	{
+// 	   "_id" : getNextSequenceValue("ob_id", hardness),
+// 	   "hardness" : "describe infor"
+// 	}
+// ])
 
 
 // show all collections

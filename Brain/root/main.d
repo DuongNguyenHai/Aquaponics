@@ -1,7 +1,14 @@
-main.o: main.cc ../lib/seed-config.h ../lib/seed-log.h \
- ../lib/seed-config.h ../lib/seed-parse-config.h ../lib/seed-log.h \
- ../lib/seed-branch.h ../lib/seed-parse-config.h ../lib/seed-json.h \
- ../lib/base/lib-json/cJSON/include/cJSON.h ../lib/seed-database.h \
+main.o: main.cc \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-config.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-log.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-config.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-log.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-parse-config.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-json.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/base/lib-json/cJSON/include/cJSON.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-branch.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-parse-config.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-database.h \
  /usr/local/include/libmongoc-1.0/mongoc.h \
  /usr/local/include/libbson-1.0/bson.h \
  /usr/local/include/libbson-1.0/bson-compat.h \
@@ -13,6 +20,7 @@ main.o: main.cc ../lib/seed-config.h ../lib/seed-log.h \
  /usr/local/include/libbson-1.0/bson-types.h \
  /usr/local/include/libbson-1.0/bson-endian.h \
  /usr/local/include/libbson-1.0/bson-clock.h \
+ /usr/local/include/libbson-1.0/bson-decimal128.h \
  /usr/local/include/libbson-1.0/bson-error.h \
  /usr/local/include/libbson-1.0/bson-iter.h \
  /usr/local/include/libbson-1.0/bson.h \
@@ -31,6 +39,10 @@ main.o: main.cc ../lib/seed-config.h ../lib/seed-log.h \
  /usr/local/include/libbson-1.0/bcon.h \
  /usr/local/include/libmongoc-1.0/mongoc-apm.h \
  /usr/local/include/libmongoc-1.0/mongoc-host-list.h \
+ /usr/local/include/libmongoc-1.0/mongoc-server-description.h \
+ /usr/local/include/libmongoc-1.0/mongoc-read-prefs.h \
+ /usr/local/include/libmongoc-1.0/mongoc-config.h \
+ /usr/local/include/libmongoc-1.0/mongoc-topology-description.h \
  /usr/local/include/libmongoc-1.0/mongoc-bulk-operation.h \
  /usr/local/include/libmongoc-1.0/mongoc-write-concern.h \
  /usr/local/include/libmongoc-1.0/mongoc-client.h \
@@ -38,8 +50,6 @@ main.o: main.cc ../lib/seed-config.h ../lib/seed-log.h \
  /usr/local/include/libmongoc-1.0/mongoc-flags.h \
  /usr/local/include/libmongoc-1.0/mongoc-cursor.h \
  /usr/local/include/libmongoc-1.0/mongoc-index.h \
- /usr/local/include/libmongoc-1.0/mongoc-read-prefs.h \
- /usr/local/include/libmongoc-1.0/mongoc-config.h \
  /usr/local/include/libmongoc-1.0/mongoc-read-concern.h \
  /usr/local/include/libmongoc-1.0/mongoc-find-and-modify.h \
  /usr/local/include/libmongoc-1.0/mongoc-database.h \
@@ -49,34 +59,37 @@ main.o: main.cc ../lib/seed-config.h ../lib/seed-log.h \
  /usr/local/include/libmongoc-1.0/mongoc-socket.h \
  /usr/local/include/libmongoc-1.0/mongoc-gridfs-file.h \
  /usr/local/include/libmongoc-1.0/mongoc-gridfs-file-list.h \
+ /usr/local/include/libmongoc-1.0/mongoc-ssl.h \
  /usr/local/include/libmongoc-1.0/mongoc-uri.h \
- /usr/local/include/libmongoc-1.0/mongoc-server-description.h \
  /usr/local/include/libmongoc-1.0/mongoc-client-pool.h \
  /usr/local/include/libmongoc-1.0/mongoc-error.h \
  /usr/local/include/libmongoc-1.0/mongoc-gridfs-file-page.h \
  /usr/local/include/libmongoc-1.0/mongoc-init.h \
  /usr/local/include/libmongoc-1.0/mongoc-matcher.h \
+ /usr/local/include/libmongoc-1.0/mongoc-handshake.h \
  /usr/local/include/libmongoc-1.0/mongoc-opcode.h \
  /usr/local/include/libmongoc-1.0/mongoc-log.h \
  /usr/local/include/libmongoc-1.0/mongoc-stream-buffered.h \
  /usr/local/include/libmongoc-1.0/mongoc-stream-file.h \
  /usr/local/include/libmongoc-1.0/mongoc-stream-gridfs.h \
  /usr/local/include/libmongoc-1.0/mongoc-stream-socket.h \
- /usr/local/include/libmongoc-1.0/mongoc-trace.h \
  /usr/local/include/libmongoc-1.0/mongoc-version.h \
  /usr/local/include/libmongoc-1.0/mongoc-version-functions.h \
- ../lib/seed-workspace.h ../lib/TCP-IP.h
+ /usr/local/include/libmongoc-1.0/mongoc-rand.h \
+ /usr/local/include/libmongoc-1.0/mongoc-stream-tls.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-workspace.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/TCP-IP.h
 main.cc:
-../lib/seed-config.h:
-../lib/seed-log.h:
-../lib/seed-config.h:
-../lib/seed-parse-config.h:
-../lib/seed-log.h:
-../lib/seed-branch.h:
-../lib/seed-parse-config.h:
-../lib/seed-json.h:
-../lib/base/lib-json/cJSON/include/cJSON.h:
-../lib/seed-database.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-config.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-log.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-config.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-log.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-parse-config.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-json.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/base/lib-json/cJSON/include/cJSON.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-branch.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-parse-config.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-database.h:
 /usr/local/include/libmongoc-1.0/mongoc.h:
 /usr/local/include/libbson-1.0/bson.h:
 /usr/local/include/libbson-1.0/bson-compat.h:
@@ -88,6 +101,7 @@ main.cc:
 /usr/local/include/libbson-1.0/bson-types.h:
 /usr/local/include/libbson-1.0/bson-endian.h:
 /usr/local/include/libbson-1.0/bson-clock.h:
+/usr/local/include/libbson-1.0/bson-decimal128.h:
 /usr/local/include/libbson-1.0/bson-error.h:
 /usr/local/include/libbson-1.0/bson-iter.h:
 /usr/local/include/libbson-1.0/bson.h:
@@ -106,6 +120,10 @@ main.cc:
 /usr/local/include/libbson-1.0/bcon.h:
 /usr/local/include/libmongoc-1.0/mongoc-apm.h:
 /usr/local/include/libmongoc-1.0/mongoc-host-list.h:
+/usr/local/include/libmongoc-1.0/mongoc-server-description.h:
+/usr/local/include/libmongoc-1.0/mongoc-read-prefs.h:
+/usr/local/include/libmongoc-1.0/mongoc-config.h:
+/usr/local/include/libmongoc-1.0/mongoc-topology-description.h:
 /usr/local/include/libmongoc-1.0/mongoc-bulk-operation.h:
 /usr/local/include/libmongoc-1.0/mongoc-write-concern.h:
 /usr/local/include/libmongoc-1.0/mongoc-client.h:
@@ -113,8 +131,6 @@ main.cc:
 /usr/local/include/libmongoc-1.0/mongoc-flags.h:
 /usr/local/include/libmongoc-1.0/mongoc-cursor.h:
 /usr/local/include/libmongoc-1.0/mongoc-index.h:
-/usr/local/include/libmongoc-1.0/mongoc-read-prefs.h:
-/usr/local/include/libmongoc-1.0/mongoc-config.h:
 /usr/local/include/libmongoc-1.0/mongoc-read-concern.h:
 /usr/local/include/libmongoc-1.0/mongoc-find-and-modify.h:
 /usr/local/include/libmongoc-1.0/mongoc-database.h:
@@ -124,21 +140,23 @@ main.cc:
 /usr/local/include/libmongoc-1.0/mongoc-socket.h:
 /usr/local/include/libmongoc-1.0/mongoc-gridfs-file.h:
 /usr/local/include/libmongoc-1.0/mongoc-gridfs-file-list.h:
+/usr/local/include/libmongoc-1.0/mongoc-ssl.h:
 /usr/local/include/libmongoc-1.0/mongoc-uri.h:
-/usr/local/include/libmongoc-1.0/mongoc-server-description.h:
 /usr/local/include/libmongoc-1.0/mongoc-client-pool.h:
 /usr/local/include/libmongoc-1.0/mongoc-error.h:
 /usr/local/include/libmongoc-1.0/mongoc-gridfs-file-page.h:
 /usr/local/include/libmongoc-1.0/mongoc-init.h:
 /usr/local/include/libmongoc-1.0/mongoc-matcher.h:
+/usr/local/include/libmongoc-1.0/mongoc-handshake.h:
 /usr/local/include/libmongoc-1.0/mongoc-opcode.h:
 /usr/local/include/libmongoc-1.0/mongoc-log.h:
 /usr/local/include/libmongoc-1.0/mongoc-stream-buffered.h:
 /usr/local/include/libmongoc-1.0/mongoc-stream-file.h:
 /usr/local/include/libmongoc-1.0/mongoc-stream-gridfs.h:
 /usr/local/include/libmongoc-1.0/mongoc-stream-socket.h:
-/usr/local/include/libmongoc-1.0/mongoc-trace.h:
 /usr/local/include/libmongoc-1.0/mongoc-version.h:
 /usr/local/include/libmongoc-1.0/mongoc-version-functions.h:
-../lib/seed-workspace.h:
-../lib/TCP-IP.h:
+/usr/local/include/libmongoc-1.0/mongoc-rand.h:
+/usr/local/include/libmongoc-1.0/mongoc-stream-tls.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-workspace.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/TCP-IP.h:

@@ -5,8 +5,11 @@
 #define SEED_CONFIG_H
 
 #include <iostream>
+#include <vector>
 #include <inttypes.h>	// int32_t int64_t
-
+// #include "seed-config.h"
+// #include "seed-parse-config.h"
+#include "seed-log.h"
 namespace TREE {
 
 extern bool PRINT_MONITOR;  // print infor on terminal
@@ -20,6 +23,7 @@ extern bool PRINT_FILE;     // print infor to file (log file)
 // 		DEBUG_LEVEL=3 means : show WARNING, ERROR and LOG and VERBOSE.
 extern int32_t DEBUG_LEVEL;
 extern int32_t INTERVAL_REQUEST; // a period of time between two request events
+extern std::vector<int> SCHEDULE;
 // Type of return. All function of system will return one of three types.
 #define RET_MISS -1
 #define RET_SUCCESS 0
@@ -33,8 +37,10 @@ extern int32_t INTERVAL_REQUEST; // a period of time between two request events
 #define Tp_INT	"2"
 #define Tp_FLOAT "3"
 #define Tp_DOUBLE "4"
-extern std::string DEFINE_ARGS[4][2];
-
+#define Tp_TIME "5"
+extern std::string DEFINE_ARGS[5][2];
+extern std::string SCHEDULE_TYPE[2];	// we can not declare extern std::string SCHEDULE_TYPE[] because there will be occur error
+extern std::string LOG_FILE;
 // Define port for ...
 #define BRANCH_PORT 8888
 #define CONSOLE_PORT 8885

@@ -11,7 +11,7 @@ using namespace TREE;
 int main(int argc, char const *argv[])
 {
 	// Set config for system
-    ParseOptions po("../config/sys-config.cfg");
+    ParseOptions po("../config/root.conf");
 
     Branch SongHe;
     

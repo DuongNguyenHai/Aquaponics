@@ -1,0 +1,4 @@
+ERROR (Database():lib/seed-database.cc:92)[20:58:22 Nov 28 2016] No suitable servers found (`serverSelectionTryOnce` set): [connection timeout calling ismaster on '127.0.0.1:27017']
+
+[Suggestion] Lets try turn on mongo: $ sudo service mongod start
+LOG (Database():lib/seed-database.cc:96) Database "SongHe" has connected successful !

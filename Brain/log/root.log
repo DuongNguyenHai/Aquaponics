@@ -1,0 +1,49 @@
+LOG (PutOnline():lib/seed-workspace.cc:109)[16:10:34 - 12/09/16] Branch[127.0.0.1] has created
+LOG (RequestDataFromMaster():lib/seed-branch.cc:199)[16:10:34 - 12/09/16] Request data after: 5s
+LOG (RequestDataFromMaster():lib/seed-branch.cc:199)[16:10:39 - 12/09/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[16:10:39 - 12/09/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[16:10:39 - 12/09/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[16:10:39 - 12/09/16] Command insert succeeded
+LOG (PrintJson():lib/seed-json.cc:59)[16:10:44 - 12/09/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (RequestDataFromMaster():lib/seed-branch.cc:199)[16:10:44 - 12/09/16] Request data after: 5s
+LOG (InsertData():lib/seed-database.cc:117)[16:10:44 - 12/09/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[16:10:44 - 12/09/16] Command insert succeeded
+LOG (RequestDataFromMaster():lib/seed-branch.cc:199)[16:10:49 - 12/09/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[16:10:49 - 12/09/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[16:10:49 - 12/09/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[16:10:49 - 12/09/16] Command insert succeeded
+LOG (HandleBranch():lib/seed-branch.cc:68)[16:10:53 - 12/09/16] Branch[127.0.0.1] has disconnected
+LOG (PutOnline():lib/seed-workspace.cc:109)[16:38:18 - 12/09/16] Branch[127.0.0.1] has created
+LOG (RequestDataFromMaster():lib/seed-branch.cc:203)[16:38:18 - 12/09/16] Request data after: 5s
+LOG (RequestDataFromMaster():lib/seed-branch.cc:203)[16:38:23 - 12/09/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[16:38:23 - 12/09/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[16:38:23 - 12/09/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[16:38:23 - 12/09/16] Command insert succeeded

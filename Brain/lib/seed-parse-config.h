@@ -9,14 +9,18 @@
 #include <stdio.h>
 #include <string>
 #include <inttypes.h>	// int32_t, uint32_t
+#include <unistd.h>
 #include <algorithm>	// remove
-
+#include <sys/param.h>	/* For PATH_MAX (the maximum length of a path). */
 #include "seed-log.h" // Print information and write to a log-file
 #include "seed-config.h" // configuration for system
+#include "seed-json.h"
 
 namespace TREE {
 
 #define NUM_ROW(ARG) (sizeof(ARG)/sizeof(ARG[0][0])/2)
+
+char *call_realpath (const char *argv0);
 
 class ParseFile {
 

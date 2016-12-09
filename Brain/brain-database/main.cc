@@ -21,7 +21,7 @@ char *jsonSelector2 = (char *)"{\"temp\":25}";
 
 int main (int   argc, char *argv[]) {
 
-	ParseOptions po("../config/sys-config.cfg");
+	ParseOptions po("../config/root.conf");
 	Database dt(DATABASE_NAME);
 
 	dt.InsertData(SENSOR, json);

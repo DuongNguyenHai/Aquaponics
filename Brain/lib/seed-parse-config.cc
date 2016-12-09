@@ -4,15 +4,18 @@ namespace TREE {
 
 // Define a file which is used for write log
 
-#ifdef LOGFILE
-#undef LOGFILE
-#define LOGFILE "seed-config.log"
-#else
-#define LOGFILE "seed-config.log"
-#endif	
+// #ifdef LOGFILE
+// #undef LOGFILE
+// #define LOGFILE "../log/seed-parse-config.log"
+// #else
+// #define LOGFILE "../log/seed-parse-config.log"
+// #endif	
 
 static bool flag_err = false;
-
+static bool SetSchedule(const char *str);
+static bool SetTimeSchedule(const char *str);
+static bool SetTimeToTimer(const char *str);
+static void BubbleSort(std::vector<int> &bubble, int size);
 // Convert string to lowercase
 static bool ToLowerCase(std::string &str){
     int i = 0;
@@ -50,18 +53,42 @@ bool ToInt(std::string str, int &result) {
 	  	return false;
 	}
 }
+
 // Check debug level : level must in range [0,3]
 static bool Check_Args_DEBUG_LEVEL(int32_t num) {
 	return (0<=num && num<=3) ? true : false;
 }
 // must be > 0
 static bool Check_Args_INTERVAL_REQUEST(int32_t num) {
-	return (num>=0) ? true : false;
+	return (num>0) ? true : false;
+}
+// the log file must can be open
+static bool Check_Args_Log_File(std::string str) {
+	std::ofstream logFile(str.c_str(), std::ios::out | std::ios::app);
+	if (logFile.is_open()) {
+		return RET_SUCCESS;
+	} else {
+		return RET_FAILURE;
+	}
 }
 
 static void PrintWarning(std::string arg, std::string val, std::string log) {
 	SEED_WARNING << "Config : \"" << arg << "=" << val << "\" "<< log <<"\n";
-	flag_err=true;
+}
+
+char *call_realpath (const char *argv0) {
+
+    char *resolved_path = (char *)malloc(PATH_MAX);
+    if(resolved_path == NULL) {
+		SEED_ERROR << "malloc() : out of memory";
+	}
+
+    if (realpath (argv0, resolved_path) == 0)
+		SEED_ERROR << "realpath failed: " << strerror (errno);
+    else
+		return resolved_path;
+
+	return NULL;
 }
 
 ParseFile::ParseFile(const char *file) {
@@ -119,7 +146,7 @@ void ParseOptions::GetOptions() {
 	std::string args[NUM_ROW(DEFINE_ARGS)][2];
 
 	if(ParseArgs(args, NUM_ROW(args)) == RET_FAILURE) {// parse option from file.
-		SEED_LOG << "Need a config file : \"sys-config.cfg\" in a \"log\" folder. All configuration was written in it";
+		SEED_LOG << "Need a config file : \"root.conf\" in a \"config\" folder. All configuration was written in it";
 		PrintUsage();
 	}
 
@@ -133,15 +160,19 @@ void ParseOptions::GetOptions() {
 							int val = ToBool(args[i][1]);
 							if(val!=-1)
 								PRINT_MONITOR = val;
-							else
-								PrintWarning(args[i][0], args[i][1], "is wrong");
+							else {
+								PrintWarning(args[i][0], args[i][1], "is wrong.");
+								SEED_LOG << "PRINT_MONITOR will be setted with default value. PRINT_MONITOR=" << ((PRINT_MONITOR) ? "true":"false");
+							}
 						} break;
 						case 1 : { // Set PRINT_FILE
 							int val = ToBool(args[i][1]);
 							if(val!=-1)
 								PRINT_FILE = val;
-							else
+							else {
 								PrintWarning(args[i][0], args[i][1], "is wrong");
+								SEED_LOG << "PRINT_FILE will be setted with default value. PRINT_FILE=" << ((PRINT_FILE) ? "true":"false");
+							}
 						} break;
 						case 2 : { // Set DEBUG_LEVEL
 							if(ToInt(args[i][1], DEBUG_LEVEL)) { // string convert to int
@@ -150,18 +181,27 @@ void ParseOptions::GetOptions() {
 									PrintWarning(args[i][0], args[i][1], "out of range");
 								}
 							}
-							else
+							else {
 								PrintWarning(args[i][0], args[i][1], "is wrong");
-
-						} break;
-						case 3 : {	// set INTERVAL_REQUEST
-							if(ToInt(args[i][1], INTERVAL_REQUEST)) { // string convert to int
-								if(!Check_Args_INTERVAL_REQUEST(INTERVAL_REQUEST)) // out of range
-									PrintWarning(args[i][0], args[i][1], "out of range");
+								SEED_LOG << "DEBUG_LEVEL will be setted with default value. DEBUG_LEVEL=" << DEBUG_LEVEL;
 							}
-							else
+						} break;
+						case 3 : { // set SCHEDULE
+							if(SetSchedule(args[i][1].c_str())==RET_FAILURE) {
 								PrintWarning(args[i][0], args[i][1], "is wrong");
-						}
+								flag_err=true;
+							}
+						} break;
+						case 4 : { // set LOG_FILE
+							if(Check_Args_Log_File(args[i][1])==RET_FAILURE) {
+								PrintWarning(args[i][0], args[i][1], "is wrong. The file cannot be found/opend");
+								SEED_LOG << "LOG_FILE will be setted with default value. LOG_FILE=" << LOG_FILE;
+							}
+							else {
+								LOG_FILE.clear();
+								LOG_FILE.append(args[i][1]);
+							}
+						} break;
 						default: break;
 					}
 
@@ -173,11 +213,127 @@ void ParseOptions::GetOptions() {
 			}
 		
 		}
-
 	}
 
 	if(flag_err)
 		PrintUsage();
+}
+
+static bool SetSchedule(const char *str) {
+	if(JsonIsValid(str)==RET_FAILURE)
+        return RET_FAILURE;
+
+    int index = JsonGetHeader(str, SCHEDULE_TYPE, sizeof(SCHEDULE_TYPE));
+
+    switch(index) {
+    	case 0: {
+    		return SetTimeSchedule(str);
+    	} break;
+    	case 1: {
+    		return SetTimeToTimer(str);
+    	} break;
+    }
+
+    return RET_FAILURE;
+}
+
+static bool SetTimeSchedule(const char *str) {
+	Json *root = JsonParse(str);
+	Json *header = JsonGetObjectItem(root, SCHEDULE_TYPE[0].c_str());
+	int size = JsonArraySize(header);
+	SCHEDULE.resize(size);
+
+	if(size==0) return RET_FAILURE;
+
+	for (int i = 0; i < size; ++i) {
+		int hour=0,min=0,sec=0;
+        Json *item = JsonGetArrayItem(header, i);
+        char *sh = strtok(strdup(JsonItemValStr(item)), "h");
+        char *sm = strtok(NULL,"'");
+        char *ss = strtok(NULL,"'");
+        if( sh==NULL && sm==NULL && ss==NULL ) {
+        	return RET_FAILURE;
+        }
+        if(sh) {
+        	ToInt(sh, hour);
+        }
+        if(sm) {
+        	ToInt(sm, min);
+        }
+        if(ss) {
+        	ToInt(ss, sec);
+        }
+        // SEED_LOG << "SCHEDULE["<<i<<"] h: "<<hour<<", m: "<<min<<", s: "<<sec;
+        SCHEDULE[i] = hour*3600+min*60+sec;
+    }
+
+    BubbleSort(SCHEDULE, size);
+
+    // for (int i = 0; i < size ; ++i) {
+    // 	SEED_LOG << "SCHEDULE[" << i << "]: " << SCHEDULE[i];
+    // }
+
+    time_t rawtime;
+    time ( &rawtime );
+    struct tm *tnow = localtime ( &rawtime );
+    int curr = tnow->tm_hour*3600+ tnow->tm_min*60 + tnow->tm_sec;
+
+    if(curr >= SCHEDULE[size-1] || curr <= SCHEDULE[0]  ) {
+    	// Do nothing here
+    } else {
+    	int g;
+    	for (int i = 0; i < size; ++i) {
+	    	if( SCHEDULE[i] < curr && curr <= SCHEDULE[i+1] ) {
+	    		// SEED_LOG << "Near SCHEDULE["<<i+1<<"]: " << SCHEDULE[i+1];
+	    		g=i+1;
+	    		break;
+	    	}
+	    }
+	    int sw, k=0;
+	    for (int i = 0; i < g; ++i) {
+	    	if((g+k)==size) k=0;
+	    	sw = SCHEDULE[i];
+	    	SCHEDULE[i] = SCHEDULE[g+k];
+	    	SCHEDULE[g+k] = sw;
+	    	k++;
+	    }
+    }
+    
+    // for (int i = 0; i < size; ++i) {
+    // 	SEED_LOG << "SCHEDULE[" << i << "]: " << SCHEDULE[i];
+    // }
+
+	JsonDelete(root);
+	return RET_SUCCESS;
+}
+
+static bool SetTimeToTimer(const char *str) {
+	Json *root = JsonParse(str);
+	Json *header = JsonGetObjectItem(root, SCHEDULE_TYPE[1].c_str());
+	Json *item = JsonGetArrayItem(header, 0);
+	if(!item)
+		return RET_FAILURE;
+
+	JsonDelete(root);
+	if(!Check_Args_INTERVAL_REQUEST(JsonItemValInt(item)))
+		return RET_FAILURE;
+	else 
+		INTERVAL_REQUEST = JsonItemValInt(item);
+
+	return RET_SUCCESS;
+}
+
+static void BubbleSort(std::vector<int> &bubble, int size) {
+	int tmp;
+	for (int i = 0; i < size; ++i) {
+		for (int j = i+1; j < size; ++j) {
+			if(bubble[j]<bubble[i]) {
+				tmp = bubble[j];
+				bubble[j] = bubble[i];
+				bubble[i] = tmp;
+			}
+		}
+	}
 }
 
 void ParseOptions::PrintUsage() {

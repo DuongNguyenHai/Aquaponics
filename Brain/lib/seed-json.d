@@ -1,8 +1,12 @@
-../lib/seed-json.o: ../lib/seed-json.cc ../lib/seed-json.h \
- ../lib/base/lib-json/cJSON/include/cJSON.h ../lib/seed-log.h \
- ../lib/seed-config.h
-../lib/seed-json.cc:
-../lib/seed-json.h:
-../lib/base/lib-json/cJSON/include/cJSON.h:
-../lib/seed-log.h:
-../lib/seed-config.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-json.o: \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-json.cc \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-json.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/base/lib-json/cJSON/include/cJSON.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-log.h \
+ /media/season/SuperData/Aquaponics/Water/Brain/lib/seed-config.h
+:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-json.cc:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-json.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/base/lib-json/cJSON/include/cJSON.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-log.h:
+/media/season/SuperData/Aquaponics/Water/Brain/lib/seed-config.h:

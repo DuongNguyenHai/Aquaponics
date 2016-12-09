@@ -7,10 +7,6 @@
 #include <stdio.h>
 #include <string.h>
 #include <inttypes.h>	// int64_t
-// mongodb c driver
-// #include "base/lib-mongo/include/libbson-1.0/bson.h"
-// #include "base/lib-mongo/include/libbson-1.0/bcon.h"
-// #include "base/lib-mongo/include/libmongoc-1.0/mongoc.h"
 #include <mongoc.h>
 #include "seed-config.h" // configuration for system
 #include "seed-log.h" // Print information and write to a log-file
