@@ -23,7 +23,6 @@ int main(int argc, char const *argv[]) {
     // Config for branch
     SongHe.Start(); // start the branch
 
-
     // Must include pause() or wait(NULL) to terminate all child process (fork()) when main process was shutdowned
     
     // wait for child termination

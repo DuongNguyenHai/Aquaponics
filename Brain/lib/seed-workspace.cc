@@ -24,7 +24,7 @@ namespace TREE {
 
 unsigned int Workspace::childProcCount = 0;
 // int Workspace::indexOfPine = 0;
-// int Workspace::fd[2*NUM_PIPES] = {0};
+int Workspace::fd[2*MAX_PIPES] = {0};
 
 static std::vector<struct threadAndClient> threadAndClnt;
 
@@ -35,7 +35,7 @@ Workspace::~Workspace() {
 }
 
 void Workspace::CreateANewOnlineSpace(void (*Handle)(int, fd_set*), int port, void *(*func)(void *)) {
-    if ( (processID = fork()) < 0) 
+    if ( (processID = fork()) == -1 ) 
         SEED_ERROR << "Cant create a new Workspace cause fork() failed";
     else if (processID == 0) {
         childProcCount++;
@@ -44,7 +44,7 @@ void Workspace::CreateANewOnlineSpace(void (*Handle)(int, fd_set*), int port, vo
 }
 
 void Workspace::CreateANewSpace(void (*func)()) {
-    if ( (processID = fork()) < 0) 
+    if ( (processID = fork()) == -1 ) 
         SEED_ERROR << "Cant create a new Workspace cause fork() failed";
     else if (processID == 0) {
         childProcCount++;
@@ -64,18 +64,19 @@ void Workspace::CreateANewWork(void *(*func)(void *), void *var) {
 }
 
 // NOT use this function.
-// int Workspace::CreateAPairOfPine(int index) {
-//     if( fd[index] !=0 || fd[index+1] !=0 ) {
-//         SEED_WARNING << "The pair of descriptor from [" << index << "] was created";
-//         return RET_FAILURE;
-//     }
-//     if (pipe(fd+(index)) < 0) {
-//         SEED_WARNING << "Failed to allocate pipes";
-//         return RET_FAILURE;
-//     }
-//     SEED_LOG << "fd["<<index<<"]: " << fd[index] << ", fd["<<index+1<<"]: " << fd[index+1];
-//     return RET_SUCCESS; 
-// }
+int Workspace::CreateAPairOfPine(int num) {
+    num--; // convert to real index of fd[]
+    if( fd[num] !=0 || fd[num+1] !=0 ) {
+        SEED_WARNING << "The pair of descriptor from [" << num << "] was created";
+        return RET_FAILURE;
+    }
+    if (pipe(fd+(num*2)) < 0) {
+        SEED_WARNING << "Failed to allocate pipes";
+        return RET_FAILURE;
+    }
+    SEED_LOG << "fd["<<num<<"]: " << fd[num] << ", fd["<<num+1<<"]: " << fd[num+1];
+    return RET_SUCCESS; 
+}
 
 void Workspace::PutOnline(void (*Handle)(int, fd_set*), int port, void *(*func)(void *)) {
 

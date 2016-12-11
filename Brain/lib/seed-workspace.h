@@ -7,7 +7,8 @@
 
 #include <iostream>
 #include <vector>
-#include <pthread.h>	// for multi thread
+#include <pthread.h> // for multi thread
+#include <unistd.h>  // pipe
 #include "seed-json.h" // Print information and write to a log-file
 #include "TCP-IP.h"
 #include "seed-log.h"
@@ -15,7 +16,7 @@
 
 namespace TREE {
 
-// #define NUM_PIPES 2	// the number of pine we made
+#define MAX_PIPES 5	// the number of pine we made
 #define VOID_TO_INT(ARG) *( (int *)&ARG)
 
 struct threadAndClient{
@@ -34,8 +35,8 @@ public:
 	void CreateANewWork(void *(*func)(void *), void *var);	// create a new thread
 	static void PrintVectorThreadAndClient();
 	// Make a communication between processes. But it's no longer used.
-	// int CreateAPairOfPine(int index);	// create a pair of descriptor for pipe.
-	// static int fd[2*NUM_PIPES];
+	int CreateAPairOfPine(int num);	// create a pair of descriptor for pipe.
+	static int fd[2*MAX_PIPES];
 	// static int indexOfPine;
 	static void ClearThread(int sock);
 

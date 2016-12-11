@@ -1,0 +1,3 @@
+ERROR (Database():lib/seed-database.cc:92)[07:40:48 - 12/11/16] No suitable servers found (`serverSelectionTryOnce` set): [connection refused calling ismaster on '127.0.0.1:27017']
+
+[Suggestion] Lets try turn on mongo: $ sudo service mongod start

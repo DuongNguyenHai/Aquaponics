@@ -1,0 +1,728 @@
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:11:55 - 12/11/16] Request data after: 5s
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:12:28 - 12/11/16] Request data after: 5s
+LOG (CreateAConnectionToMaster():lib/seed-branch.cc:73)[21:12:35 - 12/11/16] Master[0.0.0.0] has sended message
+LOG (PrintJson():lib/seed-json.cc:59)[21:12:35 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:12:35 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:12:35 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:12:35 - 12/11/16] Request data after: 5s
+LOG (CreateAConnectionToMaster():lib/seed-branch.cc:73)[21:12:37 - 12/11/16] Master[0.0.0.0] has sended message
+LOG (PrintJson():lib/seed-json.cc:59)[21:12:37 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:12:37 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:12:37 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:12:40 - 12/11/16] Request data after: 5s
+LOG (CreateAConnectionToMaster():lib/seed-branch.cc:73)[21:12:42 - 12/11/16] Master[0.0.0.0] has sended message
+LOG (PrintJson():lib/seed-json.cc:59)[21:12:42 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:12:42 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:12:42 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:12:45 - 12/11/16] Request data after: 5s
+LOG (CreateAConnectionToMaster():lib/seed-branch.cc:73)[21:12:47 - 12/11/16] Master[0.0.0.0] has sended message
+LOG (PrintJson():lib/seed-json.cc:59)[21:12:47 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:12:47 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:12:47 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:12:50 - 12/11/16] Request data after: 5s
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:13:05 - 12/11/16] There was no respond from master after 5 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:13:15 - 12/11/16] There was no respond from master after 10 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:13:25 - 12/11/16] There was no respond from master after 15 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+ERROR (CheckRequestIsSuccess():lib/seed-branch.cc:336)[21:13:25 - 12/11/16] There has no responded from master for a long time. The system will be terminated automatically right now. U should check all connection before turn system on !
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:14:51 - 12/11/16] Request data after: 5s
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:15:38 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:15:47 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:15:47 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:15:47 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:15:47 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:15:49 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:15:49 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:15:49 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:15:52 - 12/11/16] Request data after: 5s
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:16:07 - 12/11/16] There was no respond from master after 5 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:16:17 - 12/11/16] There was no respond from master after 10 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+LOG (PrintJson():lib/seed-json.cc:59)[21:16:26 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:16:26 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:16:26 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:16:26 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:16:28 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:16:28 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:16:28 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:16:31 - 12/11/16] Request data after: 5s
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:16:46 - 12/11/16] There was no respond from master after 5 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:16:56 - 12/11/16] There was no respond from master after 10 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:17:06 - 12/11/16] There was no respond from master after 15 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:17:16 - 12/11/16] There was no respond from master after 20 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:17:26 - 12/11/16] There was no respond from master after 25 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:17:36 - 12/11/16] There was no respond from master after 30 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+ERROR (CheckRequestIsSuccess():lib/seed-branch.cc:336)[21:17:36 - 12/11/16] There has no responded from master for a long time. The system will be terminated automatically right now. U should check all connection before turn system on !
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:23:59 - 12/11/16] Request data after: 5s
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:24:14 - 12/11/16] There was no respond from master after 5 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:24:24 - 12/11/16] There was no respond from master after 10 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:24:34 - 12/11/16] There was no respond from master after 15 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:24:44 - 12/11/16] There was no respond from master after 20 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:24:54 - 12/11/16] There was no respond from master after 25 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:25:04 - 12/11/16] There was no respond from master after 30 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+ERROR (CheckRequestIsSuccess():lib/seed-branch.cc:336)[21:25:04 - 12/11/16] There has no responded from master for a long time. The system will be terminated automatically right now. U should check all connection before turn system on !
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:25:15 - 12/11/16] Request data after: 5s
+LOG (main():main.cc:22)[21:26:41 - 12/11/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:26:41 - 12/11/16] Request data after: 5s
+LOG (main():main.cc:22)[21:26:54 - 12/11/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:26:54 - 12/11/16] Request data after: 5s
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:27:09 - 12/11/16] There was no respond from master after 5 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+LOG (PrintJson():lib/seed-json.cc:59)[21:27:16 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:27:16 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:27:16 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:27:16 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:27:18 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:27:18 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:27:18 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:27:21 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:27:23 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:27:23 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:27:23 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:27:26 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:27:28 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:27:28 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:27:28 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:27:31 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:27:33 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:27:33 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:27:33 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:27:36 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:27:39 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:27:39 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:27:39 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:27:41 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:27:43 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:27:43 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:27:43 - 12/11/16] Command insert succeeded
+LOG (main():main.cc:22)[21:28:55 - 12/11/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:28:55 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:29:02 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:29:02 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:29:02 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:29:02 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:29:04 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:29:04 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:29:04 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:29:07 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:29:09 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:29:09 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:29:09 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:29:12 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:29:14 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:29:14 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:29:14 - 12/11/16] Command insert succeeded
+LOG (main():main.cc:22)[21:30:05 - 12/11/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:30:05 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:30:12 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:30:12 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:30:12 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:30:12 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:30:19 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:30:19 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:30:19 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:30:19 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:30:26 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:30:26 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:30:26 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:30:26 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:30:33 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:30:33 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:30:33 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:30:33 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:30:40 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:30:40 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:30:40 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:30:40 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:30:47 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:30:47 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:30:47 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:30:47 - 12/11/16] Request data after: 5s
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:31:17 - 12/11/16] There was no respond from master after 5 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:31:42 - 12/11/16] There was no respond from master after 10 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:32:07 - 12/11/16] There was no respond from master after 15 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:32:32 - 12/11/16] There was no respond from master after 20 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:32:57 - 12/11/16] There was no respond from master after 25 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[21:33:22 - 12/11/16] There was no respond from master after 30 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+ERROR (CheckRequestIsSuccess():lib/seed-branch.cc:336)[21:33:22 - 12/11/16] There has no responded from master for a long time. The system will be terminated automatically right now. U should check all connection before turn system on !
+LOG (main():main.cc:22)[21:40:08 - 12/11/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:40:08 - 12/11/16] Request data after: 5s
+LOG (main():main.cc:22)[21:41:16 - 12/11/16] Master address: 192.168.1313, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:41:16 - 12/11/16] Request data after: 5s
+WARNING (PrintWarning():lib/seed-parse-config.cc:76)[21:41:59 - 12/11/16] Config : "MASTER_IP=192.168.1313" is wrong.
+ERROR (PrintUsage():lib/seed-parse-config.cc:349)[21:41:59 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+WARNING (PrintWarning():lib/seed-parse-config.cc:76)[21:42:07 - 12/11/16] Config : "MASTER_IP=192.168.13.13" is wrong.
+ERROR (PrintUsage():lib/seed-parse-config.cc:349)[21:42:07 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+LOG (main():main.cc:22)[21:42:39 - 12/11/16] Master address: 192.168.13.13.5, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:42:39 - 12/11/16] Request data after: 5s
+LOG (GetOptions():lib/seed-parse-config.cc:208)[21:43:16 - 12/11/16] 0
+WARNING (PrintWarning():lib/seed-parse-config.cc:76)[21:43:16 - 12/11/16] Config : "MASTER_IP=192.168.13.13.5" is wrong.
+ERROR (PrintUsage():lib/seed-parse-config.cc:351)[21:43:16 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+LOG (GetOptions():lib/seed-parse-config.cc:208)[21:43:27 - 12/11/16] 1
+LOG (main():main.cc:22)[21:43:27 - 12/11/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:43:27 - 12/11/16] Request data after: 5s
+LOG (GetOptions():lib/seed-parse-config.cc:208)[21:43:36 - 12/11/16] 1
+LOG (main():main.cc:22)[21:43:36 - 12/11/16] Master address: 192.168.1313, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:43:36 - 12/11/16] Request data after: 5s
+LOG (GetOptions():lib/seed-parse-config.cc:208)[21:43:44 - 12/11/16] 0
+WARNING (PrintWarning():lib/seed-parse-config.cc:76)[21:43:44 - 12/11/16] Config : "MASTER_IP=192.168.a" is wrong.
+ERROR (PrintUsage():lib/seed-parse-config.cc:351)[21:43:44 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+LOG (GetOptions():lib/seed-parse-config.cc:208)[21:43:53 - 12/11/16] 0
+WARNING (PrintWarning():lib/seed-parse-config.cc:76)[21:43:53 - 12/11/16] Config : "MASTER_IP=192.168.1313.45.45" is wrong.
+ERROR (PrintUsage():lib/seed-parse-config.cc:351)[21:43:53 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+LOG (GetOptions():lib/seed-parse-config.cc:208)[21:44:00 - 12/11/16] 0
+WARNING (PrintWarning():lib/seed-parse-config.cc:76)[21:44:00 - 12/11/16] Config : "MASTER_IP=192.168.1313.45" is wrong.
+ERROR (PrintUsage():lib/seed-parse-config.cc:351)[21:44:00 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+LOG (GetOptions():lib/seed-parse-config.cc:208)[21:44:08 - 12/11/16] 1
+LOG (main():main.cc:22)[21:44:08 - 12/11/16] Master address: 192.168.13.45, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:44:08 - 12/11/16] Request data after: 5s
+LOG (GetOptions():lib/seed-parse-config.cc:208)[21:44:15 - 12/11/16] 1
+LOG (main():main.cc:22)[21:44:15 - 12/11/16] Master address: 194.168.13.45, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:44:15 - 12/11/16] Request data after: 5s
+LOG (GetOptions():lib/seed-parse-config.cc:208)[21:44:23 - 12/11/16] 0
+WARNING (PrintWarning():lib/seed-parse-config.cc:76)[21:44:23 - 12/11/16] Config : "MASTER_IP=192.888.13.45" is wrong.
+ERROR (PrintUsage():lib/seed-parse-config.cc:351)[21:44:23 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+LOG (main():main.cc:22)[21:48:56 - 12/11/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:48:56 - 12/11/16] Request data after: 5s
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[21:49:06 - 12/11/16] Config : "MASTER_IP=192.168.13.1367" is not valid.
+ERROR (PrintUsage():lib/seed-parse-config.cc:360)[21:49:06 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+ex : 
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[21:50:17 - 12/11/16] Config : "MASTER_IP=192.168.13.1367" is not valid.
+ERROR (PrintUsage():lib/seed-parse-config.cc:360)[21:50:17 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+example : 
+##############################################################PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13##############################################################
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[21:50:43 - 12/11/16] Config : "MASTER_IP=192.168.13.1367" is not valid.
+ERROR (PrintUsage():lib/seed-parse-config.cc:360)[21:50:43 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+example :
+##############################################################PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+##############################################################
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[21:51:03 - 12/11/16] Config : "MASTER_IP=192.168.13.1367" is not valid.
+ERROR (PrintUsage():lib/seed-parse-config.cc:360)[21:51:03 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+example :
+##############################################################
+
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+##############################################################
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[21:51:15 - 12/11/16] Config : "MASTER_IP=192.168.13.1367" is not valid.
+ERROR (PrintUsage():lib/seed-parse-config.cc:360)[21:51:15 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+example :
+##############################################################
+
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+
+##############################################################
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[21:52:00 - 12/11/16] Config : "MASTER_IP=192.168.13.1367" is not valid.
+ERROR (PrintUsage():lib/seed-parse-config.cc:360)[21:52:00 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+example :
+#####################################################
+
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+
+#####################################################
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[21:52:15 - 12/11/16] Config : "MASTER_IP=192.168.13.1367" is not valid.
+ERROR (PrintUsage():lib/seed-parse-config.cc:360)[21:52:15 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+example :
+###################################################
+
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+
+###################################################
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[21:52:25 - 12/11/16] Config : "MASTER_IP=192.168.13.1367" is not valid.
+ERROR (PrintUsage():lib/seed-parse-config.cc:360)[21:52:25 - 12/11/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+example :
+##################################################
+
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+LOG_FILE=/home/username/root/root.log
+MASTER_IP=192.168.13.13
+
+##################################################
+LOG (main():main.cc:22)[21:52:53 - 12/11/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:52:53 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:53:10 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:53:10 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:53:10 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:53:10 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:53:17 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:53:17 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:53:17 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:53:17 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:53:24 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:53:24 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:53:24 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:53:24 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:53:31 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:53:31 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:53:31 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:53:31 - 12/11/16] Request data after: 5s
+LOG (main():main.cc:22)[21:54:18 - 12/11/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:54:18 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:54:30 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:54:30 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:54:30 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:54:30 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:54:37 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:54:37 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:54:37 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:54:37 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:54:44 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:54:44 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:54:44 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:54:44 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:54:51 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:54:51 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:54:51 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:54:51 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[21:54:58 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[21:54:58 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[21:54:58 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[21:54:58 - 12/11/16] Request data after: 5s
+LOG (main():main.cc:22)[22:00:30 - 12/11/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[22:00:30 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[22:00:37 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[22:00:37 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[22:00:37 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[22:00:37 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[22:00:44 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[22:00:44 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[22:00:44 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[22:00:44 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[22:00:51 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[22:00:51 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[22:00:51 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[22:00:51 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[22:00:58 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[22:00:58 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[22:00:58 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[22:00:58 - 12/11/16] Request data after: 5s
+LOG (main():main.cc:22)[22:02:20 - 12/11/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[22:02:20 - 12/11/16] Request data after: 5s
+LOG (PrintJson():lib/seed-json.cc:59)[22:02:27 - 12/11/16] Branch's message: 
+{
+	"data":	{
+		"temptTank":	{
+			"tempt":	25
+		}
+	}
+}
+LOG (InsertData():lib/seed-database.cc:117)[22:02:27 - 12/11/16] Command insert to "temptTank" collection
+LOG (command_excuted():lib/seed-database.cc:49)[22:02:27 - 12/11/16] Command insert succeeded
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:284)[22:02:27 - 12/11/16] Request data after: 5s
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[22:02:57 - 12/11/16] There was no respond from master after 5 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[22:03:22 - 12/11/16] There was no respond from master after 10 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[22:03:47 - 12/11/16] There was no respond from master after 15 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[22:04:12 - 12/11/16] There was no respond from master after 20 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[22:04:37 - 12/11/16] There was no respond from master after 25 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+WARNING (CheckRequestIsSuccess():lib/seed-branch.cc:333)[22:05:02 - 12/11/16] There was no respond from master after 30 times request. Perhaps, Connection has lost. Lets check all connection : Root <--> Router <--> Master
+ERROR (CheckRequestIsSuccess():lib/seed-branch.cc:336)[22:05:02 - 12/11/16] There has no responded from master for a long time. The system will be terminated automatically right now. U should check all connection before turn system on !
