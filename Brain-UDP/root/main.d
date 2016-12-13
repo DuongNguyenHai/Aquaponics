@@ -1,13 +1,11 @@
 main.o: main.cc \
- /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-config.h \
- /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-log.h \
+ /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed.h \
  /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-config.h \
  /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-log.h \
  /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-parse-config.h \
  /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-json.h \
  /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/base/lib-json/cJSON/include/cJSON.h \
  /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-branch.h \
- /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-parse-config.h \
  /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-database.h \
  /usr/local/include/libmongoc-1.0/mongoc.h \
  /usr/local/include/libbson-1.0/bson.h \
@@ -80,15 +78,13 @@ main.o: main.cc \
  /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-workspace.h \
  /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/TCP-UDP.h
 main.cc:
-/media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-config.h:
-/media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-log.h:
+/media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed.h:
 /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-config.h:
 /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-log.h:
 /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-parse-config.h:
 /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-json.h:
 /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/base/lib-json/cJSON/include/cJSON.h:
 /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-branch.h:
-/media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-parse-config.h:
 /media/season/SuperData/Aquaponics/Water/Brain-UDP/lib/seed-database.h:
 /usr/local/include/libmongoc-1.0/mongoc.h:
 /usr/local/include/libbson-1.0/bson.h:

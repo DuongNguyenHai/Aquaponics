@@ -1,5 +1,5 @@
 // Nguyen Hai Duong
-// Nov 23 2016
+// Dec 10 2016
 
 // Tree system : Master <---> Bridge <---> Root
 // Master : arduino

@@ -11,11 +11,12 @@ std::string SCHEDULE_TYPE[2] = {"schedule", "timer"};
 std::string LOG_FILE ("root.log");
 std::string MASTER_IP ("127.0.0.1");
 
-std::string DEFINE_ARGS[6][2] = 	{ 	{"PRINT_MONITOR", Tp_BOOL},
+std::string DEFINE_ARGS[6][2] = 	{ 	
+										{"LOG_FILE",Tp_STR},
+										{"PRINT_MONITOR", Tp_BOOL},
 										{"PRINT_FILE", Tp_BOOL},
 										{"DEBUG_LEVEL", Tp_INT},
 										{"SCHEDULE", Tp_TIME},
-										{"LOG_FILE",Tp_STR},
 										{"MASTER_IP",Tp_STR}
 									};
 
@@ -25,13 +26,13 @@ const char *usage = 	"Need a config file: \"config/root.conf\" \n"
 						"\n"
 						"##################################################"
 						"\n\n"
+						"LOG_FILE=/home/username/root/root.log\n"
 						"PRINT_MONITOR=true\n"
 						"PRINT_FILE=true\n"
 						"DEBUG_LEVEL=1\n"
+						"MASTER_IP=192.168.13.13"
 						"SCHEDULE={\"schedule\":[\"7h\",\"12h30'30\",\"18h\",\"0h\"]}\n"
 						"#SCHEDULE={\"timer\":[1800]}\n"
-						"LOG_FILE=/home/username/root/root.log\n"
-						"MASTER_IP=192.168.13.13"
-						"\n\n"
+						"\n"
 						"##################################################";
 } // end of namespace TREE

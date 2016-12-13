@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <iostream>
-#include "seed-config.h"
-#include "seed-log.h"
-#include "seed-parse-config.h"
-#include "seed-branch.h"
+#include "seed.h"
 #include <unistd.h>
 
 using namespace TREE;
@@ -13,14 +10,16 @@ static std::string GetRootDir(const char *argv0);
 
 int main(int argc, char const *argv[]) {
 
+    
     std::string rootDir = GetRootDir(argv[0]);
     std::string configFile (rootDir);
     configFile.append(LOG_FILE);
-
-    ParseOptions po(configFile.c_str());
     
+    ParseOptions po(configFile.c_str());
+    SEED_LOG << "___________START AQUAOS ROOT___________";
     SEED_LOG << "Master address: " << MASTER_IP << ", port: " << BRANCH_PORT;
     Branch SongHe; // Initial a new branch
+    
     // Config for branch
     SongHe.Start(); // start the branch
 

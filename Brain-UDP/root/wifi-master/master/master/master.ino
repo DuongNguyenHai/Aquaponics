@@ -1,7 +1,5 @@
-#include <Arduino.h>
-
 // Nguyen Hai Duong
-// Nov 23 2016
+// Dec 10 2016
 
 // Tree system : Master <---> Bridge <---> Root
 // Master : arduino
@@ -207,7 +205,7 @@ inline void SetTimer() {
 ISR (TIMER1_OVF_vect) {
     TCNT1 = 3036;
     count++;
-    if(count==1799) { // 1799 seconds. CalculateTempt() will take approximate 1s. so the total time's about 30' minutes
+    if(count==1799) { // 1799 seconds. CalculateTempt() will take approximate 1s. so the total time is about 30' minutes
       count=0;
       ReadAndShowTempt();
     }

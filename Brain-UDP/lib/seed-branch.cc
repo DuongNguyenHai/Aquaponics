@@ -49,7 +49,6 @@ void Branch::Start() {
     // Workspace::CreateANewOnlineSpace(HandleBranch, BRANCH_PORT, RequestDataFromMaster);
     Workspace::CreateAPairOfPine(1);    // pipe() must be created before create processes.  so this function have to call firstly
     Workspace::CreateANewOnlineSpace(CreateAConnectionToMaster, StringToChar(MASTER_IP), BRANCH_PORT, RequestDataFromMasterUDP);
-    
 }
 
 void Branch::CreateAConnectionToMaster(int clntSock) {

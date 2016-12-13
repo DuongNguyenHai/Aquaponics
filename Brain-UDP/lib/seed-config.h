@@ -12,6 +12,7 @@
 #include "seed-log.h"
 namespace TREE {
 
+#define TERMINATE true
 extern bool PRINT_MONITOR;  // print infor on terminal
 extern bool PRINT_FILE;     // print infor to file (log file)
 

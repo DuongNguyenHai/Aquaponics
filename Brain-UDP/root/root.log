@@ -1,3 +1,1532 @@
-ERROR (Database():lib/seed-database.cc:92)[07:40:48 - 12/11/16] No suitable servers found (`serverSelectionTryOnce` set): [connection refused calling ismaster on '127.0.0.1:27017']
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:00 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:00 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:307)[11:08:00 - 12/13/16] Near SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[0]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[1]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[2]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[3]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[4]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[5]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[6]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[7]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[8]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[9]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[10]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[11]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[12]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[13]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[14]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[15]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[16]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[17]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[18]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[19]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[20]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[21]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:00 - 12/13/16] SCHEDULE[23]: 86400
+LOG (main():main.cc:19)[11:08:00 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[11:08:00 - 12/13/16] Next request data at "12:00:00 - 12/13/16"
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:08:09 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:08:09 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:307)[11:08:09 - 12/13/16] Near SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[0]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[1]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[2]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[3]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[4]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[5]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[6]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[7]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[8]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[9]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[10]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[11]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[12]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[13]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[14]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[15]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[16]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[17]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[18]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[19]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[20]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[21]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:08:09 - 12/13/16] SCHEDULE[23]: 86400
+LOG (main():main.cc:19)[11:08:09 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[11:08:09 - 12/13/16] Next request data at "12:00:00 - 12/13/16"
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:32:34 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:32:34 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[11:32:34 - 12/13/16] Near SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[0]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[1]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[2]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[3]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[4]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[5]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[6]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[7]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[8]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[9]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[10]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[11]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[12]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[13]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[14]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[15]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[16]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[17]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[18]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[19]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:32:34 - 12/13/16] SCHEDULE[23]: 39600
+LOG (main():main.cc:19)[11:32:34 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[11:32:34 - 12/13/16] Next request data at "12:00:00 - 12/13/16"
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:34:52 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:34:52 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[11:34:52 - 12/13/16] Near SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[0]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[1]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[2]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[3]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[4]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[5]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[6]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[7]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[8]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[9]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[10]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[11]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[12]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[13]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[14]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[15]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[16]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[17]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[18]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[19]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[20]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:34:52 - 12/13/16] SCHEDULE[23]: 39600
+LOG (main():main.cc:19)[11:34:52 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[11:34:52 - 12/13/16] Next request data at "12:00:00 - 12/13/16"
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:35:26 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:35:26 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[11:35:26 - 12/13/16] Near SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[0]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[1]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[2]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[3]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[4]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[5]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[6]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[7]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[8]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[9]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[10]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[11]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[12]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[13]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[14]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[15]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[16]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[17]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[18]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[19]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:323)[11:35:26 - 12/13/16] SCHEDULE[23]: 39600
+LOG (main():main.cc:19)[11:35:26 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[11:35:26 - 12/13/16] Next request data at "12:00:00 - 12/13/16"
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:53:42 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:53:42 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[11:53:42 - 12/13/16] Near SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:324)[11:53:42 - 12/13/16] SCHEDULE[23]: 86400
+LOG (main():main.cc:19)[11:53:42 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[11:53:42 - 12/13/16] Next request data at "01:00:00 - 12/14/16"
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:54:32 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:54:32 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[11:54:32 - 12/13/16] Near SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[0]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[1]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[2]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[3]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[4]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[5]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[6]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[7]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[8]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[9]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[10]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[11]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[12]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[13]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[14]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[15]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[16]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[17]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[18]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[19]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[20]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[21]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[22]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:54:32 - 12/13/16] SCHEDULE[23]: 39600
+LOG (main():main.cc:19)[11:54:32 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[11:54:32 - 12/13/16] Next request data at "12:00:00 - 12/13/16"
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:29 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:29 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[11:56:29 - 12/13/16] Near SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[0]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[1]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[2]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[3]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[4]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[5]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[6]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[7]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[8]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[9]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[10]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[11]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[12]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[13]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[14]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[15]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[16]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[17]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[18]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[19]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[20]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[21]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[22]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:29 - 12/13/16] SCHEDULE[23]: 10800
+LOG (main():main.cc:19)[11:56:29 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[11:56:29 - 12/13/16] Next request data at "04:00:00 - 12/14/16"
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:56:58 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:56:58 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[11:56:58 - 12/13/16] Near SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[0]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[1]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[2]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[3]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[4]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[5]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[6]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[7]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[8]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[9]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[10]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[11]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[12]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[13]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[14]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[15]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[16]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[17]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[18]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[19]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[20]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[21]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[22]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:56:58 - 12/13/16] SCHEDULE[23]: 72000
+LOG (main():main.cc:19)[11:56:58 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[11:56:58 - 12/13/16] Next request data at "21:00:00 - 12/13/16"
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[11:57:19 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[11:57:19 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[11:57:19 - 12/13/16] Near SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[0]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[1]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[2]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[3]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[4]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[5]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[6]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[7]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[8]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[9]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[10]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[11]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[12]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[13]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[14]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[15]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[16]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[17]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[18]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[19]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[20]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[21]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[22]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[11:57:19 - 12/13/16] SCHEDULE[23]: 43200
+LOG (main():main.cc:19)[11:57:19 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[11:57:19 - 12/13/16] Next request data at "13:00:00 - 12/13/16"
+LOG (main():main.cc:13)[12:05:55 - 12/13/16] _____________START AQUAOS ROOT_____________
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:05:55 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:05:55 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[12:05:55 - 12/13/16] Near SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[0]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[1]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[2]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[3]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[4]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[5]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[6]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[7]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[8]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[9]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[10]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[11]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[12]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[13]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[14]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[15]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[16]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[17]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[18]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[19]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[20]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[21]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[22]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:325)[12:05:55 - 12/13/16] SCHEDULE[23]: 43200
+LOG (main():main.cc:20)[12:05:55 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[12:05:55 - 12/13/16] Next request data at "13:00:00 - 12/13/16"
+LOG (main():main.cc:13)[12:06:16 - 12/13/16] _____________START AQUAOS ROOT_____________
+LOG (main():main.cc:20)[12:06:16 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[12:06:16 - 12/13/16] Next request data at "13:00:00 - 12/13/16"
+LOG (main():main.cc:13)[12:06:43 - 12/13/16] _________START AQUAOS ROOT_________
+LOG (main():main.cc:20)[12:06:43 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[12:06:43 - 12/13/16] Next request data at "13:00:00 - 12/13/16"
+LOG (main():main.cc:13)[12:07:09 - 12/13/16] ___________START AQUAOS ROOT___________
+LOG (main():main.cc:20)[12:07:09 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[12:07:09 - 12/13/16] Next request data at "13:00:00 - 12/13/16"
+LOG (main():main.cc:13)[12:07:26 - 12/13/16] ___________START AQUAOS ROOT___________
+WARNING (JsonIsValid():lib/seed-json.cc:18)[12:07:26 - 12/13/16] Error before : "22h","23h","24h"]}
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[12:07:26 - 12/13/16] Config : "SCHEDULE={"schedule":["1h","2h","3h","4h","5h","6h","7h","8h","9h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h","21h""22h","23h","24h"]}" is wrong
+ERROR (PrintUsage():lib/seed-parse-config.cc:362)[12:07:26 - 12/13/16] 
 
-[Suggestion] Lets try turn on mongo: $ sudo service mongod start
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+example :
+##################################################
+
+LOG_FILE=/home/username/root/root.log
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+MASTER_IP=192.168.13.13SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+
+##################################################
+LOG (main():main.cc:13)[12:27:10 - 12/13/16] ___________START AQUAOS ROOT___________
+WARNING (JsonIsValid():lib/seed-json.cc:18)[12:27:10 - 12/13/16] Error before : "22h","23h","24h"]}
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[12:27:10 - 12/13/16] Config : "SCHEDULE={"schedule":["1h","2h","3h","4h","5h","6h","7h","8h","9h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h","21h""22h","23h","24h"]}" is wrong
+ERROR (PrintUsage():lib/seed-parse-config.cc:365)[12:27:10 - 12/13/16] 
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+example :
+##################################################
+
+LOG_FILE=/home/username/root/root.log
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+MASTER_IP=192.168.13.13SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+
+##################################################
+LOG (main():main.cc:13)[12:27:28 - 12/13/16] ___________START AQUAOS ROOT___________
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:27:28 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:27:28 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[12:27:28 - 12/13/16] Near SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[0]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[1]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[2]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[3]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[4]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[5]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[6]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[7]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[8]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[9]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[10]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[11]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[12]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[13]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[14]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[15]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[16]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[17]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[18]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[19]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[20]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[21]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[22]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:27:28 - 12/13/16] SCHEDULE[23]: 43200
+LOG (main():main.cc:20)[12:27:28 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[12:27:28 - 12/13/16] Next request data at "13:00:00 - 12/13/16"
+LOG (main():main.cc:13)[12:28:22 - 12/13/16] ___________START AQUAOS ROOT___________
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:22 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:22 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[12:28:22 - 12/13/16] Near SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[0]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[1]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[2]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[3]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[4]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[5]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[6]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[7]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[8]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[9]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[10]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[11]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[12]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[13]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[14]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[15]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[16]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[17]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[18]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[19]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[20]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[21]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[22]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:22 - 12/13/16] SCHEDULE[23]: 75600
+LOG (main():main.cc:20)[12:28:22 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[12:28:22 - 12/13/16] Next request data at "22:00:00 - 12/13/16"
+LOG (main():main.cc:13)[12:28:52 - 12/13/16] ___________START AQUAOS ROOT___________
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:28:52 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:28:52 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[12:28:52 - 12/13/16] Near SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[0]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[1]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[2]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[3]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[4]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[5]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[6]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[7]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[8]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[9]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[10]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[11]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[12]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[13]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[14]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[15]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[16]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[17]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[18]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[19]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[20]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[21]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[22]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:28:52 - 12/13/16] SCHEDULE[23]: 7200
+LOG (main():main.cc:20)[12:28:52 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[12:28:52 - 12/13/16] Next request data at "03:00:00 - 12/14/16"
+LOG (main():main.cc:13)[12:29:11 - 12/13/16] ___________START AQUAOS ROOT___________
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:11 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:11 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[12:29:11 - 12/13/16] Near SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[0]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[1]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[2]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[3]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[4]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[5]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[6]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[7]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[8]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[9]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[10]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[11]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[12]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[13]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[14]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[15]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[16]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[17]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[18]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[19]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[20]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[21]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[22]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:11 - 12/13/16] SCHEDULE[23]: 43200
+LOG (main():main.cc:20)[12:29:11 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[12:29:11 - 12/13/16] Next request data at "13:00:00 - 12/13/16"
+LOG (main():main.cc:13)[12:29:49 - 12/13/16] ___________START AQUAOS ROOT___________
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:29:49 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:29:49 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[12:29:49 - 12/13/16] Near SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[0]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[1]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[2]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[3]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[4]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[5]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[6]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[7]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[8]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[9]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[10]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[11]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[12]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[13]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[14]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[15]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[16]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[17]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[18]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[19]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[20]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[21]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[22]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:29:49 - 12/13/16] SCHEDULE[23]: 43200
+LOG (main():main.cc:20)[12:29:49 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[12:29:49 - 12/13/16] Next request data at "13:00:00 - 12/13/16"
+LOG (main():main.cc:13)[12:30:15 - 12/13/16] ___________START AQUAOS ROOT___________
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:15 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:15 - 12/13/16] SCHEDULE[23]: 86400
+LOG (main():main.cc:13)[12:30:28 - 12/13/16] ___________START AQUAOS ROOT___________
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:28 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:28 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[12:30:28 - 12/13/16] Near SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[0]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[1]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[2]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[3]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[4]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[5]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[6]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[7]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[8]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[9]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[10]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[11]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[12]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[13]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[14]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[15]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[16]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[17]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[18]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[19]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[20]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[21]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[22]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:28 - 12/13/16] SCHEDULE[23]: 43200
+LOG (main():main.cc:20)[12:30:28 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[12:30:28 - 12/13/16] Next request data at "13:00:00 - 12/13/16"
+LOG (main():main.cc:13)[12:30:56 - 12/13/16] ___________START AQUAOS ROOT___________
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[0] h: 1, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[1] h: 2, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[2] h: 3, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[3] h: 4, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[4] h: 5, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[5] h: 6, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[6] h: 7, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[7] h: 8, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[8] h: 9, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[9] h: 10, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[10] h: 11, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[11] h: 12, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[12] h: 13, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[13] h: 14, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[14] h: 15, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[15] h: 16, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[16] h: 17, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[17] h: 18, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[18] h: 19, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[19] h: 20, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[20] h: 21, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[21] h: 22, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[22] h: 23, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:286)[12:30:56 - 12/13/16] SCHEDULE[23] h: 24, m: 0, s: 0
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[0]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[1]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[2]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[3]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[4]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[5]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[6]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[7]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[8]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[9]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[10]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[11]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[12]: 46800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[14]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[15]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[16]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[17]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[18]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[19]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[20]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[21]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[22]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:293)[12:30:56 - 12/13/16] SCHEDULE[23]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:308)[12:30:56 - 12/13/16] Near SCHEDULE[13]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[0]: 50400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[1]: 54000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[2]: 57600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[3]: 61200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[4]: 64800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[5]: 68400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[6]: 72000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[7]: 75600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[8]: 79200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[9]: 82800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[10]: 86400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[11]: 3600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[12]: 7200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[13]: 10800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[14]: 14400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[15]: 18000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[16]: 21600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[17]: 25200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[18]: 28800
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[19]: 32400
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[20]: 36000
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[21]: 39600
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[22]: 43200
+LOG (SetTimeSchedule():lib/seed-parse-config.cc:328)[12:30:56 - 12/13/16] SCHEDULE[23]: 46800
+LOG (main():main.cc:20)[12:30:56 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[12:30:56 - 12/13/16] Next request data at "14:00:00 - 12/13/16"
+LOG (main():main.cc:13)[12:41:32 - 12/13/16] ___________START AQUAOS ROOT___________
+LOG (main():main.cc:20)[12:41:32 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[12:41:32 - 12/13/16] Next request data at "13:00:00 - 12/13/16"
+WARNING (JsonIsValid():lib/seed-json.cc:18)[12:44:20 - 12/13/16] Error before : "21h","22h","23h","24h"]}
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[12:44:20 - 12/13/16] Config : "SCHEDULE={"schedule":["1h","2h","3h","4h","5h","6h","7h","8h","9h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h""21h","22h","23h","24h"]}" is wrong
+ERROR (PrintUsage():lib/seed-parse-config.cc:365)[12:44:20 - 12/13/16] ________AQUAOS ROOT START FAILED________
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+example :
+##################################################
+
+LOG_FILE=/home/username/root/root.log
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+MASTER_IP=192.168.13.13SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+
+##################################################
+WARNING (JsonIsValid():lib/seed-json.cc:18)[12:44:49 - 12/13/16] Error before : "21h","22h","23h","24h"]}
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[12:44:49 - 12/13/16] Config : "SCHEDULE={"schedule":["1h","2h","3h","4h","5h","6h","7h","8h","9h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h""21h","22h","23h","24h"]}" is wrong
+ERROR (PrintUsage():lib/seed-parse-config.cc:365)[12:44:49 - 12/13/16] 
+
+________AQUAOS ROOT START FAILED________
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+example :
+##################################################
+
+LOG_FILE=/home/username/root/root.log
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+MASTER_IP=192.168.13.13SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+
+##################################################
+WARNING (JsonIsValid():lib/seed-json.cc:18)[12:45:09 - 12/13/16] Error before : "21h","22h","23h","24h"]}
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[12:45:09 - 12/13/16] Config : "SCHEDULE={"schedule":["1h","2h","3h","4h","5h","6h","7h","8h","9h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h""21h","22h","23h","24h"]}" is wrong
+ERROR (PrintUsage():lib/seed-parse-config.cc:365)[12:45:09 - 12/13/16] 
+
+___________AQUAOS ROOT START FAILED___________
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+example :
+##################################################
+
+LOG_FILE=/home/username/root/root.log
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+MASTER_IP=192.168.13.13SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+
+##################################################
+WARNING (JsonIsValid():lib/seed-json.cc:18)[12:45:22 - 12/13/16] Error before : "21h","22h","23h","24h"]}
+WARNING (PrintWarning():lib/seed-parse-config.cc:87)[12:45:22 - 12/13/16] Config : "SCHEDULE={"schedule":["1h","2h","3h","4h","5h","6h","7h","8h","9h","10h","11h","12h","13h","14h","15h","16h","17h","18h","19h","20h""21h","22h","23h","24h"]}" is wrong
+ERROR (PrintUsage():lib/seed-parse-config.cc:365)[12:45:22 - 12/13/16] 
+
+_____________AQUAOS ROOT START FAILED_____________
+
+Need a config file: "config/root.conf" 
+Usage : <option> = <content>
+example :
+##################################################
+
+LOG_FILE=/home/username/root/root.log
+PRINT_MONITOR=true
+PRINT_FILE=true
+DEBUG_LEVEL=1
+MASTER_IP=192.168.13.13SCHEDULE={"schedule":["7h","12h30'30","18h","0h"]}
+#SCHEDULE={"timer":[1800]}
+
+##################################################
+LOG (main():main.cc:19)[12:46:12 - 12/13/16] ___________START AQUAOS ROOT___________
+LOG (main():main.cc:20)[12:46:12 - 12/13/16] Master address: 192.168.13.13, port: 8888
+LOG (RequestDataFromMasterUDP():lib/seed-branch.cc:299)[12:46:12 - 12/13/16] Next request data at "13:00:00 - 12/13/16"

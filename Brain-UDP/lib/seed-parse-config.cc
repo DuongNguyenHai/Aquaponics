@@ -11,7 +11,7 @@ namespace TREE {
 // #define LOGFILE "../log/seed-parse-config.log"
 // #endif	
 
-static bool flag_err = false;
+bool flag_err = false;
 static bool SetSchedule(const char *str);
 static bool SetTimeSchedule(const char *str);
 static bool SetTimeToTimer(const char *str);
@@ -167,7 +167,17 @@ void ParseOptions::GetOptions() {
 			for (unsigned int j = 0; j < NUM_ROW(args); j++) {
 				if(strcmp(args[i][0].c_str(), DEFINE_ARGS[j][0].c_str())==0) {
 					switch (j) {
-						case 0 : {	// Set PRINT_MONITOR
+						case 0 : { // set LOG_FILE
+							if(Check_Arg_Log_File(args[i][1])==RET_FAILURE) {
+								PrintWarning(args[i][0], args[i][1], "is wrong. The file cannot be found/opend");
+								SEED_LOG << "LOG_FILE will be setted with default value. LOG_FILE=" << LOG_FILE;
+							}
+							else {
+								LOG_FILE.clear();
+								LOG_FILE.append(args[i][1]);
+							}
+						} break;
+						case 1 : {	// Set PRINT_MONITOR
 							int val = ToBool(args[i][1]);
 							if(val!=-1)
 								PRINT_MONITOR = val;
@@ -176,7 +186,7 @@ void ParseOptions::GetOptions() {
 								SEED_LOG << "PRINT_MONITOR will be setted with default value. PRINT_MONITOR=" << ((PRINT_MONITOR) ? "true":"false");
 							}
 						} break;
-						case 1 : { // Set PRINT_FILE
+						case 2 : { // Set PRINT_FILE
 							int val = ToBool(args[i][1]);
 							if(val!=-1)
 								PRINT_FILE = val;
@@ -185,7 +195,7 @@ void ParseOptions::GetOptions() {
 								SEED_LOG << "PRINT_FILE will be setted with default value. PRINT_FILE=" << ((PRINT_FILE) ? "true":"false");
 							}
 						} break;
-						case 2 : { // Set DEBUG_LEVEL
+						case 3 : { // Set DEBUG_LEVEL
 							if(ToInt(args[i][1], DEBUG_LEVEL)) { // string convert to int
 								if(!Check_Arg_DEBUG_LEVEL(DEBUG_LEVEL)) {	// out of range
 									DEBUG_LEVEL = 1;	// must set DEBUG_LEVEL > 0 for use SEED_WARNING
@@ -197,20 +207,10 @@ void ParseOptions::GetOptions() {
 								SEED_LOG << "DEBUG_LEVEL will be setted with default value. DEBUG_LEVEL=" << DEBUG_LEVEL;
 							}
 						} break;
-						case 3 : { // set SCHEDULE
+						case 4 : { // set SCHEDULE
 							if(SetSchedule(args[i][1].c_str())==RET_FAILURE) {
 								PrintWarning(args[i][0], args[i][1], "is wrong");
 								flag_err=true;
-							}
-						} break;
-						case 4 : { // set LOG_FILE
-							if(Check_Arg_Log_File(args[i][1])==RET_FAILURE) {
-								PrintWarning(args[i][0], args[i][1], "is wrong. The file cannot be found/opend");
-								SEED_LOG << "LOG_FILE will be setted with default value. LOG_FILE=" << LOG_FILE;
-							}
-							else {
-								LOG_FILE.clear();
-								LOG_FILE.append(args[i][1]);
 							}
 						} break;
 						case 5 : { // set MASTER_IP
@@ -303,19 +303,24 @@ static bool SetTimeSchedule(const char *str) {
     } else {
     	int g;
     	for (int i = 0; i < size; ++i) {
-	    	if( SCHEDULE[i] < curr && curr <= SCHEDULE[i+1] ) {
-	    		// SEED_LOG << "Near SCHEDULE["<<i+1<<"]: " << SCHEDULE[i+1];
+	    	if( SCHEDULE[i] <= curr && curr < SCHEDULE[i+1] ) {
 	    		g=i+1;
+	    		// SEED_LOG << "Near SCHEDULE["<<g<<"]: " << SCHEDULE[g];
 	    		break;
 	    	}
 	    }
-	    int sw, k=0;
-	    for (int i = 0; i < g; ++i) {
-	    	if((g+k)==size) k=0;
-	    	sw = SCHEDULE[i];
-	    	SCHEDULE[i] = SCHEDULE[g+k];
-	    	SCHEDULE[g+k] = sw;
-	    	k++;
+	    
+	    int sw[size];
+	    for (int i = 0; i < size; ++i)
+	    {
+	    	if (g+i==size) {
+	    		g=-i;
+	    	}
+	    	sw[i] = SCHEDULE[g+i];
+	    }
+	    for (int i = 0; i < size; ++i)
+	    {
+	    	SCHEDULE[i] = sw[i];
 	    }
     }
     
@@ -357,7 +362,7 @@ static void BubbleSort(std::vector<int> &bubble, int size) {
 }
 
 void ParseOptions::PrintUsage() {
-	SEED_ERROR << "\n\n" << usage << "\n";
+	SEED_ERROR << "\n\n_____________AQUAOS ROOT START FAILED_____________\n\n" << usage << "\n";
 }
 
 }	// end of namespace TREE
